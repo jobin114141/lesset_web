@@ -1,0 +1,279 @@
+/* Custom CSS for Lisset Transport Inc */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Offset for the sticky 80px top navbar */
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.kinetic-gradient {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%);
+}
+
+.hero-overlay {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.nav-item-active {
+    border-bottom: 2px solid #002b5b;
+    color: #001736;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+
+/* Custom animation curve for mobile slide-over */
+#mobile-menu {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.bento-item {
+    background: white;
+    border: 1px solid #E6E8EA;
+    transition: all 0.3s ease;
+}
+
+.bento-item:hover {
+    border-color: #002b5b;
+}
+
+/* WhatsApp Floating Button Position */
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px !important;
+    right: 24px;
+    z-index: 60;
+}
+
+/* Infinite Marquee Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: max-content;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Traffix Map Section Styles */
+.location-cta {
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    background-color: #ffffff;
+}
+
+.location-cta-content {
+    box-sizing: border-box;
+    max-width: 640px;
+    padding: 20px 0 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.location-cta-content .kicker {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #505f76;
+    /* secondary */
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.location-cta-content .heading-2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #001736;
+    /* primary */
+    margin-bottom: 37px;
+    line-height: 1.1;
+}
+
+.location-area {
+    line-height: 0.65;
+    max-width: 490px;
+}
+
+.location-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.location-area ul li {
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.single-location {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+}
+
+.single-location .location-title {
+    color: #505f76;
+    /* secondary */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+}
+
+.single-location.active_location .location-title {
+    color: #001736 !important;
+    /* primary */
+}
+
+.single-location.active_location .location-icon svg path {
+    fill: #FFB300 !important;
+    /* Yellow accent */
+}
+
+.single-location:hover .location-title {
+    color: #001736 !important;
+}
+
+.single-location:hover .location-icon svg path {
+    fill: #FFB300 !important;
+}
+
+.location-icon {
+    height: 52px;
+    width: 52px;
+}
+
+.location-icon svg {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.location-icon svg path {
+    transition: all 0.3s ease-in-out;
+    fill: #c4c6d0;
+    /* outline-variant */
+}
+
+.location-btns {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.location-btns .gl-button {
+    display: inline-block;
+    background-color: #002b5b;
+    /* primary-container */
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 2px solid #002b5b;
+}
+
+.location-btns .gl-button:hover {
+    background-color: #001736;
+    border-color: #001736;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.location-btns .gl-button.trp-btn {
+    background-color: transparent;
+    color: #002b5b;
+    border-color: #002b5b;
+}
+
+.location-btns .gl-button.trp-btn:hover {
+    background-color: #002b5b;
+    color: #ffffff;
+}
+
+.location-cta-map {
+    aspect-ratio: 1010/769;
+    height: 100%;
+    max-height: 769px;
+    max-width: 1010px;
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    z-index: 1;
+    pointer-events: none;
+    /* Disable pointer-events on the whole overlay to let buttons click */
+}
+
+.location-cta-map svg {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    pointer-events: auto;
+    /* Enable hover/clicks on SVG paths inside */
+}
+
+.map-hover-mage {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.map-hover-mage.active_map {
+    opacity: 1 !important;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1024px) {
+    .location-cta {
+        flex-direction: column-reverse;
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .location-cta-content {
+        padding: 40px 0 0;
+        max-width: 100%;
+    }
+
+    .location-cta-map {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

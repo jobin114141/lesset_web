@@ -1,0 +1,1624 @@
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <title>Lisset Transport Inc | Premium Freight & Corporate Mobility Solutions</title>
+    <meta name="description"
+        content="Discover Lisset Transport Inc, North America's fastest-growing logistics network. We offer premium transport, warehousing, and corporate mobility solutions across Canada & USA." />
+    <meta name="keywords"
+        content="Lisset logistics, freight transport, cargo logistics, premium freight, warehousing Canada & USA, corporate mobility solutions" />
+    <meta name="author" content="Lisset Transport Inc" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lisset Transport Inc | Premium Freight & Corporate Mobility Solutions" />
+    <meta property="og:description"
+        content="Discover Lisset Transport Inc, North America's fastest-growing logistics network. We offer premium transport, warehousing, and corporate mobility solutions across Canada & USA." />
+    <meta property="og:image" content="assets/new_logos/logo_2.png" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Tailwind CSS with Forms and Container Queries Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Tailwind Configuration script -->
+    <script src="script.js"></script>
+
+    <!-- Google Fonts Preconnect to prevent FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=block"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block"
+        rel="stylesheet" />
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon_cropped.png" />
+    <link rel="apple-touch-icon" href="assets/favicon_cropped.png" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+
+    <!-- TopNavBar -->
+    <!-- TopNavBar -->
+    <nav id="main-nav"
+        class="fixed top-0 left-0 w-full z-50 bg-transparent border-b border-transparent h-[90px] transition-all duration-300">
+        <div
+            class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
+            <a href="index.html" id="logo-container"
+                class="relative flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                <div id="logo-glow"
+                    class="absolute inset-0 bg-white/70 blur-[20px] rounded-full z-0 transition-opacity duration-300">
+                </div>
+                <img id="nav-logo" alt="Lisset Transport Inc"
+                    class="h-16 md:h-20 w-auto object-contain mix-blend-multiply z-10 transition-all duration-300"
+                    src="assets/new_logos/logo_2.png" />
+            </a>
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
+                <a class="nav-link text-white font-bold border-b-2 border-white pb-1 font-label-md text-label-md uppercase tracking-wider"
+                    href="index.html">Home</a>
+                <a class="nav-link text-white/80 hover:text-white transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="about.html">About Us</a>
+                <a class="nav-link text-white/80 hover:text-white transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="services.html">Services</a>
+                <a class="nav-link text-white/80 hover:text-white transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="contact.html">Contact Us</a>
+            </div>
+            <div class="flex items-center gap-md">
+                <button onclick="toggleMobileMenu()"
+                    class="xl:hidden flex items-center justify-center p-2 text-white focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-[120px] transition-all duration-300 transform translate-x-full">
+        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="index.html">Home</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="about.html">About Us</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="services.html">Services</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    <main class="pt-0">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen min-h-[500px] flex items-start md:items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/new_images/img9.png" alt="Lisset Transport Inc Background"
+                    class="w-full h-full object-cover object-right md:object-center brightness-125">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/75 to-transparent"></div>
+            </div>
+            <div
+                class="relative z-10 w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto pt-[110px] md:pt-0">
+                <div class="max-w-3xl space-y-md">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/20 border border-white/30 backdrop-blur-sm">
+                        <span class="material-symbols-outlined text-[18px] text-white">speed</span>
+                        <span class="text-white font-label-md text-label-sm uppercase tracking-widest">Cross-Border
+                            Excellence</span>
+                    </div>
+                    <h1
+                        class="font-display-lg text-3xl sm:text-4xl lg:text-display-lg text-white tracking-tight !mt-sm md:!mt-md">
+                        Seamless Cross-Border Logistics<br />
+                        <span class="text-white/90 font-light">Powering North America's Supply Chain</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-gray-200 max-w-xl">
+                        We deliver excellence, one truckload at a time. Connecting businesses with seamless logistics
+                        solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-md pt-base">
+                        <a href="#offerings"
+                            class="bg-primary text-white px-6 md:px-xl py-4 rounded font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-2">
+                            Our Services
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a href="contact.html"
+                            class="border border-white/80 text-white hover:bg-white hover:text-primary px-6 md:px-xl py-4 rounded font-label-md text-label-md transition-all flex items-center justify-center backdrop-blur-sm">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Company Overview & Stats / About Lisset Overview -->
+        <section id="about-overview"
+            class="py-12 md:py-xl bg-surface-container-lowest border-b border-surface-container">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+                    <div class="lg:col-span-6 space-y-md">
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">About Lisset Transport
+                        </h2>
+                        <div class="w-20 h-1 bg-primary-container"></div>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            Founded on the principles of trust and reliability, Lisset Transport Inc has established
+                            itself as a premier logistics provider in North America. Our dedicated team and modern fleet
+                            ensure that your cargo reaches its destination safely and on time, every time.
+                        </p>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            We understand the complexities of cross-border transit regulations and optimize routes to
+                            provide the most cost-effective solutions for our clients.
+                        </p>
+                        <div class="pt-sm">
+                            <a href="about.html"
+                                class="inline-flex items-center gap-2 bg-primary-container text-white px-6 py-3 rounded font-label-md text-label-sm hover:bg-primary transition-all uppercase tracking-wider font-bold">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3 Core Features replacing Stats Grid -->
+                    <div class="lg:col-span-6 grid grid-cols-1 gap-sm">
+                        <div
+                            class="p-6 bg-surface border border-surface-container-high rounded-xl space-y-2 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary-container text-2xl">local_shipping</span>
+                                <h3 class="font-headline-md text-primary text-lg font-bold">Modern Fleet</h3>
+                            </div>
+                            <p class="text-secondary text-sm">State-of-the-art trucks equipped for safety and
+                                efficiency.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-surface border border-surface-container-high rounded-xl space-y-2 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary-container text-2xl">public</span>
+                                <h3 class="font-headline-md text-primary text-lg font-bold">Cross-Border</h3>
+                            </div>
+                            <p class="text-secondary text-sm">Comprehensive coverage across all major US and Canada
+                                routes.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-surface border border-surface-container-high rounded-xl space-y-2 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary-container text-2xl">schedule</span>
+                                <h3 class="font-headline-md text-primary text-lg font-bold">On-Time Delivery</h3>
+                            </div>
+                            <p class="text-secondary text-sm">Punctuality is our priority. We value your time and
+                                schedule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Truck Animation Section -->
+        <section id="scrolling-truck-section"
+            class="relative py-16 bg-white overflow-hidden border-t border-surface-container-high">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10 text-center mb-8">
+                <span class="text-primary font-label-md text-label-sm uppercase tracking-widest block mb-2">Transit
+                    Simulation</span>
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary font-bold">Lisset on the Move</h2>
+                <p class="text-secondary max-w-xl mx-auto mt-base text-sm">Watch our fleet deliver cross-border cargo.
+                    Scroll to see the truck arrive at its destination.</p>
+            </div>
+
+            <!-- White background container -->
+            <div class="relative w-full h-96 md:h-[550px] flex items-center overflow-hidden bg-white">
+                <!-- Ambient blur orb for the text section -->
+                <div
+                    class="hidden md:block absolute left-[-10%] top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[80px] pointer-events-none z-10">
+                </div>
+
+                <!-- Left Side Content (Scroll-linked blending typography) -->
+                <div id="scrolling-text-card"
+                    class="absolute left-4 sm:left-8 md:left-24 top-6 md:top-1/2 -translate-y-0 md:-translate-y-1/2 max-w-[calc(100%-2rem)] md:max-w-lg z-20 pointer-events-none select-none transition-all duration-75 ease-out opacity-0">
+                    <span
+                        class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full mb-3">Transit
+                        Simulation</span>
+                    <h3
+                        class="font-display-lg text-2xl sm:text-3xl md:text-5xl text-primary font-extrabold leading-tight">
+                        Connecting Canada &amp;<br />
+                        <span
+                            class="bg-gradient-to-r from-primary-container to-primary bg-clip-text text-transparent font-bold">United
+                            States Routes</span>
+                    </h3>
+                    <p
+                        class="text-secondary text-xs sm:text-sm md:text-base font-body-md mt-2 md:mt-4 leading-relaxed font-medium">
+                        Lisset Transport Inc provides dependable full-truckload (FTL) and less-than-truckload (LTL)
+                        services, handling customs clearance and port drayage effortlessly.
+                    </p>
+                </div>
+
+                <!-- Truck Image -->
+                <img id="scrolling-truck" src="assets/new_images/img_1.png" alt="Lisset Transport Truck Moving"
+                    class="absolute right-0 bottom-4 md:top-1/2 -translate-y-0 md:-translate-y-1/2 h-36 sm:h-48 md:h-[480px] object-contain will-change-transform transition-transform duration-75 ease-out z-10" />
+            </div>
+        </section>
+
+        <!-- Cross-Border Connectivity Portal Section -->
+        <section id="connectivity-portal"
+            class="py-12 md:py-16 bg-surface-container-low border-t border-b border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="text-center mb-10 max-w-2xl mx-auto">
+                    <span class="text-primary font-label-md text-label-sm uppercase tracking-widest block mb-2">Network
+                        Connectivity</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary font-bold">Cross-Border
+                        Freight Planner</h2>
+                    <p class="text-secondary mt-2 text-sm">Select your freight hubs to calculate estimated transit
+                        times, customs clearance ports, and route logistics.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Left: Interactive Selector Card -->
+                    <div
+                        class="lg:col-span-5 bg-surface-container-lowest border border-surface-container-high rounded-2xl p-6 shadow-sm flex flex-col justify-between animate-fadeIn">
+                        <div class="space-y-4">
+                            <h3 class="font-headline-md text-primary text-lg font-bold flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-container text-xl">map</span>
+                                Route Estimator
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="space-y-1">
+                                    <label for="route-origin"
+                                        class="block text-xs font-bold text-secondary uppercase tracking-wider">Origin
+                                        Hub (Canada)</label>
+                                    <select id="route-origin"
+                                        class="w-full bg-surface border border-surface-container-high rounded-xl p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all font-body-md text-sm cursor-pointer"
+                                        onchange="calculateRoute()">
+                                        <option value="toronto" selected>Toronto, ON (GTA Hub)</option>
+                                        <option value="montreal">Montreal, QC (East Hub)</option>
+                                        <option value="halifax">Halifax, NS (Port Drayage)</option>
+                                        <option value="vancouver">Vancouver, BC (West Coast)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1">
+                                    <label for="route-destination"
+                                        class="block text-xs font-bold text-secondary uppercase tracking-wider">Destination
+                                        Hub (USA)</label>
+                                    <select id="route-destination"
+                                        class="w-full bg-surface border border-surface-container-high rounded-xl p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all font-body-md text-sm cursor-pointer"
+                                        onchange="calculateRoute()">
+                                        <option value="chicago" selected>Chicago, IL (Midwest)</option>
+                                        <option value="new_york">New York, NY (Northeast)</option>
+                                        <option value="boston">Boston, MA (New England)</option>
+                                        <option value="atlanta">Atlanta, GA (Southeast)</option>
+                                        <option value="dallas">Dallas, TX (Southwest)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-surface-container-high/60 mt-6 space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div
+                                    class="p-3 bg-surface-container-low/50 rounded-xl border border-surface-container-high/40">
+                                    <span
+                                        class="block text-[10px] text-secondary uppercase font-bold tracking-wider mb-0.5">Est.
+                                        Transit</span>
+                                    <span id="display-time" class="font-label-md text-primary font-bold text-sm">12-14
+                                        Hours</span>
+                                </div>
+                                <div
+                                    class="p-3 bg-surface-container-low/50 rounded-xl border border-surface-container-high/40">
+                                    <span
+                                        class="block text-[10px] text-secondary uppercase font-bold tracking-wider mb-0.5">Customs
+                                        Crossing</span>
+                                    <span id="display-port"
+                                        class="font-label-md text-primary font-bold text-sm truncate block"
+                                        title="Windsor / Detroit">Windsor / Detroit</span>
+                                </div>
+                            </div>
+                            <div
+                                class="p-3 bg-surface-container-low/50 rounded-xl border border-surface-container-high/40">
+                                <span
+                                    class="block text-[10px] text-secondary uppercase font-bold tracking-wider mb-0.5">Primary
+                                    Transit Route</span>
+                                <span id="display-route" class="font-label-md text-primary font-semibold text-sm">Hwy
+                                    401 &amp; I-75 South</span>
+                            </div>
+
+                            <a id="route-cta" href="contact.html?origin=Toronto&destination=Chicago"
+                                class="w-full bg-primary-container text-white py-3 rounded-xl font-label-md text-label-md hover:bg-primary transition-all text-center block uppercase tracking-wider font-bold shadow-md">
+                                Request Quote for this Lane
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Live Crossing Status Feed & Map Visualizer -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest border border-surface-container-high rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <h3 class="font-headline-md text-primary text-lg font-bold flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-container text-xl">rss_feed</span>
+                                Live Border Port Status
+                            </h3>
+                            <p class="text-secondary text-sm">Real-time status updates at key Canadian &amp; US
+                                commercial border crossings.</p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                                <!-- Port 1 -->
+                                <div
+                                    class="p-4 bg-surface rounded-xl border border-surface-container-high flex items-center justify-between hover:shadow-sm transition-all duration-300">
+                                    <div class="space-y-1">
+                                        <h4 class="font-label-md text-primary text-sm font-semibold">Ambassador Bridge
+                                        </h4>
+                                        <p class="text-xs text-secondary">Windsor / Detroit</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">
+                                            <span class="w-1.5 h-1.5 bg-green-600 rounded-full animate-pulse"></span>
+                                            12m delay
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Port 2 -->
+                                <div
+                                    class="p-4 bg-surface rounded-xl border border-surface-container-high flex items-center justify-between hover:shadow-sm transition-all duration-300">
+                                    <div class="space-y-1">
+                                        <h4 class="font-label-md text-primary text-sm font-semibold">Lacolle / Champlain
+                                        </h4>
+                                        <p class="text-xs text-secondary">Quebec / New York</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">
+                                            <span class="w-1.5 h-1.5 bg-green-600 rounded-full animate-pulse"></span>
+                                            18m delay
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Port 3 -->
+                                <div
+                                    class="p-4 bg-surface rounded-xl border border-surface-container-high flex items-center justify-between hover:shadow-sm transition-all duration-300">
+                                    <div class="space-y-1">
+                                        <h4 class="font-label-md text-primary text-sm font-semibold">Peace Bridge</h4>
+                                        <p class="text-xs text-secondary">Fort Erie / Buffalo</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                                            <span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span>
+                                            35m delay
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Port 4 -->
+                                <div
+                                    class="p-4 bg-surface rounded-xl border border-surface-container-high flex items-center justify-between hover:shadow-sm transition-all duration-300">
+                                    <div class="space-y-1">
+                                        <h4 class="font-label-md text-primary text-sm font-semibold">St. Stephen /
+                                            Calais</h4>
+                                        <p class="text-xs text-secondary">New Brunswick / Maine</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span
+                                            class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">
+                                            <span class="w-1.5 h-1.5 bg-green-600 rounded-full animate-pulse"></span>
+                                            8m delay
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Animated Path Visualizer -->
+                        <div
+                            class="bg-surface border border-surface-container-high rounded-xl p-4 mt-6 relative overflow-hidden h-24 flex flex-col justify-center shadow-inner">
+                            <div
+                                class="absolute inset-0 bg-[radial-gradient(circle,rgba(99,102,241,0.03)_0%,transparent_80%)]">
+                            </div>
+                            <div class="flex items-center justify-between px-6 relative z-10">
+                                <div class="text-center w-24">
+                                    <span
+                                        class="material-symbols-outlined text-primary-container text-2xl">home_pin</span>
+                                    <span id="visual-origin"
+                                        class="block text-xs font-bold text-primary mt-1 truncate">Toronto</span>
+                                </div>
+                                <div class="flex-1 px-4 relative flex items-center">
+                                    <div
+                                        class="w-full h-0.5 border-t-2 border-dashed border-primary-container/30 relative">
+                                    </div>
+                                    <span id="visual-truck"
+                                        class="material-symbols-outlined text-primary absolute left-0 -top-3 transition-all duration-1000 ease-in-out transform -translate-y-0.5">local_shipping</span>
+                                </div>
+                                <div class="text-center w-24">
+                                    <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+                                    <span id="visual-destination"
+                                        class="block text-xs font-bold text-primary mt-1 truncate">Chicago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logistics Division Section -->
+        <section id="logistics-division-home" class="py-12 md:py-xl bg-surface border-b border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+                    <!-- Left Column: Image -->
+                    <div
+                        class="lg:col-span-5 relative rounded-2xl overflow-hidden shadow-lg border border-surface-container-high group aspect-[4/3] w-full">
+                        <img src="assets/new_images/cross_border_freight_hero.png" alt="Cross-Border Freight Services"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 z-10 relative">
+                        <div
+                            class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded text-label-sm font-label-sm font-bold uppercase tracking-wider">
+                            Cross-Border</div>
+                    </div>
+                    <!-- Right Column: Content -->
+                    <div class="lg:col-span-7 space-y-md">
+                        <span
+                            class="font-label-md text-label-md text-primary-container uppercase tracking-wider block font-bold">North
+                            American Logistics</span>
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary font-bold">Cross-Border
+                            Freight Services</h2>
+                        <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+                            Lisset Transport Inc operates a modern fleet optimized for cross-border shipping between
+                            Canada and the United States, utilizing advanced logistics route optimization.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm pt-xs">
+                            <div
+                                class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl border border-surface-container-high hover:border-primary/20 transition-colors">
+                                <span
+                                    class="material-symbols-outlined text-primary-container text-2xl">local_shipping</span>
+                                <span class="font-label-md text-primary font-semibold">FTL &amp; LTL Shipping</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl border border-surface-container-high hover:border-primary/20 transition-colors">
+                                <span class="material-symbols-outlined text-primary-container text-2xl">anchor</span>
+                                <span class="font-label-md text-primary font-semibold">Halifax Port Container
+                                    Drayage</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl border border-surface-container-high hover:border-primary/20 transition-colors">
+                                <span class="material-symbols-outlined text-primary-container text-2xl">ac_unit</span>
+                                <span class="font-label-md text-primary font-semibold">Refrigerated Cold Chain</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl border border-surface-container-high hover:border-primary/20 transition-colors">
+                                <span class="material-symbols-outlined text-primary-container text-2xl">shield</span>
+                                <span class="font-label-md text-primary font-semibold">Full Insured Cargo</span>
+                            </div>
+                        </div>
+                        <div class="pt-sm">
+                            <a href="services.html"
+                                class="inline-flex items-center gap-2 bg-primary-container text-white px-6 md:px-xl py-4 rounded font-label-md text-label-md hover:bg-primary transition-all uppercase tracking-wider font-bold shadow-md">
+                                Explore Services
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Lisset -->
+        <section id="industries" class="py-12 md:py-xl bg-surface-container-lowest">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-end mb-12 md:mb-xl gap-md">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">The Lisset Advantage</h2>
+                        <p class="text-secondary mt-base">Why industry leaders trust us with their critical supply
+                            chains and corporate mobility needs.</p>
+                    </div>
+                    <a class="text-primary-container font-bold flex items-center gap-2 hover:underline"
+                        href="services.html">View
+                        Capabilities <span class="material-symbols-outlined">north_east</span></a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-md">
+                    <div
+                        class="p-4 md:p-md border border-surface-container-high rounded-lg hover:bg-surface transition-colors">
+                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">history</span>
+                        <h4 class="font-headline-md text-headline-md text-primary mb-2 text-lg">Experience</h4>
+                        <p class="text-label-sm text-secondary">Nearly two decades of domain expertise in the North
+                            American
+                            landscape.</p>
+                    </div>
+                    <div
+                        class="p-4 md:p-md border border-surface-container-high rounded-lg hover:bg-surface transition-colors">
+                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">memory</span>
+                        <h4 class="font-headline-md text-headline-md text-primary mb-2 text-lg">Technology</h4>
+                        <p class="text-label-sm text-secondary">Integrated GPS tracking and automated fleet management
+                            systems.</p>
+                    </div>
+                    <div
+                        class="p-4 md:p-md border border-surface-container-high rounded-lg hover:bg-surface transition-colors">
+                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">sync_alt</span>
+                        <h4 class="font-headline-md text-headline-md text-primary mb-2 text-lg">Flexible Fleet</h4>
+                        <p class="text-label-sm text-secondary">From 2T small vans to 45T heavy trailers, ready for any
+                            load.</p>
+                    </div>
+                    <div
+                        class="p-4 md:p-md border border-surface-container-high rounded-lg hover:bg-surface transition-colors">
+                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">handshake</span>
+                        <h4 class="font-headline-md text-headline-md text-primary mb-2 text-lg">Trusted</h4>
+                        <p class="text-label-sm text-secondary">Built on long-term relationships and consistent
+                            performance.</p>
+                    </div>
+                    <div
+                        class="p-4 md:p-md border border-surface-container-high rounded-lg hover:bg-surface transition-colors">
+                        <span class="material-symbols-outlined text-primary text-[40px] mb-4">trending_up</span>
+                        <h4 class="font-headline-md text-headline-md text-primary mb-2 text-lg">Scalable</h4>
+                        <p class="text-label-sm text-secondary">Agile platforms designed to grow alongside your
+                            business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="py-12 md:py-xl bg-surface border-b border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                    <div class="space-y-md">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary-container/10 border border-primary-container/20">
+                            <span class="material-symbols-outlined text-[18px] text-primary-container">work</span>
+                            <span class="text-primary font-label-md text-label-sm uppercase tracking-widest">We're
+                                Hiring!</span>
+                        </div>
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Join the Lisset Transport
+                            Team</h2>
+                        <p class="font-body-md text-body-md text-secondary">
+                            Lisset Transport Inc is looking for professional drivers and owner-operators to join our
+                            growing North American transportation network. Drive your career forward with market-leading
+                            rates and reliable support.
+                        </p>
+                        <div class="space-y-sm pt-base">
+                            <div
+                                class="flex items-start gap-3 p-4 bg-primary-container/[0.03] border border-surface-container-high border-l-4 border-l-primary-container rounded-xl shadow-sm">
+                                <span
+                                    class="material-symbols-outlined text-primary-container mt-0.5">verified_user</span>
+                                <div>
+                                    <h4
+                                        class="font-label-md text-primary-container text-sm uppercase tracking-wider font-bold">
+                                        Owner-Operators</h4>
+                                    <p class="text-label-sm text-secondary">Keep 90% of every load with transparent
+                                        rates and dedicated dispatch support.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-3 p-4 bg-surface-container-lowest border border-surface-container-high rounded-xl">
+                                <span class="material-symbols-outlined text-primary-container mt-0.5">groups</span>
+                                <div>
+                                    <h4 class="font-label-md text-primary text-sm uppercase tracking-wider font-bold">
+                                        Company Drivers</h4>
+                                    <p class="text-label-sm text-secondary">Up to $0.70/mile, 3,000 miles weekly, weekly
+                                        pay, layover pay, and 24/7 multilingual dispatch.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-base">
+                            <a href="careers.html"
+                                class="bg-primary-container text-on-primary px-6 md:px-xl py-4 rounded font-label-md text-label-md hover:bg-primary transition-colors inline-block text-center uppercase tracking-wider font-bold shadow-md">Apply
+                                Now &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Right Side: Clean Image Display -->
+                    <div class="flex items-center justify-center py-6 lg:py-0 w-full">
+                        <div
+                            class="relative rounded-2xl overflow-hidden shadow-lg border border-surface-container-high group aspect-[4/3] w-full max-w-lg mx-auto">
+                            <img src="assets/new_images/owner_operator_careers.png"
+                                alt="Lisset Transport Owner-Operator Careers"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative">
+                            <div
+                                class="absolute bottom-4 left-4 right-4 bg-primary-container/95 backdrop-blur-md px-5 py-4 rounded-xl border border-white/25 text-white z-20 shadow-xl">
+                                <p class="text-white/80 text-xs mt-1">Transparent rates, dedicated dispatch, and 24/7
+                                    support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Latest News & Insights Section -->
+        <section id="news" class="py-12 md:py-xl bg-white border-t border-b border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="text-center mb-12 md:mb-xl max-w-2xl mx-auto">
+                    <span class="text-primary font-label-md text-label-sm uppercase tracking-widest block mb-2">News &
+                        Updates</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Latest News & Insights</h2>
+                    <div class="w-20 h-1 bg-primary-container mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- News Card 1 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="assets/new_images/OTR-trucks.png" alt="Fleet Expansion"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span
+                                    class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">Fleet
+                                    Update</span>
+                            </div>
+                            <div class="p-6 space-y-3">
+                                <span class="text-xs text-secondary font-semibold">June 10, 2026</span>
+                                <h3
+                                    class="text-lg font-bold text-primary leading-snug group-hover:text-primary-container transition-colors">
+                                    Fleet Growth: New Freightliners Join Our Cross-Border Network
+                                </h3>
+                                <p class="text-secondary text-sm leading-relaxed font-body-md">
+                                    Lisset Transport Inc has expanded its fleet with new Freightliner Cascadia trucks,
+                                    boosting capacity for FTL and LTL cross-border runs between Canada and the United
+                                    States.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="services.html"
+                                class="inline-flex items-center gap-1.5 text-xs font-bold text-primary-container hover:text-primary transition-colors uppercase tracking-wider"
+                                aria-label="Read Article">Read More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="assets/new_images/AdobeStock_288509692-1-1024x673.jpeg"
+                                    alt="Canada-US Border Crossing"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span
+                                    class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">Border
+                                    Logistics</span>
+                            </div>
+                            <div class="p-6 space-y-3">
+                                <span class="text-xs text-secondary font-semibold">May 22, 2026</span>
+                                <h3
+                                    class="text-lg font-bold text-primary leading-snug group-hover:text-primary-container transition-colors">
+                                    Seamless Canada–US Customs: How We Keep Cargo Moving 24/7
+                                </h3>
+                                <p class="text-secondary text-sm leading-relaxed font-body-md">
+                                    Our dedicated compliance team handles all CBSA and CBP customs documentation,
+                                    ensuring zero-delay border crossings at key ports including Windsor, Lacolle, and
+                                    Emerson.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="services.html"
+                                class="inline-flex items-center gap-1.5 text-xs font-bold text-primary-container hover:text-primary transition-colors uppercase tracking-wider"
+                                aria-label="Read Article">Read More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="assets/new_images/hiring_drivers_news.png" alt="Owner Operators Hiring"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <span
+                                    class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">We're
+                                    Hiring</span>
+                            </div>
+                            <div class="p-6 space-y-3">
+                                <span class="text-xs text-secondary font-semibold">May 05, 2026</span>
+                                <h3
+                                    class="text-lg font-bold text-primary leading-snug group-hover:text-primary-container transition-colors">
+                                    Owner-Operators: Keep 90% of Every Load with Lisset Transport
+                                </h3>
+                                <p class="text-secondary text-sm leading-relaxed font-body-md">
+                                    We're actively recruiting experienced owner-operators and company drivers across
+                                    Ontario, Quebec, and the Maritime provinces. Enjoy weekly pay, layover pay, and
+                                    24/7 multilingual dispatch support.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="careers.html"
+                                class="inline-flex items-center gap-1.5 text-xs font-bold text-primary-container hover:text-primary transition-colors uppercase tracking-wider"
+                                aria-label="Read Article">Apply Now
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Client Testimonials Section -->
+        <section id="testimonials"
+            class="py-12 md:py-xl bg-surface-container-low border-b border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="text-center mb-12 md:mb-xl max-w-2xl mx-auto">
+                    <span
+                        class="text-primary font-label-md text-label-sm uppercase tracking-widest block mb-2">Testimonials</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">What Our Clients Say</h2>
+                    <div class="w-20 h-1 bg-primary-container mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-6 md:p-8 flex flex-col justify-between hover:shadow-md transition-all duration-300">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-1 text-[#FFB300]">
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                            </div>
+                            <p class="text-secondary font-body-md italic leading-relaxed text-sm">
+                                "Lisset Transport Inc has been our primary carrier for heavy manufacturing raw materials
+                                for over 8 years. Their adherence to SLAs and real-time tracking has brought
+                                unprecedented transparency to our production cycles."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-surface-container-high mt-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary font-bold text-lg">
+                                RN
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm">Robert Novak</h4>
+                                <p class="text-xs text-secondary">VP Operations, Laurentian Polymers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-6 md:p-8 flex flex-col justify-between hover:shadow-md transition-all duration-300">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-1 text-[#FFB300]">
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                            </div>
+                            <p class="text-secondary font-body-md italic leading-relaxed text-sm">
+                                "Distributing FMCG goods across Eastern Canada requires agility and promptness. Lisset's
+                                dedicated fleet and regional distributor hubs ensure our retail outlets are always
+                                stocked, even during peak winter seasons."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-surface-container-high mt-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary font-bold text-lg">
+                                PS
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm">Patricia Smith</h4>
+                                <p class="text-xs text-secondary">Supply Chain Director, V-North Foods</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-6 md:p-8 flex flex-col justify-between hover:shadow-md transition-all duration-300">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-1 text-[#FFB300]">
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined text-lg"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                            </div>
+                            <p class="text-secondary font-body-md italic leading-relaxed text-sm">
+                                "We partner with Lisset Passenger Mobility for our annual corporate retreats and daily
+                                employee transport routes. The buses are exceptionally maintained, and the drivers are
+                                highly trained, prioritizing passenger safety above all else."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 border-t border-surface-container-high mt-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary font-bold text-lg">
+                                AJ
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm">Andrew Johnston</h4>
+                                <p class="text-xs text-secondary">Senior Manager HR, Maritime Finance Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-12 md:py-xl bg-primary-container">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center space-y-md">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-white">Ready To Move Forward With Lisset?
+                </h2>
+                <p class="text-white/80 max-w-2xl mx-auto font-body-lg text-body-lg">Partner with a logistics powerhouse
+                    that prioritizes your growth as much as its own.</p>
+                <div class="flex justify-center flex-wrap gap-md pt-base">
+                    <a href="contact.html"
+                        class="bg-white text-primary-container px-6 md:px-xl py-4 rounded font-label-md text-label-md hover:bg-surface-container transition-all uppercase tracking-wider inline-block">Contact
+                        Us</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Our Trusted Clients -->
+        <section
+            class="py-12 md:py-16 relative overflow-hidden bg-surface-container-lowest border-t border-surface-container-high">
+            <!-- Decorative Glows -->
+            <div
+                class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none translate-y-1/3 -translate-x-1/3">
+            </div>
+
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-8 md:mb-12 text-center relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/20 border border-primary-container/30 mb-6">
+                    <span class="material-symbols-outlined text-[16px] text-primary-container">public</span>
+                    <span class="text-primary font-label-sm font-bold tracking-widest uppercase">Our Global
+                        Network</span>
+                </div>
+                <h2 class="font-headline-lg text-3xl md:text-5xl font-extrabold mb-6 text-primary">
+                    Trusted by <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Industry
+                        Leaders</span>
+                </h2>
+                <p class="text-secondary font-body-lg text-lg max-w-2xl mx-auto leading-relaxed">
+                    Powering the supply chains and mobility needs of the world's most innovative brands with
+                    uncompromising reliability and scale.
+                </p>
+            </div>
+
+            <div class="relative flex overflow-x-hidden group py-4">
+                <!-- Left/Right Seamless Fade Gradients -->
+                <div
+                    class="absolute top-0 left-0 w-24 md:w-48 h-full bg-gradient-to-r from-surface-container-lowest to-transparent z-10 pointer-events-none">
+                </div>
+                <div
+                    class="absolute top-0 right-0 w-24 md:w-48 h-full bg-gradient-to-l from-surface-container-lowest to-transparent z-10 pointer-events-none">
+                </div>
+
+                <!-- Marquee Track 1 -->
+                <div
+                    class="animate-marquee flex items-center gap-6 md:gap-8 px-3 md:px-4 group-hover:[animation-play-state:paused]">
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.56.22 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.13 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.23 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.35 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.56 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.21 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.25 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.29 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.35 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.39 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.44 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.48 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.52 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.56 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.00 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.04 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.07 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.12 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.16 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.20 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.24 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.30 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.39 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.43 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.47 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+                <!-- Marquee Track 2 (Duplicate for infinite loop) -->
+                <div class="animate-marquee flex items-center gap-6 md:gap-8 px-3 md:px-4 group-hover:[animation-play-state:paused]"
+                    aria-hidden="true">
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.56.22 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.13 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.23 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.35 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.57.56 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.21 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.25 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.29 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.35 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.39 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.44 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.48 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.52 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.58.56 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.00 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.04 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.07 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.12 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.16 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.20 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.24 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.30 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.39 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.43 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-36 h-24 md:w-48 md:h-28 bg-white rounded-2xl shadow-sm border border-surface-container-high/50 flex items-center justify-center p-4 md:p-6 hover:-translate-y-2 hover:shadow-xl hover:border-primary/40 transition-all duration-300 cursor-pointer group/card">
+                        <img src="assets/logos/WhatsApp Image 2026-05-23 at 9.59.47 AM.jpeg" alt="Client Logo"
+                            class="max-w-full max-h-full object-contain mix-blend-multiply group-hover/card:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 md:py-xl bg-surface border-t border-surface-container-high">
+            <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+                <div class="text-center mb-12 md:mb-xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary-container/10 border border-primary-container/20 mb-3">
+                        <span class="material-symbols-outlined text-[18px] text-primary-container">mail</span>
+                        <span class="text-primary font-label-md text-label-sm uppercase tracking-widest">Connect with
+                            Us</span>
+                    </div>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Get in Touch</h2>
+                    <p class="text-secondary max-w-2xl mx-auto mt-base">Have questions about our logistics services or
+                        careers? Fill out the form or reach out to our team directly.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+                    <div class="lg:col-span-5 space-y-md">
+                        <div
+                            class="bg-surface-container-lowest border border-surface-container-high rounded-xl p-md space-y-md">
+                            <h3 class="font-headline-md text-primary text-xl">Headquarters</h3>
+                            <div class="w-12 h-0.5 bg-primary-container"></div>
+                            <div class="space-y-sm">
+                                <div class="flex items-start gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary-container mt-1">location_on</span>
+                                    <p class="text-secondary font-body-md">Lisset Transport Inc<br />576 Prince St Unit
+                                        2<br />Truro, NS B2N 1G3, Canada</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary-container">mail</span>
+                                    <a href="mailto:safety@lisset.ca"
+                                        class="text-secondary hover:text-primary transition-colors font-body-md">safety@lisset.ca</a>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary-container">call</span>
+                                    <a href="tel:+19022011816"
+                                        class="text-secondary hover:text-primary transition-colors font-body-md">902-201-1816
+                                        ext 1</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary-container">schedule</span>
+                                    <span class="text-secondary font-body-md">Mon - Sat: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Contact Form -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest border border-surface-container-high rounded-xl p-md">
+                        <form id="contact-form" class="space-y-md" onsubmit="handleContactSubmit(event)">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+                                <div class="space-y-2">
+                                    <label for="name"
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Full
+                                        Name</label>
+                                    <input type="text" id="name" required
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all"
+                                        placeholder="John Doe" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="email"
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Email
+                                        Address</label>
+                                    <input type="email" id="email" required
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all"
+                                        placeholder="john@example.com" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+                                <div class="space-y-2">
+                                    <label for="phone"
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Phone
+                                        Number</label>
+                                    <input type="tel" id="phone" required
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all"
+                                        placeholder="+91 98765 43210" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="subject"
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Service
+                                        Required</label>
+                                    <select id="subject" required
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="logistics">Logistics Solutions</option>
+                                        <option value="mobility">Corporate Mobility Solutions</option>
+                                        <option value="careers">Careers & Jobs</option>
+                                        <option value="other">General Enquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label for="message"
+                                    class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Message</label>
+                                <textarea id="message" rows="4" required
+                                    class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container transition-all"
+                                    placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-primary-container text-on-primary py-4 rounded font-label-md text-label-md hover:bg-primary transition-all uppercase tracking-wider">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-xl">
+                <!-- Brand Column -->
+                <div class="space-y-sm lg:col-span-4">
+                    <div class="flex items-center gap-4">
+                        <img alt="Lisset Transport Inc" class="h-12 w-auto object-contain mix-blend-multiply"
+                            src="assets/new_logos/logo_2.png" />
+                    </div>
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving North America. Growing
+                        Together.
+                    </p>
+                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
+                        Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
+                        supply chain excellence across North America since 2006.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="flex flex-col gap-base lg:col-span-2">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Quick
+                            Links</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="index.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Home</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="about.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">About Us</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="services.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Services</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="logistics.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="contact.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Contact</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="careers.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Careers</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Divisions Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
+                            Divisions</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <a href="logistics.html"
+                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Industrial Freight &
+                                Cargo</span>
+                        </a>
+                        <a href="services.html#corporate"
+                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Corporate Employee
+                                Mobility</span>
+                        </a>
+                        <a href="services.html"
+                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Premium Fleet
+                                Solutions</span>
+                        </a>
+
+                        <a href="logistics.html#warehouse"
+                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Warehouse
+                                Management</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Get In
+                            Touch</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="space-y-sm text-sm pt-2">
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Email:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">mail</span>
+                                <a href="mailto:safety@lisset.ca" class="hover:underline">safety@lisset.ca</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Phone:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">call</span>
+                                <a href="tel:+19022011816" class="hover:underline">902-201-1816 ext 1</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Headquarters:</span>
+                            <div class="flex items-start gap-2 text-secondary">
+                                <span
+                                    class="material-symbols-outlined text-base text-primary-container mt-0.5">location_on</span>
+                                <span>Lisset Transport Inc - 576 Prince St Unit 2, Truro, NS B2N 1G3, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
+                <p class="text-secondary/60 text-sm">© 2026 Lisset Transport Inc. All Rights Reserved.</p>
+                <div class="flex gap-md">
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="#">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="mailto:safety@lisset.ca">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="tel:+19022011816">
+                        <span class="material-symbols-outlined text-lg">call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculateRoute() {
+            const origin = document.getElementById('route-origin').value;
+            const destination = document.getElementById('route-destination').value;
+            const key = `${origin}-${destination}`;
+
+            const routeData = {
+                "toronto-chicago": { time: "12-14 Hours", port: "Windsor / Detroit (Ambassador Bridge)", delay: "12 mins", status: "Optimal", route: "Hwy 401 & I-75 South" },
+                "toronto-new_york": { time: "11-13 Hours", port: "Fort Erie / Buffalo (Peace Bridge)", delay: "35 mins", status: "Moderate", route: "QEW & I-90 East" },
+                "toronto-boston": { time: "13-15 Hours", port: "Thousand Islands Bridge", delay: "15 mins", status: "Optimal", route: "Hwy 401 & I-81 South" },
+                "toronto-atlanta": { time: "22-24 Hours", port: "Windsor / Detroit (Ambassador Bridge)", delay: "12 mins", status: "Optimal", route: "I-75 South Direct" },
+                "toronto-dallas": { time: "32-34 Hours", port: "Windsor / Detroit (Ambassador Bridge)", delay: "12 mins", status: "Optimal", route: "I-30 West Corridor" },
+
+                "montreal-new_york": { time: "9-11 Hours", port: "Lacolle / Champlain", delay: "18 mins", status: "Optimal", route: "A-15 & I-87 South" },
+                "montreal-boston": { time: "8-10 Hours", port: "Derby Line / Stanstead", delay: "10 mins", status: "Optimal", route: "I-91 South & I-89 South" },
+                "montreal-chicago": { time: "18-20 Hours", port: "Lansdowne / Alexandria Bay", delay: "14 mins", status: "Optimal", route: "Hwy 401 & I-94 West" },
+                "montreal-atlanta": { time: "24-26 Hours", port: "Lacolle / Champlain", delay: "18 mins", status: "Optimal", route: "I-81 South & I-75 South" },
+                "montreal-dallas": { time: "36-38 Hours", port: "Lacolle / Champlain", delay: "18 mins", status: "Optimal", route: "I-40 West Corridor" },
+
+                "halifax-boston": { time: "15-17 Hours", port: "Calais / St. Stephen", delay: "8 mins", status: "Optimal", route: "Trans-Canada Hwy & I-95 South" },
+                "halifax-new_york": { time: "19-21 Hours", port: "Calais / St. Stephen", delay: "8 mins", status: "Optimal", route: "I-95 South Corridor" },
+                "halifax-chicago": { time: "28-30 Hours", port: "Calais / St. Stephen", delay: "8 mins", status: "Optimal", route: "I-95 South & I-90 West" },
+                "halifax-atlanta": { time: "34-36 Hours", port: "Calais / St. Stephen", delay: "8 mins", status: "Optimal", route: "I-95 South & I-85 South" },
+                "halifax-dallas": { time: "44-46 Hours", port: "Calais / St. Stephen", delay: "8 mins", status: "Optimal", route: "I-81 South & I-30 West" },
+
+                "vancouver-chicago": { time: "42-44 Hours", port: "Portal / North Portal", delay: "22 mins", status: "Moderate", route: "I-90 East Direct" },
+                "vancouver-dallas": { time: "40-42 Hours", port: "Sweet Grass / Coutts", delay: "15 mins", status: "Optimal", route: "I-15 South & I-25 South" },
+                "vancouver-new_york": { time: "58-60 Hours", port: "Portal / North Portal", delay: "22 mins", status: "Moderate", route: "I-90 East Corridor" },
+                "vancouver-boston": { time: "60-62 Hours", port: "Portal / North Portal", delay: "22 mins", status: "Moderate", route: "I-90 East & I-84 East" },
+                "vancouver-atlanta": { time: "54-56 Hours", port: "Sweet Grass / Coutts", delay: "15 mins", status: "Optimal", route: "I-15 South & I-24 East" }
+            };
+
+            const data = routeData[key] || { time: "N/A", port: "Customs Inspection Required", delay: "N/A", status: "Contact Us", route: "Transit Corridor Optimization Required" };
+
+            document.getElementById('display-time').textContent = data.time;
+            document.getElementById('display-port').textContent = data.port;
+            document.getElementById('display-port').title = data.port;
+            document.getElementById('display-route').textContent = data.route;
+
+            const originText = document.getElementById('route-origin').options[document.getElementById('route-origin').selectedIndex].text.split('(')[0].trim();
+            const destinationText = document.getElementById('route-destination').options[document.getElementById('route-destination').selectedIndex].text.split('(')[0].trim();
+
+            document.getElementById('visual-origin').textContent = originText;
+            document.getElementById('visual-destination').textContent = destinationText;
+
+            const truck = document.getElementById('visual-truck');
+            if (truck) {
+                truck.style.left = '0%';
+                setTimeout(() => {
+                    truck.style.left = 'calc(100% - 24px)';
+                }, 50);
+            }
+
+            const cta = document.getElementById('route-cta');
+            if (cta) {
+                cta.href = `contact.html?origin=${encodeURIComponent(originText)}&destination=${encodeURIComponent(destinationText)}`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const section = document.getElementById('scrolling-truck-section');
+            const truck = document.getElementById('scrolling-truck');
+            const textCard = document.getElementById('scrolling-text-card');
+            if (!section || !truck) return;
+
+            const handleScroll = () => {
+                const rect = section.getBoundingClientRect();
+                const viewHeight = window.innerHeight;
+
+                // Calculate progress: 0 when the top of the section enters the bottom of screen, 
+                // 1 when the section is centered in the viewport
+                const entryPoint = viewHeight;
+                const centerPoint = viewHeight / 2 - rect.height / 2;
+
+                let progress = (entryPoint - rect.top) / (entryPoint - centerPoint);
+                progress = Math.max(0, Math.min(1, progress));
+
+                // Translate from 110% (off-screen) to 45% (moderate portion of the truck showing)
+                const startX = 110;
+                const endX = 45;
+                const translateX = startX - (progress * (startX - endX));
+
+                const isMobile = window.innerWidth < 768;
+                const translateY = isMobile ? 'translateY(0)' : 'translateY(-50%)';
+
+                truck.style.transform = `${translateY} translateX(${translateX}%)`;
+
+                // Animate text card: slide from left (-50px to 0) and fade in (0 to 1)
+                if (textCard) {
+                    const textTranslateX = -50 + (progress * 50);
+                    textCard.style.transform = `${translateY} translateX(${textTranslateX}px)`;
+                    textCard.style.opacity = progress;
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            window.addEventListener('resize', handleScroll);
+            handleScroll();
+
+            // Dynamic Navbar scroll styling handler
+            const mainNav = document.getElementById('main-nav');
+            const navLogo = document.getElementById('nav-logo');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+
+            const handleNavbarScroll = () => {
+                if (window.scrollY > 50) {
+                    // Scrolled state: Solid white background with dark text
+                    mainNav.classList.remove('bg-transparent', 'border-transparent');
+                    mainNav.classList.add('bg-surface-container-lowest/95', 'backdrop-blur-md', 'border-surface-container-high', 'shadow-md');
+
+                    if (navLogo) {
+                        navLogo.className = 'h-16 md:h-20 w-auto object-contain mix-blend-multiply z-10 transition-all duration-300';
+                        const glow = document.getElementById('logo-glow');
+                        if (glow) glow.style.opacity = '0';
+                    }
+
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === 'index.html') {
+                            link.className = 'nav-link text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider';
+                        } else {
+                            link.className = 'nav-link text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider';
+                        }
+                    });
+
+                    if (hamburgerIcon) {
+                        hamburgerIcon.parentElement.classList.remove('text-white');
+                        hamburgerIcon.parentElement.classList.add('text-primary');
+                    }
+                } else {
+                    // Top state: Transparent background with white text
+                    mainNav.classList.add('bg-transparent', 'border-transparent');
+                    mainNav.classList.remove('bg-surface-container-lowest/95', 'backdrop-blur-md', 'border-surface-container-high', 'shadow-md');
+
+                    if (navLogo) {
+                        navLogo.className = 'h-16 md:h-20 w-auto object-contain mix-blend-multiply z-10 transition-all duration-300';
+                        const glow = document.getElementById('logo-glow');
+                        if (glow) glow.style.opacity = '1';
+                    }
+
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === 'index.html') {
+                            link.className = 'nav-link text-white font-bold border-b-2 border-white pb-1 font-label-md text-label-md uppercase tracking-wider';
+                        } else {
+                            link.className = 'nav-link text-white/80 hover:text-white transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider';
+                        }
+                    });
+
+                    if (hamburgerIcon) {
+                        hamburgerIcon.parentElement.classList.remove('text-primary');
+                        hamburgerIcon.parentElement.classList.add('text-white');
+                    }
+                }
+            };
+
+            window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+            handleNavbarScroll(); // Run once initially
+            if (typeof calculateRoute === 'function') {
+                calculateRoute();
+            }
+        });
+    </script>
+</body>
+
+</html>
