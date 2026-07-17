@@ -1,5225 +1,5225 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-
-<html class="light" lang="en">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<head>
-
-
-
-
-
-
-
-    <title>Contact Us | Lisset Transport Inc</title>
-
-
-
-
-
-
-
-    <meta name="description" content="Get in touch with Lisset Transport Inc's support team for logistics, commercial freight, or corporate travel enquiries." />
-
-
-
-
-
-
-
-    <meta name="keywords" content="contact Lisset, logistics support, corporate travel bookings, transport support, Canada US shipping support" />
-
-
-
-
-
-
-
-    <meta name="author" content="Lisset Transport Inc" />
-
-
-
-
-
-
-
-    <meta name="robots" content="index, follow" />
-
-
-
-
-
-
-
-    <meta property="og:type" content="website" />
-
-
-
-
-
-
-
-    <meta property="og:title" content="Contact Us | Lisset Transport Inc" />
-
-
-
-
-
-
-
-    <meta property="og:description" content="Get in touch with Lisset Transport Inc's support team for logistics, commercial freight, or corporate travel enquiries." />
-
-
-
-
-
-
-
-    <meta property="og:image" content="assets/new_logos/logo_2.png" />
-
-
-
-
-
-
-
-    <meta charset="utf-8" />
-
-
-
-
-
-
-
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-
-
-
-
-
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-
-
-
-
-
-
-    <script src="script.js"></script>
-
-
-
-
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-
-
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-
-
-
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=block" rel="stylesheet" />
-
-
-
-
-
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet" />
-
-
-
-
-
-
-
-        <link rel="stylesheet" href="style.css" />
-
-
-
-
-
-
-
-    <style>
-
-
-
-
-
-
-
-        /* ===== CONTACT PAGE ANIMATIONS ===== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Scroll-reveal base states */
-
-
-
-
-
-
-
-        [data-reveal] {
-
-
-
-
-
-
-
-            opacity: 0;
-
-
-
-
-
-
-
-            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-
-
-
-
-
-
-
-                        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
-
-
-
-
-
-
-
-            will-change: opacity, transform;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        [data-reveal="up"]    { transform: translateY(48px); }
-
-
-
-
-
-
-
-        [data-reveal="down"]  { transform: translateY(-48px); }
-
-
-
-
-
-
-
-        [data-reveal="left"]  { transform: translateX(-60px); }
-
-
-
-
-
-
-
-        [data-reveal="right"] { transform: translateX(60px); }
-
-
-
-
-
-
-
-        [data-reveal="scale"] { transform: scale(0.88); }
-
-
-
-
-
-
-
-        [data-reveal="fade"]  { transform: none; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        [data-reveal].revealed {
-
-
-
-
-
-
-
-            opacity: 1;
-
-
-
-
-
-
-
-            transform: none;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Stagger delays */
-
-
-
-
-
-
-
-        [data-delay="100"] { transition-delay: 0.10s; }
-
-
-
-
-
-
-
-        [data-delay="200"] { transition-delay: 0.20s; }
-
-
-
-
-
-
-
-        [data-delay="300"] { transition-delay: 0.30s; }
-
-
-
-
-
-
-
-        [data-delay="400"] { transition-delay: 0.40s; }
-
-
-
-
-
-
-
-        [data-delay="500"] { transition-delay: 0.50s; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Floating orbs */
-
-
-
-
-
-
-
-        @keyframes floatOrb {
-
-
-
-
-
-
-
-            0%, 100% { transform: translateY(0px) scale(1); }
-
-
-
-
-
-
-
-            50%       { transform: translateY(-20px) scale(1.05); }
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .orb-float-1 { animation: floatOrb 7s ease-in-out infinite; }
-
-
-
-
-
-
-
-        .orb-float-2 { animation: floatOrb 9s ease-in-out infinite 1.5s; }
-
-
-
-
-
-
-
-        .orb-float-3 { animation: floatOrb 6s ease-in-out infinite 3.5s; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Animated divider line */
-
-
-
-
-
-
-
-        .divider-line {
-
-
-
-
-
-
-
-            width: 0;
-
-
-
-
-
-
-
-            height: 3px;
-
-
-
-
-
-
-
-            background: linear-gradient(90deg, #002b5b, #4a90d9, #002b5b);
-
-
-
-
-
-
-
-            border-radius: 99px;
-
-
-
-
-
-
-
-            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .divider-line.revealed { width: 80px; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Scroll progress bar */
-
-
-
-
-
-
-
-        #scroll-progress {
-
-
-
-
-
-
-
-            position: fixed;
-
-
-
-
-
-
-
-            top: 90px;
-
-
-
-
-
-
-
-            left: 0;
-
-
-
-
-
-
-
-            height: 3px;
-
-
-
-
-
-
-
-            width: 0%;
-
-
-
-
-
-
-
-            background: linear-gradient(90deg, #002b5b, #4a90d9);
-
-
-
-
-
-
-
-            z-index: 49;
-
-
-
-
-
-
-
-            transition: width 0.1s linear;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Label tag pop animation */
-
-
-
-
-
-
-
-        @keyframes tagPop {
-
-
-
-
-
-
-
-            0%   { opacity: 0; transform: scale(0.7) translateY(6px); }
-
-
-
-
-
-
-
-            60%  { transform: scale(1.05) translateY(-1px); }
-
-
-
-
-
-
-
-            100% { opacity: 1; transform: scale(1) translateY(0); }
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .tag-pop { animation: tagPop 0.5s cubic-bezier(0.22,1,0.36,1) both; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Hero headline word-by-word reveal */
-
-
-
-
-
-
-
-        .word-reveal .word {
-
-
-
-
-
-
-
-            display: inline-block;
-
-
-
-
-
-
-
-            opacity: 0;
-
-
-
-
-
-
-
-            transform: translateY(30px);
-
-
-
-
-
-
-
-            transition: opacity 0.5s ease, transform 0.5s ease;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .word-reveal.revealed .word {
-
-
-
-
-
-
-
-            opacity: 1;
-
-
-
-
-
-
-
-            transform: translateY(0);
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Moving background grid */
-
-
-
-
-
-
-
-        @keyframes gridDrift {
-
-
-
-
-
-
-
-            0%   { background-position: 0 0; }
-
-
-
-
-
-
-
-            100% { background-position: 40px 40px; }
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .bg-grid-drift {
-
-
-
-
-
-
-
-            background-image:
-
-
-
-
-
-
-
-                linear-gradient(rgba(0,43,91,0.04) 1px, transparent 1px),
-
-
-
-
-
-
-
-                linear-gradient(90deg, rgba(0,43,91,0.04) 1px, transparent 1px);
-
-
-
-
-
-
-
-            background-size: 40px 40px;
-
-
-
-
-
-
-
-            animation: gridDrift 6s linear infinite;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Card lift hover */
-
-
-
-
-
-
-
-        .lift-card {
-
-
-
-
-
-
-
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .lift-card:hover {
-
-
-
-
-
-
-
-            transform: translateY(-5px) scale(1.01);
-
-
-
-
-
-
-
-            box-shadow: 0 14px 36px rgba(0,43,91,0.10);
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Image zoom on hover */
-
-
-
-
-
-
-
-        .zoom-img-wrap img {
-
-
-
-
-
-
-
-            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        .zoom-img-wrap:hover img { transform: scale(1.04); }
-
-
-
-
-
-
-
-    </style>
-
-
-
-
-
-
-
-    <link rel="icon" type="image/png" href="assets/new_logos/logo_2.png" />
-
-
-
-
-
-
-
-    <link rel="apple-touch-icon" href="assets/new_logos/logo_2.png" />
-
-
-
-
-
-
-
-</head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Scroll progress bar -->
-
-
-
-
-
-
-
-    <div id="scroll-progress"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <nav class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high h-[90px] transition-all duration-300">
-
-
-
-
-
-
-
-        <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
-
-
-
-
-
-
-
-            <a href="index.html" class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
-
-
-
-
-
-
-
-                <img alt="Lisset Transport Inc" class="h-16 md:h-20 w-auto object-contain mix-blend-multiply" src="assets/new_logos/logo_2.png" />
-
-
-
-
-
-
-
-            </a>
-
-
-
-
-
-
-
-            <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
-
-
-
-
-
-
-
-                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="index.html">Home</a>
-
-
-
-
-
-
-
-                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="about.html">About Us</a>
-
-
-
-
-
-
-
-                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="services.html">Services</a>
-
-
-
-
-
-
-
-                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider" href="contact.html">Contact Us</a>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="flex items-center gap-md">
-
-
-
-
-
-
-
-                <button onclick="toggleMobileMenu()" class="xl:hidden flex items-center justify-center p-2 text-primary focus:outline-none" aria-label="Toggle Menu">
-
-
-
-
-
-
-
-                    <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
-
-
-
-
-
-
-
-                </button>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-    </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Mobile Navigation Drawer -->
-
-
-
-
-
-
-
-    <div id="mobile-menu" class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-[120px] transition-all duration-300 transform translate-x-full">
-
-
-
-
-
-
-
-        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
-
-
-
-
-
-
-
-            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="index.html">Home</a>
-
-
-
-
-
-
-
-            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="about.html">About Us</a>
-
-
-
-
-
-
-
-            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="services.html">Services</a>
-
-
-
-
-
-
-
-            <a onclick="toggleMobileMenu()" class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block" href="contact.html">Contact Us</a>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main class="pt-[90px]">
-
-
-
-
-
-
-
-        <!-- Hero Section -->
-
-
-
-
-
-
-
-        <section class="relative bg-white overflow-hidden py-12 md:py-20 bg-grid-drift">
-
-
-
-
-
-
-
-            <!-- Floating orbs -->
-
-
-
-
-
-
-
-            <div class="absolute top-8 left-8 w-48 h-48 bg-primary/5 rounded-full blur-3xl orb-float-1 pointer-events-none"></div>
-
-
-
-
-
-
-
-            <div class="absolute bottom-8 right-32 w-64 h-64 bg-primary/4 rounded-full blur-3xl orb-float-2 pointer-events-none"></div>
-
-
-
-
-
-
-
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
-                <div class="max-w-3xl space-y-md">
-
-
-
-
-
-
-
-                    <span class="font-label-md text-label-md text-primary tracking-widest block uppercase tag-pop" style="animation-delay:0.2s">Connect With Lisset</span>
-
-
-
-
-
-
-
-                    <div class="divider-line mb-sm" id="hero-divider"></div>
-
-
-
-
-
-
-
-                    <h1 id="hero-headline" class="word-reveal font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary tracking-tight leading-tight">
-
-
-
-
-
-
-
-                        <span class="word" style="transition-delay:0.3s">Get</span>&nbsp;<span class="word" style="transition-delay:0.45s">in</span>&nbsp;<span class="word" style="transition-delay:0.6s">Touch</span>&nbsp;<span class="word" style="transition-delay:0.75s">with</span>&nbsp;<span class="word" style="transition-delay:0.9s">Our</span>&nbsp;<span class="word" style="transition-delay:1.05s">Team</span>
-
-
-
-
-
-
-
-                    </h1>
-
-
-
-
-
-
-
-<p class="font-body-lg text-base md:text-body-lg text-secondary max-w-2xl" data-reveal="up" data-delay="300">
-
-
-
-
-
-
-
-                        Whether you need to secure industrial freight routes, book luxury group travel, or explore
-
-
-
-
-
-
-
-                        corporate partnerships, our operations center is standing by to assist.
-
-
-
-
-
-
-
-                    </p>
-
-
-
-
-
-
-
-                    <div class="flex flex-col sm:flex-row flex-wrap gap-md pt-xs" data-reveal="up" data-delay="450">
-
-
-
-
-
-
-
-                        <a href="#contact-grid"
-
-
-
-
-
-
-
-                            class="bg-primary-container text-on-primary px-xl py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all flex justify-center items-center gap-2 uppercase tracking-wider w-full sm:w-auto">
-
-
-
-
-
-
-
-                            Explore Contacts
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a href="tel:+19022011816"
-
-
-
-
-
-
-
-                            class="border border-outline text-primary px-xl py-4 rounded-full font-label-md text-label-md hover:bg-surface-container transition-all flex justify-center items-center gap-2 uppercase tracking-wider w-full sm:w-auto">
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-sm">call</span>
-
-
-
-
-
-
-
-                            Call Hotline
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- Decorative aligned logo -->
-
-
-
-
-
-
-
-            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:flex items-center justify-end pr-12 opacity-15">
-
-
-
-
-
-
-
-                <img src="assets/new_logos/logo_2.png" alt="Lisset Transport Inc Background" id="parallax-logo" class="parallax-logo w-auto h-[500px] object-contain grayscale mix-blend-multiply" />
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Contact details and form section -->
-
-
-
-
-
-
-
-        <section id="contact-grid" class="py-12 md:py-xl bg-surface">
-
-
-
-
-
-
-
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
-
-
-
-
-
-
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!-- Left Side: Contact Cards -->
-
-
-
-
-
-
-
-                    <div class="lg:col-span-5 space-y-md" data-reveal="left">
-
-
-
-
-
-
-
-                        <div class="space-y-sm mb-6 md:mb-lg">
-
-
-
-
-
-
-
-                            <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Operational Verticals</h2>
-
-
-
-
-
-
-
-                            <div class="w-16 h-1 bg-primary-container"></div>
-
-
-
-
-
-
-
-                            <p class="font-body-md text-secondary">Reach out directly to the specialized division that
-
-
-
-
-
-
-
-                                fits your inquiry for immediate support.</p>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- Logistics Card -->
-
-
-
-
-
-
-
-                        <div
-
-
-
-
-
-
-
-                            class="lift-card bg-white border border-surface-container-high rounded-xl p-md shadow-sm hover:shadow-md transition-all duration-300 space-y-sm relative overflow-hidden group">
-
-
-
-
-
-
-
-                            <div
-
-
-
-
-
-
-
-                                class="absolute -right-6 -bottom-6 opacity-5 group-hover:scale-110 transition-transform duration-300">
-
-
-
-
-
-
-
-                                <span class="material-symbols-outlined text-[100px] text-primary">local_shipping</span>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-3">
-
-
-
-
-
-
-
-                                <div
-
-
-
-
-
-
-
-                                    class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
-
-
-
-
-
-
-
-                                    <span class="material-symbols-outlined">local_shipping</span>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <h3 class="font-headline-md text-primary text-lg">Logistics Solutions</h3>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <p class="text-secondary text-sm">For primary freight operations, corporate SLAs, and
-
-
-
-
-
-
-
-                                warehouse space allocations.</p>
-
-
-
-
-
-
-
-                            <div class="space-y-xs pt-xs text-sm">
-
-
-
-
-
-
-
-                                <div class="flex items-center gap-2 text-secondary">
-
-
-
-
-
-
-
-                                    <span class="material-symbols-outlined text-sm text-primary">mail</span>
-
-
-
-
-
-
-
-                                    <a href="mailto:safety@lisset.ca"
-
-
-
-
-
-
-
-                                        class="hover:underline hover:text-primary">safety@lisset.ca</a>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="flex items-center gap-2 text-secondary">
-
-
-
-
-
-
-
-                                    <span class="material-symbols-outlined text-sm text-primary">call</span>
-
-
-
-
-
-
-
-                                    <a href="tel:+19022011816" class="hover:underline hover:text-primary">902-201-1816 ext 1</a>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- Corporate HQ Card -->
-
-
-
-
-
-
-
-                        <div
-
-
-
-
-
-
-
-                            class="lift-card bg-white border border-surface-container-high rounded-xl p-md shadow-sm hover:shadow-md transition-all duration-300 space-y-sm relative overflow-hidden group">
-
-
-
-
-
-
-
-                            <div
-
-
-
-
-
-
-
-                                class="absolute -right-6 -bottom-6 opacity-5 group-hover:scale-110 transition-transform duration-300">
-
-
-
-
-
-
-
-                                <span class="material-symbols-outlined text-[100px] text-primary">corporate_fare</span>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-3">
-
-
-
-
-
-
-
-                                <div
-
-
-
-
-
-
-
-                                    class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
-
-
-
-
-
-
-
-                                    <span class="material-symbols-outlined">corporate_fare</span>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <h3 class="font-headline-md text-primary text-lg">Corporate Headquarters</h3>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="space-y-xs pt-xs text-sm">
-
-
-
-
-
-
-
-                                <div class="flex items-start gap-2 text-secondary">
-
-
-
-
-
-
-
-                                    <span
-
-
-
-
-
-
-
-                                        class="material-symbols-outlined text-sm text-primary mt-0.5">location_on</span>
-
-
-
-
-
-
-
-                                    <span>Lisset Transport Inc<br />576 Prince St Unit 2<br />Truro, NS B2N 1G3, Canada</span>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="flex items-center gap-2 text-secondary">
-
-
-
-
-
-
-
-                                    <span class="material-symbols-outlined text-sm text-primary">schedule</span>
-
-
-
-
-
-
-
-                                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <!-- Right Side: Contact Form -->
-
-
-
-
-
-
-
-                    <div class="lift-card lg:col-span-7 bg-white border border-surface-container-high rounded-xl p-md shadow-sm" data-reveal="right" data-delay="200">
-
-
-
-
-
-
-
-                        <h3 class="font-headline-md text-primary mb-md">Send a Message</h3>
-
-
-
-
-
-
-
-                        <form id="interactive-contact-form" class="space-y-md" onsubmit="handleContactSubmit(event)">
-
-
-
-
-
-
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
-
-
-
-
-
-
-
-                                <div class="space-y-2">
-
-
-
-
-
-
-
-                                    <label for="form-name"
-
-
-
-
-
-
-
-                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Full
-
-
-
-
-
-
-
-                                        Name</label>
-
-
-
-
-
-
-
-                                    <input type="text" id="form-name" required
-
-
-
-
-
-
-
-                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
-
-
-
-
-
-
-
-                                        placeholder="Enter your name" />
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="space-y-2">
-
-
-
-
-
-
-
-                                    <label for="form-email"
-
-
-
-
-
-
-
-                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Email
-
-
-
-
-
-
-
-                                        Address</label>
-
-
-
-
-
-
-
-                                    <input type="email" id="form-email" required
-
-
-
-
-
-
-
-                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
-
-
-
-
-
-
-
-                                        placeholder="Enter your email" />
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
-
-
-
-
-
-
-
-                                <div class="space-y-2">
-
-
-
-
-
-
-
-                                    <label for="form-phone"
-
-
-
-
-
-
-
-                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Phone
-
-
-
-
-
-
-
-                                        Number</label>
-
-
-
-
-
-
-
-                                    <input type="tel" id="form-phone" required
-
-
-
-
-
-
-
-                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
-
-
-
-
-
-
-
-                                        placeholder="+91 XXXXX XXXXX" />
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                                <div class="space-y-2">
-
-
-
-
-
-
-
-                                    <label for="form-subject"
-
-
-
-
-
-
-
-                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Inquiry
-
-
-
-
-
-
-
-                                        Category</label>
-
-
-
-
-
-
-
-                                    <select id="form-subject" required
-
-
-
-
-
-
-
-                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all">
-
-
-
-
-
-
-
-                                        <option value="" disabled selected>Select category</option>
-
-
-
-
-
-
-
-                                        <option value="logistics">Logistics Division (Freight / Warehouse)</option>
-
-
-
-
-
-
-
-                                        <option value="careers">Careers &amp; Employment</option>
-
-
-
-
-
-
-
-                                        <option value="corporate">Corporate Partnerships</option>
-
-
-
-
-
-
-
-                                        <option value="other">General Feedback</option>
-
-
-
-
-
-
-
-                                    </select>
-
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="space-y-2">
-
-
-
-
-
-
-
-                                <label for="form-message"
-
-
-
-
-
-
-
-                                    class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Your
-
-
-
-
-
-
-
-                                    Message</label>
-
-
-
-
-
-
-
-                                <textarea id="form-message" rows="5" required
-
-
-
-
-
-
-
-                                    class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
-
-
-
-
-
-
-
-                                    placeholder="Write details about your shipping loads or travel itineraries..."></textarea>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <button type="submit"
-
-
-
-
-
-
-
-                                class="w-full bg-primary-container text-on-primary py-4 rounded font-label-md text-label-md hover:bg-primary transition-all uppercase tracking-wider font-bold flex items-center justify-center gap-2">
-
-
-
-
-
-
-
-                                Submit Form
-
-
-
-
-
-
-
-                                <span class="material-symbols-outlined text-sm">send</span>
-
-
-
-
-
-
-
-                            </button>
-
-
-
-
-
-
-
-                        </form>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- National Hubs / Connectivity Map -->
-
-
-
-
-
-
-
-        <section class="py-12 md:py-xl bg-surface-container-lowest">
-
-
-
-
-
-
-
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
-
-
-
-
-
-
-
-                <div class="flex flex-col md:flex-row gap-xl items-center">
-
-
-
-
-
-
-
-                    <div class="flex-1 space-y-md" data-reveal="left">
-
-
-
-
-
-
-
-                        <span class="font-label-md text-label-md text-primary tracking-widest block uppercase">National
-
-
-
-
-
-
-
-                            Footprint</span>
-
-
-
-
-
-
-
-                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Connected Across Major Indian
-
-
-
-
-
-
-
-                            Corridors</h2>
-
-
-
-
-
-
-
-                        <p class="text-secondary leading-relaxed">
-
-
-
-
-
-
-
-                            With central control offices in Kochi and a synchronized network across major freight
-
-
-
-
-
-
-
-                            routes, Lisset Transport Inc is positioned to scale your business.
-
-
-
-
-
-
-
-                        </p>
-
-
-
-
-
-
-
-                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-sm pt-xs">
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Kochi (HQ)
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Bangalore
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Chennai
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Hyderabad
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Mumbai
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
-
-
-
-
-
-
-
-                                <span class="w-2 h-2 bg-primary rounded-full"></span> Delhi
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <div class="flex-1 w-full">
-
-
-
-
-
-
-
-                        <div data-reveal="right" data-delay="200"
-
-
-
-
-
-
-
-                            class="zoom-img-wrap bg-surface rounded-xl border border-surface-container-high aspect-video relative overflow-hidden shadow-sm group">
-
-
-
-
-
-
-
-                            <img alt="India Connectivity Infrastructure"
-
-
-
-
-
-
-
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-
-
-
-
-
-
-
-                                data-location="India"
-
-
-
-
-
-
-
-                                src="assets/india_connectivity_map.png" />
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </section>
-
-
-
-
-
-
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
-
-
-
-
-
-
-
-    <footer class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
-
-
-
-
-
-
-
-        <!-- Background Glows -->
-
-
-
-
-
-
-
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-1"></div>
-
-
-
-
-
-
-
-        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-2">
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
-
-
-
-
-
-
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-xl">
-
-
-
-
-
-
-
-                <!-- Brand Column -->
-
-
-
-
-
-
-
-                <div class="space-y-sm lg:col-span-4">
-
-
-
-
-
-
-
-                    <div class="flex items-center gap-4">
-
-
-
-
-
-
-
-                        <img alt="Lisset Transport Inc" class="h-12 w-auto object-contain mix-blend-multiply" src="assets/new_logos/logo_2.png" />
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving India. Growing Together.
-
-
-
-
-
-
-
-                    </p>
-
-
-
-
-
-
-
-                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
-
-
-
-
-
-
-
-                        Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
-
-
-
-
-
-
-
-                        supply chain excellence across India since 2006.
-
-
-
-
-
-
-
-                    </p>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- Quick Links Column -->
-
-
-
-
-
-
-
-                <div class="flex flex-col gap-base lg:col-span-2">
-
-
-
-
-
-
-
-                    <div class="relative pb-2">
-
-
-
-
-
-
-
-                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Quick
-
-
-
-
-
-
-
-                            Links</span>
-
-
-
-
-
-
-
-                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <div class="flex flex-col gap-3 pt-2">
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="index.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Home</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="about.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">About Us</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="services.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Services</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="logistics.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="contact.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Contact</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-
-
-
-
-
-
-
-                            href="careers.html">
-
-
-
-
-
-
-
-                            <span
-
-
-
-
-
-
-
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Careers</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- Divisions Column -->
-
-
-
-
-
-
-
-                <div class="flex flex-col gap-base lg:col-span-3">
-
-
-
-
-
-
-
-                    <div class="relative pb-2">
-
-
-
-
-
-
-
-                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
-
-
-
-
-
-
-
-                            Divisions</span>
-
-
-
-
-
-
-
-                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <div class="flex flex-col gap-3 pt-2">
-
-
-
-
-
-
-
-                        <a href="logistics.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Industrial Freight & Cargo</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a href="services.html#corporate" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Corporate Employee Mobility</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                        <a href="services.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Premium Fleet Solutions</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <a href="logistics.html#warehouse" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-
-
-
-
-
-
-                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
-
-
-
-
-
-
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Warehouse Management</span>
-
-
-
-
-
-
-
-                        </a>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- Contact Column -->
-
-
-
-
-
-
-
-                <div class="flex flex-col gap-base lg:col-span-3">
-
-
-
-
-
-
-
-                    <div class="relative pb-2">
-
-
-
-
-
-
-
-                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Get In
-
-
-
-
-
-
-
-                            Touch</span>
-
-
-
-
-
-
-
-                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                    <div class="space-y-sm text-sm pt-2">
-
-
-
-
-
-
-
-                        <div class="flex flex-col gap-1">
-
-
-
-
-
-
-
-                            <span class="font-semibold text-primary">Email:</span>
-
-
-
-
-
-
-
-                            <div
-
-
-
-
-
-
-
-                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
-
-
-
-
-
-
-
-                                <span class="material-symbols-outlined text-base text-primary-container">mail</span>
-
-
-
-
-
-
-
-                                <a href="mailto:safety@lisset.ca"
-
-
-
-
-
-
-
-                                    class="hover:underline">safety@lisset.ca</a>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="flex flex-col gap-1">
-
-
-
-
-
-
-
-                            <span class="font-semibold text-primary">Phone:</span>
-
-
-
-
-
-
-
-                            <div
-
-
-
-
-
-
-
-                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
-
-
-
-
-
-
-
-                                <span class="material-symbols-outlined text-base text-primary-container">call</span>
-
-
-
-
-
-
-
-                                <a href="tel:+19022011816" class="hover:underline">902-201-1816 ext 1</a>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                            
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="flex flex-col gap-1">
-
-
-
-
-
-
-
-                            <span class="font-semibold text-primary">Headquarters:</span>
-
-
-
-
-
-
-
-                            <div class="flex items-start gap-2 text-secondary">
-
-
-
-
-
-
-
-                                <span
-
-
-
-
-
-
-
-                                    class="material-symbols-outlined text-base text-primary-container mt-0.5">location_on</span>
-
-
-
-
-
-
-
-                                <span>Lisset Transport Inc - 576 Prince St Unit 2, Truro, NS B2N 1G3, Canada</span>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div
-
-
-
-
-
-
-
-                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
-
-
-
-
-
-
-
-                <p class="text-secondary/60 text-sm">© 2026 Lisset Transport Inc. All Rights Reserved.</p>
-
-
-
-
-
-
-
-                <div class="flex gap-md">
-
-
-
-
-
-
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-
-
-
-
-
-
-
-                        href="#">
-
-
-
-
-
-
-
-                        <span class="material-symbols-outlined text-lg">public</span>
-
-
-
-
-
-
-
-                    </a>
-
-
-
-
-
-
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-
-
-
-
-
-
-
-                        href="mailto:safety@lisset.ca">
-
-
-
-
-
-
-
-                        <span class="material-symbols-outlined text-lg">mail</span>
-
-
-
-
-
-
-
-                    </a>
-
-
-
-
-
-
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-
-
-
-
-
-
-
-                        href="tel:+19022011816">
-
-
-
-
-
-
-
-                        <span class="material-symbols-outlined text-lg">call</span>
-
-
-
-
-
-
-
-                    </a>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Premium Dynamic Toast Container -->
-
-
-
-
-
-
-
-    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        // SCROLL PROGRESS BAR
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        const progressBar = document.getElementById('scroll-progress');
-
-
-
-
-
-
-
-        function updateProgress() {
-
-
-
-
-
-
-
-            const scrollTop = window.scrollY;
-
-
-
-
-
-
-
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-
-
-
-
-
-
-            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
-
-
-
-
-
-
-            progressBar.style.width = pct + '%';
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        window.addEventListener('scroll', updateProgress, { passive: true });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        // PARALLAX HERO LOGO
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        const parallaxLogo = document.getElementById('parallax-logo');
-
-
-
-
-
-
-
-        function updateParallax() {
-
-
-
-
-
-
-
-            if (!parallaxLogo) return;
-
-
-
-
-
-
-
-            const scrollY = window.scrollY;
-
-
-
-
-
-
-
-            parallaxLogo.style.transform = `translateY(${scrollY * 0.22}px) scale(${1 + scrollY * 0.00005})`;
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-        window.addEventListener('scroll', updateParallax, { passive: true });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        // HERO HEADLINE WORD REVEAL (triggers on load)
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        setTimeout(() => {
-
-
-
-
-
-
-
-            const headline = document.getElementById('hero-headline');
-
-
-
-
-
-
-
-            if (headline) headline.classList.add('revealed');
-
-
-
-
-
-
-
-            document.querySelectorAll('.divider-line').forEach(el => el.classList.add('revealed'));
-
-
-
-
-
-
-
-        }, 350);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        // SCROLL REVEAL ENGINE — [data-reveal]
-
-
-
-
-
-
-
-        // =============================================
-
-
-
-
-
-
-
-        const revealObserver = new IntersectionObserver((entries) => {
-
-
-
-
-
-
-
-            entries.forEach(entry => {
-
-
-
-
-
-
-
-                if (entry.isIntersecting) {
-
-
-
-
-
-
-
-                    entry.target.classList.add('revealed');
-
-
-
-
-
-
-
-                    revealObserver.unobserve(entry.target);
-
-
-
-
-
-
-
-                }
-
-
-
-
-
-
-
-            });
-
-
-
-
-
-
-
-        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // Dynamic Toast System
-
-
-
-
-
-
-
-        function showToast(message, type = 'success') {
-
-
-
-
-
-
-
-            const container = document.getElementById('toast-container');
-
-
-
-
-
-
-
-            const toast = document.createElement('div');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            toast.className = `transform translate-y-10 opacity-0 transition-all duration-300 ease-out bg-white border border-surface-container-high shadow-xl p-md rounded-xl max-w-md flex items-start gap-3 border-l-4 border-l-primary-container`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            toast.innerHTML = `
-
-
-
-
-
-
-
-            <span class="material-symbols-outlined text-primary-container text-2xl flex-shrink-0">check_circle</span>
-
-
-
-
-
-
-
-            <div class="flex-1">
-
-
-
-
-
-
-
-                <p class="font-bold text-primary text-sm">Message Sent Successfully</p>
-
-
-
-
-
-
-
-                <p class="text-secondary text-xs mt-1 leading-normal">${message}</p>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <button class="text-secondary hover:text-primary focus:outline-none" onclick="this.parentElement.remove()">
-
-
-
-
-
-
-
-                <span class="material-symbols-outlined text-sm">close</span>
-
-
-
-
-
-
-
-            </button>
-
-
-
-
-
-
-
-        `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            container.appendChild(toast);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Trigger entrance animation
-
-
-
-
-
-
-
-            setTimeout(() => {
-
-
-
-
-
-
-
-                toast.classList.remove('translate-y-10', 'opacity-0');
-
-
-
-
-
-
-
-            }, 10);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Auto remove after 6 seconds
-
-
-
-
-
-
-
-            setTimeout(() => {
-
-
-
-
-
-
-
-                toast.classList.add('opacity-0', 'translate-y-2');
-
-
-
-
-
-
-
-                setTimeout(() => {
-
-
-
-
-
-
-
-                    toast.remove();
-
-
-
-
-
-
-
-                }, 300);
-
-
-
-
-
-
-
-            }, 6000);
-
-
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!DOCTYPE html>
+
+
+
+
+
+
+
+<html class="light" lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+
+
+
+
+
+
+    <title>Contact Us | Lisset Transport Inc</title>
+
+
+
+
+
+
+
+    <meta name="description" content="Get in touch with Lisset Transport Inc's support team for logistics, commercial freight, or corporate travel enquiries." />
+
+
+
+
+
+
+
+    <meta name="keywords" content="contact Lisset, logistics support, corporate travel bookings, transport support, Canada US shipping support" />
+
+
+
+
+
+
+
+    <meta name="author" content="Lisset Transport Inc" />
+
+
+
+
+
+
+
+    <meta name="robots" content="index, follow" />
+
+
+
+
+
+
+
+    <meta property="og:type" content="website" />
+
+
+
+
+
+
+
+    <meta property="og:title" content="Contact Us | Lisset Transport Inc" />
+
+
+
+
+
+
+
+    <meta property="og:description" content="Get in touch with Lisset Transport Inc's support team for logistics, commercial freight, or corporate travel enquiries." />
+
+
+
+
+
+
+
+    <meta property="og:image" content="assets/new_logos/logo_2.png" />
+
+
+
+
+
+
+
+    <meta charset="utf-8" />
+
+
+
+
+
+
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=block" rel="stylesheet" />
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet" />
+
+
+
+
+
+
+
+        <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+
+
+    <style>
+
+
+
+
+
+
+
+        /* ===== CONTACT PAGE ANIMATIONS ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Scroll-reveal base states */
+
+
+
+
+
+
+
+        [data-reveal] {
+
+
+
+
+
+
+
+            opacity: 0;
+
+
+
+
+
+
+
+            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+
+
+
+
+
+
+
+                        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+
+
+
+
+
+            will-change: opacity, transform;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        [data-reveal="up"]    { transform: translateY(48px); }
+
+
+
+
+
+
+
+        [data-reveal="down"]  { transform: translateY(-48px); }
+
+
+
+
+
+
+
+        [data-reveal="left"]  { transform: translateX(-60px); }
+
+
+
+
+
+
+
+        [data-reveal="right"] { transform: translateX(60px); }
+
+
+
+
+
+
+
+        [data-reveal="scale"] { transform: scale(0.88); }
+
+
+
+
+
+
+
+        [data-reveal="fade"]  { transform: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        [data-reveal].revealed {
+
+
+
+
+
+
+
+            opacity: 1;
+
+
+
+
+
+
+
+            transform: none;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Stagger delays */
+
+
+
+
+
+
+
+        [data-delay="100"] { transition-delay: 0.10s; }
+
+
+
+
+
+
+
+        [data-delay="200"] { transition-delay: 0.20s; }
+
+
+
+
+
+
+
+        [data-delay="300"] { transition-delay: 0.30s; }
+
+
+
+
+
+
+
+        [data-delay="400"] { transition-delay: 0.40s; }
+
+
+
+
+
+
+
+        [data-delay="500"] { transition-delay: 0.50s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Floating orbs */
+
+
+
+
+
+
+
+        @keyframes floatOrb {
+
+
+
+
+
+
+
+            0%, 100% { transform: translateY(0px) scale(1); }
+
+
+
+
+
+
+
+            50%       { transform: translateY(-20px) scale(1.05); }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .orb-float-1 { animation: floatOrb 7s ease-in-out infinite; }
+
+
+
+
+
+
+
+        .orb-float-2 { animation: floatOrb 9s ease-in-out infinite 1.5s; }
+
+
+
+
+
+
+
+        .orb-float-3 { animation: floatOrb 6s ease-in-out infinite 3.5s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Animated divider line */
+
+
+
+
+
+
+
+        .divider-line {
+
+
+
+
+
+
+
+            width: 0;
+
+
+
+
+
+
+
+            height: 3px;
+
+
+
+
+
+
+
+            background: linear-gradient(90deg, #002b5b, #4a90d9, #002b5b);
+
+
+
+
+
+
+
+            border-radius: 99px;
+
+
+
+
+
+
+
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .divider-line.revealed { width: 80px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Scroll progress bar */
+
+
+
+
+
+
+
+        #scroll-progress {
+
+
+
+
+
+
+
+            position: fixed;
+
+
+
+
+
+
+
+            top: 90px;
+
+
+
+
+
+
+
+            left: 0;
+
+
+
+
+
+
+
+            height: 3px;
+
+
+
+
+
+
+
+            width: 0%;
+
+
+
+
+
+
+
+            background: linear-gradient(90deg, #002b5b, #4a90d9);
+
+
+
+
+
+
+
+            z-index: 49;
+
+
+
+
+
+
+
+            transition: width 0.1s linear;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Label tag pop animation */
+
+
+
+
+
+
+
+        @keyframes tagPop {
+
+
+
+
+
+
+
+            0%   { opacity: 0; transform: scale(0.7) translateY(6px); }
+
+
+
+
+
+
+
+            60%  { transform: scale(1.05) translateY(-1px); }
+
+
+
+
+
+
+
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .tag-pop { animation: tagPop 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Hero headline word-by-word reveal */
+
+
+
+
+
+
+
+        .word-reveal .word {
+
+
+
+
+
+
+
+            display: inline-block;
+
+
+
+
+
+
+
+            opacity: 0;
+
+
+
+
+
+
+
+            transform: translateY(30px);
+
+
+
+
+
+
+
+            transition: opacity 0.5s ease, transform 0.5s ease;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .word-reveal.revealed .word {
+
+
+
+
+
+
+
+            opacity: 1;
+
+
+
+
+
+
+
+            transform: translateY(0);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Moving background grid */
+
+
+
+
+
+
+
+        @keyframes gridDrift {
+
+
+
+
+
+
+
+            0%   { background-position: 0 0; }
+
+
+
+
+
+
+
+            100% { background-position: 40px 40px; }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .bg-grid-drift {
+
+
+
+
+
+
+
+            background-image:
+
+
+
+
+
+
+
+                linear-gradient(rgba(0,43,91,0.04) 1px, transparent 1px),
+
+
+
+
+
+
+
+                linear-gradient(90deg, rgba(0,43,91,0.04) 1px, transparent 1px);
+
+
+
+
+
+
+
+            background-size: 40px 40px;
+
+
+
+
+
+
+
+            animation: gridDrift 6s linear infinite;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Card lift hover */
+
+
+
+
+
+
+
+        .lift-card {
+
+
+
+
+
+
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .lift-card:hover {
+
+
+
+
+
+
+
+            transform: translateY(-5px) scale(1.01);
+
+
+
+
+
+
+
+            box-shadow: 0 14px 36px rgba(0,43,91,0.10);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Image zoom on hover */
+
+
+
+
+
+
+
+        .zoom-img-wrap img {
+
+
+
+
+
+
+
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        .zoom-img-wrap:hover img { transform: scale(1.04); }
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+    <link rel="icon" type="image/png" href="assets/new_logos/logo_2.png" />
+
+
+
+
+
+
+
+    <link rel="apple-touch-icon" href="assets/new_logos/logo_2.png" />
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll progress bar -->
+
+
+
+
+
+
+
+    <div id="scroll-progress"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high h-[90px] transition-all duration-300">
+
+
+
+
+
+
+
+        <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+
+
+
+
+
+
+
+            <a href="index.html" class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
+
+
+
+
+
+
+
+                <img alt="Lisset Transport Inc" class="h-16 md:h-20 w-auto object-contain mix-blend-multiply" src="assets/new_logos/logo_2.png" />
+
+
+
+
+
+
+
+            </a>
+
+
+
+
+
+
+
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
+
+
+
+
+
+
+
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="index.html">Home</a>
+
+
+
+
+
+
+
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="about.html">About Us</a>
+
+
+
+
+
+
+
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider" href="services.html">Services</a>
+
+
+
+
+
+
+
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider" href="contact.html">Contact Us</a>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="flex items-center gap-md">
+
+
+
+
+
+
+
+                <button onclick="toggleMobileMenu()" class="xl:hidden flex items-center justify-center p-2 text-primary focus:outline-none" aria-label="Toggle Menu">
+
+
+
+
+
+
+
+                    <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
+
+
+
+
+
+
+
+                </button>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Mobile Navigation Drawer -->
+
+
+
+
+
+
+
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-[120px] transition-all duration-300 transform translate-x-full">
+
+
+
+
+
+
+
+        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+
+
+
+
+
+
+
+            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="index.html">Home</a>
+
+
+
+
+
+
+
+            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="about.html">About Us</a>
+
+
+
+
+
+
+
+            <a onclick="toggleMobileMenu()" class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors" href="services.html">Services</a>
+
+
+
+
+
+
+
+            <a onclick="toggleMobileMenu()" class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block" href="contact.html">Contact Us</a>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="pt-[90px]">
+
+
+
+
+
+
+
+        <!-- Hero Section -->
+
+
+
+
+
+
+
+        <section class="relative bg-white overflow-hidden py-20 md:py-32 bg-grid-drift">
+
+
+
+
+
+
+
+            <!-- Floating orbs -->
+
+
+
+
+
+
+
+            <div class="absolute top-8 left-8 w-48 h-48 bg-primary/5 rounded-full blur-3xl orb-float-1 pointer-events-none"></div>
+
+
+
+
+
+
+
+            <div class="absolute bottom-8 right-32 w-64 h-64 bg-primary/4 rounded-full blur-3xl orb-float-2 pointer-events-none"></div>
+
+
+
+
+
+
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                <div class="max-w-3xl space-y-md">
+
+
+
+
+
+
+
+                    <span class="font-label-md text-label-md text-primary tracking-widest block uppercase tag-pop" style="animation-delay:0.2s">Connect With Lisset</span>
+
+
+
+
+
+
+
+                    <div class="divider-line mb-sm" id="hero-divider"></div>
+
+
+
+
+
+
+
+                    <h1 id="hero-headline" class="word-reveal font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary tracking-tight leading-tight">
+
+
+
+
+
+
+
+                        <span class="word" style="transition-delay:0.3s">Get</span>&nbsp;<span class="word" style="transition-delay:0.45s">in</span>&nbsp;<span class="word" style="transition-delay:0.6s">Touch</span>&nbsp;<span class="word" style="transition-delay:0.75s">with</span>&nbsp;<span class="word" style="transition-delay:0.9s">Our</span>&nbsp;<span class="word" style="transition-delay:1.05s">Team</span>
+
+
+
+
+
+
+
+                    </h1>
+
+
+
+
+
+
+
+<p class="font-body-lg text-base md:text-body-lg text-secondary max-w-2xl" data-reveal="up" data-delay="300">
+
+
+
+
+
+
+
+                        Whether you need to secure industrial freight routes, book luxury group travel, or explore
+
+
+
+
+
+
+
+                        corporate partnerships, our operations center is standing by to assist.
+
+
+
+
+
+
+
+                    </p>
+
+
+
+
+
+
+
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-md pt-xs" data-reveal="up" data-delay="450">
+
+
+
+
+
+
+
+                        <a href="#contact-grid"
+
+
+
+
+
+
+
+                            class="bg-primary-container text-on-primary px-xl py-4 rounded-full font-label-md text-label-md hover:shadow-lg transition-all flex justify-center items-center gap-2 uppercase tracking-wider w-full sm:w-auto">
+
+
+
+
+
+
+
+                            Explore Contacts
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-sm">arrow_downward</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a href="tel:+19022011816"
+
+
+
+
+
+
+
+                            class="border border-outline text-primary px-xl py-4 rounded-full font-label-md text-label-md hover:bg-surface-container transition-all flex justify-center items-center gap-2 uppercase tracking-wider w-full sm:w-auto">
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-sm">call</span>
+
+
+
+
+
+
+
+                            Call Hotline
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Decorative aligned logo -->
+
+
+
+
+
+
+
+            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:flex items-center justify-end pr-12 opacity-15">
+
+
+
+
+
+
+
+                <img src="assets/new_logos/logo_2.png" alt="Lisset Transport Inc Background" id="parallax-logo" class="parallax-logo w-auto h-[500px] object-contain grayscale mix-blend-multiply" />
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact details and form section -->
+
+
+
+
+
+
+
+        <section id="contact-grid" class="py-12 md:py-xl bg-surface">
+
+
+
+
+
+
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+
+
+
+
+
+
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Left Side: Contact Cards -->
+
+
+
+
+
+
+
+                    <div class="lg:col-span-5 space-y-md" data-reveal="left">
+
+
+
+
+
+
+
+                        <div class="space-y-sm mb-6 md:mb-lg">
+
+
+
+
+
+
+
+                            <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Operational Verticals</h2>
+
+
+
+
+
+
+
+                            <div class="w-16 h-1 bg-primary-container"></div>
+
+
+
+
+
+
+
+                            <p class="font-body-md text-secondary">Reach out directly to the specialized division that
+
+
+
+
+
+
+
+                                fits your inquiry for immediate support.</p>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Logistics Card -->
+
+
+
+
+
+
+
+                        <div
+
+
+
+
+
+
+
+                            class="lift-card bg-white border border-surface-container-high rounded-xl p-md shadow-sm hover:shadow-md transition-all duration-300 space-y-sm relative overflow-hidden group">
+
+
+
+
+
+
+
+                            <div
+
+
+
+
+
+
+
+                                class="absolute -right-6 -bottom-6 opacity-5 group-hover:scale-110 transition-transform duration-300">
+
+
+
+
+
+
+
+                                <span class="material-symbols-outlined text-[100px] text-primary">local_shipping</span>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-3">
+
+
+
+
+
+
+
+                                <div
+
+
+
+
+
+
+
+                                    class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
+
+
+
+
+
+
+
+                                    <span class="material-symbols-outlined">local_shipping</span>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <h3 class="font-headline-md text-primary text-lg">Logistics Solutions</h3>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <p class="text-secondary text-sm">For primary freight operations, corporate SLAs, and
+
+
+
+
+
+
+
+                                warehouse space allocations.</p>
+
+
+
+
+
+
+
+                            <div class="space-y-xs pt-xs text-sm">
+
+
+
+
+
+
+
+                                <div class="flex items-center gap-2 text-secondary">
+
+
+
+
+
+
+
+                                    <span class="material-symbols-outlined text-sm text-primary">mail</span>
+
+
+
+
+
+
+
+                                    <a href="mailto:safety@lisset.ca"
+
+
+
+
+
+
+
+                                        class="hover:underline hover:text-primary">safety@lisset.ca</a>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="flex items-center gap-2 text-secondary">
+
+
+
+
+
+
+
+                                    <span class="material-symbols-outlined text-sm text-primary">call</span>
+
+
+
+
+
+
+
+                                    <a href="tel:+19022011816" class="hover:underline hover:text-primary">902-201-1816 ext 1</a>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Corporate HQ Card -->
+
+
+
+
+
+
+
+                        <div
+
+
+
+
+
+
+
+                            class="lift-card bg-white border border-surface-container-high rounded-xl p-md shadow-sm hover:shadow-md transition-all duration-300 space-y-sm relative overflow-hidden group">
+
+
+
+
+
+
+
+                            <div
+
+
+
+
+
+
+
+                                class="absolute -right-6 -bottom-6 opacity-5 group-hover:scale-110 transition-transform duration-300">
+
+
+
+
+
+
+
+                                <span class="material-symbols-outlined text-[100px] text-primary">corporate_fare</span>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-3">
+
+
+
+
+
+
+
+                                <div
+
+
+
+
+
+
+
+                                    class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
+
+
+
+
+
+
+
+                                    <span class="material-symbols-outlined">corporate_fare</span>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <h3 class="font-headline-md text-primary text-lg">Corporate Headquarters</h3>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="space-y-xs pt-xs text-sm">
+
+
+
+
+
+
+
+                                <div class="flex items-start gap-2 text-secondary">
+
+
+
+
+
+
+
+                                    <span
+
+
+
+
+
+
+
+                                        class="material-symbols-outlined text-sm text-primary mt-0.5">location_on</span>
+
+
+
+
+
+
+
+                                    <span>Lisset Transport Inc<br />576 Prince St Unit 2<br />Truro, NS B2N 1G3, Canada</span>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="flex items-center gap-2 text-secondary">
+
+
+
+
+
+
+
+                                    <span class="material-symbols-outlined text-sm text-primary">schedule</span>
+
+
+
+
+
+
+
+                                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <!-- Right Side: Contact Form -->
+
+
+
+
+
+
+
+                    <div class="lift-card lg:col-span-7 bg-white border border-surface-container-high rounded-xl p-md shadow-sm" data-reveal="right" data-delay="200">
+
+
+
+
+
+
+
+                        <h3 class="font-headline-md text-primary mb-md">Send a Message</h3>
+
+
+
+
+
+
+
+                        <form id="interactive-contact-form" class="space-y-md" onsubmit="handleContactSubmit(event)">
+
+
+
+
+
+
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+
+
+
+
+
+
+
+                                <div class="space-y-2">
+
+
+
+
+
+
+
+                                    <label for="form-name"
+
+
+
+
+
+
+
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Full
+
+
+
+
+
+
+
+                                        Name</label>
+
+
+
+
+
+
+
+                                    <input type="text" id="form-name" required
+
+
+
+
+
+
+
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
+
+
+
+
+
+
+
+                                        placeholder="Enter your name" />
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="space-y-2">
+
+
+
+
+
+
+
+                                    <label for="form-email"
+
+
+
+
+
+
+
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Email
+
+
+
+
+
+
+
+                                        Address</label>
+
+
+
+
+
+
+
+                                    <input type="email" id="form-email" required
+
+
+
+
+
+
+
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
+
+
+
+
+
+
+
+                                        placeholder="Enter your email" />
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+
+
+
+
+
+
+
+                                <div class="space-y-2">
+
+
+
+
+
+
+
+                                    <label for="form-phone"
+
+
+
+
+
+
+
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Phone
+
+
+
+
+
+
+
+                                        Number</label>
+
+
+
+
+
+
+
+                                    <input type="tel" id="form-phone" required
+
+
+
+
+
+
+
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
+
+
+
+
+
+
+
+                                        placeholder="+91 XXXXX XXXXX" />
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="space-y-2">
+
+
+
+
+
+
+
+                                    <label for="form-subject"
+
+
+
+
+
+
+
+                                        class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Inquiry
+
+
+
+
+
+
+
+                                        Category</label>
+
+
+
+
+
+
+
+                                    <select id="form-subject" required
+
+
+
+
+
+
+
+                                        class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all">
+
+
+
+
+
+
+
+                                        <option value="" disabled selected>Select category</option>
+
+
+
+
+
+
+
+                                        <option value="logistics">Logistics Division (Freight / Warehouse)</option>
+
+
+
+
+
+
+
+                                        <option value="careers">Careers &amp; Employment</option>
+
+
+
+
+
+
+
+                                        <option value="corporate">Corporate Partnerships</option>
+
+
+
+
+
+
+
+                                        <option value="other">General Feedback</option>
+
+
+
+
+
+
+
+                                    </select>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="space-y-2">
+
+
+
+
+
+
+
+                                <label for="form-message"
+
+
+
+
+
+
+
+                                    class="block text-label-sm font-label-sm text-secondary uppercase tracking-wider">Your
+
+
+
+
+
+
+
+                                    Message</label>
+
+
+
+
+
+
+
+                                <textarea id="form-message" rows="5" required
+
+
+
+
+
+
+
+                                    class="w-full bg-surface border border-surface-container-high rounded p-3 text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all"
+
+
+
+
+
+
+
+                                    placeholder="Write details about your shipping loads or travel itineraries..."></textarea>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <button type="submit"
+
+
+
+
+
+
+
+                                class="w-full bg-primary-container text-on-primary py-4 rounded font-label-md text-label-md hover:bg-primary transition-all uppercase tracking-wider font-bold flex items-center justify-center gap-2">
+
+
+
+
+
+
+
+                                Submit Form
+
+
+
+
+
+
+
+                                <span class="material-symbols-outlined text-sm">send</span>
+
+
+
+
+
+
+
+                            </button>
+
+
+
+
+
+
+
+                        </form>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- National Hubs / Connectivity Map -->
+
+
+
+
+
+
+
+        <section class="py-12 md:py-xl bg-surface-container-lowest">
+
+
+
+
+
+
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+
+
+
+
+
+
+
+                <div class="flex flex-col md:flex-row gap-xl items-center">
+
+
+
+
+
+
+
+                    <div class="flex-1 space-y-md" data-reveal="left">
+
+
+
+
+
+
+
+                        <span class="font-label-md text-label-md text-primary tracking-widest block uppercase">National
+
+
+
+
+
+
+
+                            Footprint</span>
+
+
+
+
+
+
+
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Connected Across Major Indian
+
+
+
+
+
+
+
+                            Corridors</h2>
+
+
+
+
+
+
+
+                        <p class="text-secondary leading-relaxed">
+
+
+
+
+
+
+
+                            With central control offices in Kochi and a synchronized network across major freight
+
+
+
+
+
+
+
+                            routes, Lisset Transport Inc is positioned to scale your business.
+
+
+
+
+
+
+
+                        </p>
+
+
+
+
+
+
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-sm pt-xs">
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Kochi (HQ)
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Bangalore
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Chennai
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Hyderabad
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Mumbai
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-sm">
+
+
+
+
+
+
+
+                                <span class="w-2 h-2 bg-primary rounded-full"></span> Delhi
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="flex-1 w-full">
+
+
+
+
+
+
+
+                        <div data-reveal="right" data-delay="200"
+
+
+
+
+
+
+
+                            class="zoom-img-wrap bg-surface rounded-xl border border-surface-container-high aspect-video relative overflow-hidden shadow-sm group">
+
+
+
+
+
+
+
+                            <img alt="India Connectivity Infrastructure"
+
+
+
+
+
+
+
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+
+
+
+
+
+
+
+                                data-location="India"
+
+
+
+
+
+
+
+                                src="assets/india_connectivity_map.png" />
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+
+
+
+
+
+
+    <footer class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
+
+
+
+
+
+
+
+        <!-- Background Glows -->
+
+
+
+
+
+
+
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-1"></div>
+
+
+
+
+
+
+
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-2">
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+
+
+
+
+
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-xl">
+
+
+
+
+
+
+
+                <!-- Brand Column -->
+
+
+
+
+
+
+
+                <div class="space-y-sm lg:col-span-4">
+
+
+
+
+
+
+
+                    <div class="flex items-center gap-4">
+
+
+
+
+
+
+
+                        <img alt="Lisset Transport Inc" class="h-12 w-auto object-contain mix-blend-multiply" src="assets/new_logos/logo_2.png" />
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving India. Growing Together.
+
+
+
+
+
+
+
+                    </p>
+
+
+
+
+
+
+
+                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
+
+
+
+
+
+
+
+                        Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
+
+
+
+
+
+
+
+                        supply chain excellence across India since 2006.
+
+
+
+
+
+
+
+                    </p>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Quick Links Column -->
+
+
+
+
+
+
+
+                <div class="flex flex-col gap-base lg:col-span-2">
+
+
+
+
+
+
+
+                    <div class="relative pb-2">
+
+
+
+
+
+
+
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Quick
+
+
+
+
+
+
+
+                            Links</span>
+
+
+
+
+
+
+
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="flex flex-col gap-3 pt-2">
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="index.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Home</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="about.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">About Us</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="services.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Services</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="logistics.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="contact.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Contact</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+
+
+
+
+
+
+
+                            href="careers.html">
+
+
+
+
+
+
+
+                            <span
+
+
+
+
+
+
+
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Careers</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Divisions Column -->
+
+
+
+
+
+
+
+                <div class="flex flex-col gap-base lg:col-span-3">
+
+
+
+
+
+
+
+                    <div class="relative pb-2">
+
+
+
+
+
+
+
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
+
+
+
+
+
+
+
+                            Divisions</span>
+
+
+
+
+
+
+
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="flex flex-col gap-3 pt-2">
+
+
+
+
+
+
+
+                        <a href="logistics.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Industrial Freight & Cargo</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a href="services.html#corporate" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Corporate Employee Mobility</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                        <a href="services.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Premium Fleet Solutions</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a href="logistics.html#warehouse" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+
+
+
+
+
+
+
+                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
+
+
+
+
+
+
+
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Warehouse Management</span>
+
+
+
+
+
+
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Contact Column -->
+
+
+
+
+
+
+
+                <div class="flex flex-col gap-base lg:col-span-3">
+
+
+
+
+
+
+
+                    <div class="relative pb-2">
+
+
+
+
+
+
+
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Get In
+
+
+
+
+
+
+
+                            Touch</span>
+
+
+
+
+
+
+
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="space-y-sm text-sm pt-2">
+
+
+
+
+
+
+
+                        <div class="flex flex-col gap-1">
+
+
+
+
+
+
+
+                            <span class="font-semibold text-primary">Email:</span>
+
+
+
+
+
+
+
+                            <div
+
+
+
+
+
+
+
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+
+
+
+
+
+
+
+                                <span class="material-symbols-outlined text-base text-primary-container">mail</span>
+
+
+
+
+
+
+
+                                <a href="mailto:safety@lisset.ca"
+
+
+
+
+
+
+
+                                    class="hover:underline">safety@lisset.ca</a>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="flex flex-col gap-1">
+
+
+
+
+
+
+
+                            <span class="font-semibold text-primary">Phone:</span>
+
+
+
+
+
+
+
+                            <div
+
+
+
+
+
+
+
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+
+
+
+
+
+
+
+                                <span class="material-symbols-outlined text-base text-primary-container">call</span>
+
+
+
+
+
+
+
+                                <a href="tel:+19022011816" class="hover:underline">902-201-1816 ext 1</a>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="flex flex-col gap-1">
+
+
+
+
+
+
+
+                            <span class="font-semibold text-primary">Headquarters:</span>
+
+
+
+
+
+
+
+                            <div class="flex items-start gap-2 text-secondary">
+
+
+
+
+
+
+
+                                <span
+
+
+
+
+
+
+
+                                    class="material-symbols-outlined text-base text-primary-container mt-0.5">location_on</span>
+
+
+
+
+
+
+
+                                <span>Lisset Transport Inc - 576 Prince St Unit 2, Truro, NS B2N 1G3, Canada</span>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div
+
+
+
+
+
+
+
+                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
+
+
+
+
+
+
+
+                <p class="text-secondary/60 text-sm">© 2026 Lisset Transport Inc. All Rights Reserved.</p>
+
+
+
+
+
+
+
+                <div class="flex gap-md">
+
+
+
+
+
+
+
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+
+
+
+
+
+
+
+                        href="#">
+
+
+
+
+
+
+
+                        <span class="material-symbols-outlined text-lg">public</span>
+
+
+
+
+
+
+
+                    </a>
+
+
+
+
+
+
+
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+
+
+
+
+
+
+
+                        href="mailto:safety@lisset.ca">
+
+
+
+
+
+
+
+                        <span class="material-symbols-outlined text-lg">mail</span>
+
+
+
+
+
+
+
+                    </a>
+
+
+
+
+
+
+
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+
+
+
+
+
+
+
+                        href="tel:+19022011816">
+
+
+
+
+
+
+
+                        <span class="material-symbols-outlined text-lg">call</span>
+
+
+
+
+
+
+
+                    </a>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Premium Dynamic Toast Container -->
+
+
+
+
+
+
+
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        // SCROLL PROGRESS BAR
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        const progressBar = document.getElementById('scroll-progress');
+
+
+
+
+
+
+
+        function updateProgress() {
+
+
+
+
+
+
+
+            const scrollTop = window.scrollY;
+
+
+
+
+
+
+
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+
+
+
+
+
+
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+
+
+
+
+
+
+            progressBar.style.width = pct + '%';
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        window.addEventListener('scroll', updateProgress, { passive: true });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        // PARALLAX HERO LOGO
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        const parallaxLogo = document.getElementById('parallax-logo');
+
+
+
+
+
+
+
+        function updateParallax() {
+
+
+
+
+
+
+
+            if (!parallaxLogo) return;
+
+
+
+
+
+
+
+            const scrollY = window.scrollY;
+
+
+
+
+
+
+
+            parallaxLogo.style.transform = `translateY(${scrollY * 0.22}px) scale(${1 + scrollY * 0.00005})`;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+        window.addEventListener('scroll', updateParallax, { passive: true });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        // HERO HEADLINE WORD REVEAL (triggers on load)
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        setTimeout(() => {
+
+
+
+
+
+
+
+            const headline = document.getElementById('hero-headline');
+
+
+
+
+
+
+
+            if (headline) headline.classList.add('revealed');
+
+
+
+
+
+
+
+            document.querySelectorAll('.divider-line').forEach(el => el.classList.add('revealed'));
+
+
+
+
+
+
+
+        }, 350);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        // SCROLL REVEAL ENGINE — [data-reveal]
+
+
+
+
+
+
+
+        // =============================================
+
+
+
+
+
+
+
+        const revealObserver = new IntersectionObserver((entries) => {
+
+
+
+
+
+
+
+            entries.forEach(entry => {
+
+
+
+
+
+
+
+                if (entry.isIntersecting) {
+
+
+
+
+
+
+
+                    entry.target.classList.add('revealed');
+
+
+
+
+
+
+
+                    revealObserver.unobserve(entry.target);
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+            });
+
+
+
+
+
+
+
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Dynamic Toast System
+
+
+
+
+
+
+
+        function showToast(message, type = 'success') {
+
+
+
+
+
+
+
+            const container = document.getElementById('toast-container');
+
+
+
+
+
+
+
+            const toast = document.createElement('div');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            toast.className = `transform translate-y-10 opacity-0 transition-all duration-300 ease-out bg-white border border-surface-container-high shadow-xl p-md rounded-xl max-w-md flex items-start gap-3 border-l-4 border-l-primary-container`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            toast.innerHTML = `
+
+
+
+
+
+
+
+            <span class="material-symbols-outlined text-primary-container text-2xl flex-shrink-0">check_circle</span>
+
+
+
+
+
+
+
+            <div class="flex-1">
+
+
+
+
+
+
+
+                <p class="font-bold text-primary text-sm">Message Sent Successfully</p>
+
+
+
+
+
+
+
+                <p class="text-secondary text-xs mt-1 leading-normal">${message}</p>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <button class="text-secondary hover:text-primary focus:outline-none" onclick="this.parentElement.remove()">
+
+
+
+
+
+
+
+                <span class="material-symbols-outlined text-sm">close</span>
+
+
+
+
+
+
+
+            </button>
+
+
+
+
+
+
+
+        `;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            container.appendChild(toast);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Trigger entrance animation
+
+
+
+
+
+
+
+            setTimeout(() => {
+
+
+
+
+
+
+
+                toast.classList.remove('translate-y-10', 'opacity-0');
+
+
+
+
+
+
+
+            }, 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Auto remove after 6 seconds
+
+
+
+
+
+
+
+            setTimeout(() => {
+
+
+
+
+
+
+
+                toast.classList.add('opacity-0', 'translate-y-2');
+
+
+
+
+
+
+
+                setTimeout(() => {
+
+
+
+
+
+
+
+                    toast.remove();
+
+
+
+
+
+
+
+                }, 300);
+
+
+
+
+
+
+
+            }, 6000);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
