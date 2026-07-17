@@ -283,8 +283,8 @@ html {
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-w: 1200px;
+    width: max-content;
+    max-width: 95%; /* Responsive fit on smaller viewports */
     background-color: rgba(17, 24, 39, 0.85); /* Dark charcoal/black color */
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 9999px;
@@ -293,7 +293,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
+    gap: 32px; /* Tight, premium spacing matching the reference mockup */
+    padding: 0 12px 0 16px;
     z-index: 1000;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
