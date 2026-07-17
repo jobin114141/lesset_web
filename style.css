@@ -309,11 +309,11 @@ html {
     border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* Rounded pill container for the horizontal logo */
+/* Rounded circle container for the logo */
 .nav-logo-capsule {
+    width: 60px;
     height: 60px;
-    padding: 0 24px;
-    border-radius: 9999px;
+    border-radius: 50%;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -327,8 +327,10 @@ html {
 }
 
 .nav-logo-capsule img {
-    height: 44px;
+    max-width: 82%;
+    max-height: 82%;
     width: auto;
+    height: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
