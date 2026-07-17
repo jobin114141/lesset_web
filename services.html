@@ -34,6 +34,156 @@
 
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+        /* ===== SERVICES PAGE ANIMATIONS ===== */
+
+        /* Base reveal states */
+        [data-reveal] {
+            opacity: 0;
+            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: opacity, transform;
+        }
+        [data-reveal="up"]    { transform: translateY(48px); }
+        [data-reveal="down"]  { transform: translateY(-48px); }
+        [data-reveal="left"]  { transform: translateX(-60px); }
+        [data-reveal="right"] { transform: translateX(60px); }
+        [data-reveal="scale"] { transform: scale(0.88); }
+        [data-reveal="fade"]  { transform: none; }
+
+        [data-reveal].revealed {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Stagger delays */
+        [data-delay="100"] { transition-delay: 0.10s; }
+        [data-delay="200"] { transition-delay: 0.20s; }
+        [data-delay="300"] { transition-delay: 0.30s; }
+        [data-delay="400"] { transition-delay: 0.40s; }
+        [data-delay="500"] { transition-delay: 0.50s; }
+        [data-delay="600"] { transition-delay: 0.60s; }
+        [data-delay="700"] { transition-delay: 0.70s; }
+        [data-delay="800"] { transition-delay: 0.80s; }
+
+        /* ---- Parallax hero logo ---- */
+        .parallax-logo {
+            will-change: transform;
+            transition: transform 0.1s linear;
+        }
+
+        /* ---- Floating orb animations ---- */
+        @keyframes floatOrb {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50%       { transform: translateY(-20px) scale(1.05); }
+        }
+        .orb-float-1 { animation: floatOrb 7s ease-in-out infinite; }
+        .orb-float-2 { animation: floatOrb 9s ease-in-out infinite 1.5s; }
+        .orb-float-3 { animation: floatOrb 6s ease-in-out infinite 3s; }
+
+        /* ---- Animated section divider line ---- */
+        .divider-line {
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #002b5b, #4a90d9, #002b5b);
+            border-radius: 99px;
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .divider-line.revealed { width: 80px; }
+
+        /* ---- Counter number animation ---- */
+        .stat-number {
+            display: inline-block;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ---- Capability card tilt hover ---- */
+        .cap-card {
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .cap-card:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 12px 32px rgba(0,43,91,0.10);
+        }
+
+        /* ---- Wide feature card image zoom ---- */
+        .feature-img {
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .feature-card:hover .feature-img { transform: scale(1.06); }
+
+        /* ---- Why-choose card icon pulse ---- */
+        @keyframes iconPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(0,43,91,0.18); }
+            60%       { box-shadow: 0 0 0 10px rgba(0,43,91,0); }
+        }
+        .why-card:hover .why-icon {
+            animation: iconPulse 0.7s ease-out;
+        }
+
+        /* ---- CTA section shimmer ---- */
+        @keyframes shimmer {
+            0%   { background-position: -400px 0; }
+            100% { background-position: 400px 0; }
+        }
+        .cta-shimmer {
+            background: linear-gradient(90deg,
+                rgba(255,255,255,0.0) 0%,
+                rgba(255,255,255,0.06) 40%,
+                rgba(255,255,255,0.12) 50%,
+                rgba(255,255,255,0.06) 60%,
+                rgba(255,255,255,0.0) 100%);
+            background-size: 800px 100%;
+            animation: shimmer 4s linear infinite;
+            pointer-events: none;
+        }
+
+        /* ---- Scroll progress bar ---- */
+        #scroll-progress {
+            position: fixed;
+            top: 90px;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, #002b5b, #4a90d9);
+            z-index: 49;
+            transition: width 0.1s linear;
+        }
+
+        /* ---- Axis label tag pulse ---- */
+        @keyframes tagPop {
+            0%   { opacity: 0; transform: scale(0.7) translateY(6px); }
+            60%  { transform: scale(1.05) translateY(-1px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .tag-pop { animation: tagPop 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+        /* ---- Hero headline word-by-word reveal ---- */
+        .word-reveal .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .word-reveal.revealed .word {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ---- Moving background grid pattern ---- */
+        @keyframes gridDrift {
+            0%   { background-position: 0 0; }
+            100% { background-position: 40px 40px; }
+        }
+        .bg-grid-drift {
+            background-image:
+                linear-gradient(rgba(0,43,91,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,43,91,0.04) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: gridDrift 6s linear infinite;
+        }
+    </style>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/new_logos/logo_2.png" />
     <link rel="apple-touch-icon" href="assets/new_logos/logo_2.png" />
@@ -91,52 +241,64 @@
         </div>
     </div>
 
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
+
     <main class="pt-[90px]">
         <!-- Hero Section -->
-        <section class="relative bg-surface overflow-hidden py-8 md:py-12">
+        <section class="relative bg-surface overflow-hidden py-12 md:py-20 bg-grid-drift">
+            <!-- Floating orbs -->
+            <div class="absolute top-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl orb-float-1 pointer-events-none"></div>
+            <div class="absolute bottom-10 right-32 w-64 h-64 bg-primary/4 rounded-full blur-3xl orb-float-2 pointer-events-none"></div>
+            <div class="absolute top-1/2 left-1/3 w-32 h-32 bg-primary/6 rounded-full blur-2xl orb-float-3 pointer-events-none"></div>
+
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
                 <div class="max-w-4xl space-y-md">
-                    <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm">OUR
+                    <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm tag-pop" style="animation-delay:0.2s">OUR
                         SERVICES</span>
-                    <h1 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary leading-tight">
-                        Integrated Logistics &amp;<br class="hidden sm:inline" /> Passenger Mobility
+                    <!-- Animated divider -->
+                    <div class="divider-line" data-reveal="fade" id="hero-divider"></div>
+                    <h1 class="word-reveal font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary leading-tight mt-sm" id="hero-headline">
+                        <span class="word" style="transition-delay:0.3s">Integrated</span>&nbsp;<span class="word" style="transition-delay:0.45s">Logistics</span>&nbsp;<span class="word" style="transition-delay:0.60s">&amp;</span><br class="hidden sm:inline" /><span class="word" style="transition-delay:0.75s">Passenger</span>&nbsp;<span class="word" style="transition-delay:0.90s">Mobility</span>
                     </h1>
-                    <p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed">
+                    <p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed" data-reveal="up" data-delay="300">
                         Lisset Transport Inc operates across two core business divisions — Logistics and Passenger Mobility
                         —
                         delivering dependable transportation infrastructure and customer-focused movement solutions
                         across Canada and the United States.
                     </p>
 
-                    <div class="flex flex-wrap gap-md pt-sm">
+                    <div class="flex flex-wrap gap-md pt-sm" data-reveal="up" data-delay="500">
                         <a href="#logistics-division"
-                            class="bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:shadow-lg transition-all font-label-md text-label-md uppercase tracking-wider font-bold">
+                            class="bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold">
                             Explore Divisions
                         </a>
                         <a href="contact.html"
-                            class="border border-primary text-primary px-6 md:px-xl py-3 rounded hover:bg-primary/5 transition-all font-label-md text-label-md uppercase tracking-wider font-bold">
+                            class="border border-primary text-primary px-6 md:px-xl py-3 rounded hover:bg-primary/5 hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold">
                             Contact Us
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- Decorative aligned logo -->
-            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:flex items-center justify-end pr-12 opacity-15">
-                <img src="assets/new_logos/logo_2.png" alt="Lisset Transport Inc Background" class="w-auto h-[500px] object-contain grayscale mix-blend-multiply" />
+            <!-- Decorative parallax logo -->
+            <div class="absolute right-0 top-0 w-1/2 h-full hidden lg:flex items-center justify-end pr-12 opacity-10">
+                <img src="assets/new_logos/logo_2.png" alt="Lisset Transport Inc Background" id="parallax-logo" class="parallax-logo w-auto h-[500px] object-contain grayscale mix-blend-multiply" />
             </div>
         </section>
 
         <!-- Logistics Division Section -->
         <section id="logistics-division"
             class="py-12 md:py-xl bg-white border-t border-b border-surface-container-high relative overflow-hidden">
+            <!-- Floating accent circle -->
+            <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                    <!-- Left Panel (4 cols) -->
-                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24">
+                    <!-- Left Panel (4 cols) - slides in from left -->
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
                         <div class="flex items-center gap-sm">
                             <div
-                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary why-icon">
                                 <span class="material-symbols-outlined text-2xl"
                                     data-icon="local_shipping">local_shipping</span>
                             </div>
@@ -165,23 +327,23 @@
 
                         <div class="pt-md">
                             <a href="logistics.html"
-                                class="inline-flex items-center gap-xs bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:bg-primary transition-all font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">
+                                class="inline-flex items-center gap-xs bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:bg-primary hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">
                                 Explore Logistics Solutions <span class="material-symbols-outlined text-sm"
                                     data-icon="arrow_forward">arrow_forward</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Right Panel (8 cols): Capabilities Grid -->
-                    <div class="lg:col-span-8">
+                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
+                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
                         <span
                             class="font-label-md text-label-md text-primary uppercase tracking-wider block font-bold mb-md">Key
                             Solutions &amp; Capabilities</span>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
 
                             <!-- Road Freight -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="100"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="local_shipping">local_shipping</span>
@@ -192,8 +354,8 @@
                             </div>
 
                             <!-- Cargo Handling & Distribution -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="200"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl" data-icon="hub">hub</span>
                                     <span class="font-semibold text-sm">Cargo &amp; Distribution</span>
@@ -203,8 +365,8 @@
                             </div>
 
                             <!-- Fleet Operations -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="300"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="airport_shuttle">airport_shuttle</span>
@@ -215,8 +377,8 @@
                             </div>
 
                             <!-- Warehousing Support -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="400"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl" data-icon="domain">domain</span>
                                     <span class="font-semibold text-sm">Warehousing &amp; Storage</span>
@@ -226,8 +388,8 @@
                             </div>
 
                             <!-- Corporate Supply Chain -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="500"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="settings_suggest">settings_suggest</span>
@@ -238,8 +400,8 @@
                             </div>
 
                             <!-- Dedicated Logistics Solutions -->
-                            <div
-                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="600"
+                                class="cap-card bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30">
                                 <div class="flex items-center gap-xs mb-xs text-primary">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="conveyor_belt">conveyor_belt</span>
@@ -250,8 +412,8 @@
                             </div>
 
                              <!-- Cross-Border Operations -->
-                             <div
-                                 class="sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-surface-container-low rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
+                             <div data-reveal="scale" data-delay="200"
+                                 class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-surface-container-low rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
                                  <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
                                      <div class="flex items-center gap-xs text-primary">
                                          <span class="material-symbols-outlined text-xl" data-icon="public">public</span>
@@ -261,10 +423,10 @@
                                          Seamless movement across Canada and US borders with full regulatory compliance, customs clearance, and dedicated logistics routing tailored to trans-continental supply chains.
                                      </p>
                                  </div>
-                                 <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-outline-variant/40">
+                                 <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-outline-variant/40 overflow-hidden">
                                      <img src="assets/new_images/OTR-trucks.png" 
                                           alt="Cross Border Logistics Network" 
-                                          class="absolute inset-0 w-full h-full object-cover object-center" />
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
                                  </div>
                              </div>
 
@@ -277,21 +439,21 @@
 
         <!-- Operational Strength Section -->
         <section class="py-12 md:py-20 bg-white border-b border-surface-container-high relative overflow-hidden">
+            <div class="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-1"></div>
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg z-10 relative">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
-                    <!-- Left Side (Blended Image) -->
-                    <div class="lg:col-span-6 flex justify-center">
+                    <!-- Left Side (Blended Image) - slides in from left -->
+                    <div class="lg:col-span-6 flex justify-center" data-reveal="left">
                         <div class="relative w-full max-w-xl group">
-
                             <div class="relative rounded-2xl overflow-hidden bg-white">
                                 <img src="assets/new_images/img12.png" 
                                      alt="Operational Excellence" 
-                                     class="w-full h-[300px] md:h-[380px] object-contain mix-blend-multiply transform scale-100 group-hover:scale-103 transition-transform duration-500 ease-out" />
+                                     class="w-full h-[300px] md:h-[380px] object-contain mix-blend-multiply transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
                             </div>
                         </div>
                     </div>
-                    <!-- Right Side (Operational Details) -->
-                    <div class="lg:col-span-6 space-y-md">
+                    <!-- Right Side (Operational Details) - slides in from right -->
+                    <div class="lg:col-span-6 space-y-md" data-reveal="right" data-delay="200">
                         <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm">OPERATIONAL EXCELLENCE</span>
                         <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Reliability Through Nationwide Integration</h2>
                         <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
@@ -300,8 +462,35 @@
                         <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
                             Every route is optimized for efficiency, safety, and timing, delivering a seamless corporate supply chain experience that keeps your commercial business running smoothly.
                         </p>
+                        <!-- Animated stat bars -->
+                        <div class="space-y-3 pt-sm" data-reveal="up" data-delay="400">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                                    <span>On-Time Delivery</span><span class="counter-pct" data-target="99.8">0</span>%
+                                </div>
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="99.8" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                                    <span>Fleet Utilization</span><span class="counter-pct" data-target="94">0</span>%
+                                </div>
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="94" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.2s"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                                    <span>Customer Satisfaction</span><span class="counter-pct" data-target="97">0</span>%
+                                </div>
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="97" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="pt-sm">
-                            <a href="logistics.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container transition-colors">
+                            <a href="logistics.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
                                 Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -313,18 +502,19 @@
 
         <!-- Travel & Passenger Mobility Section -->
         <section id="holidays-division" class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
-            <!-- Background Glows -->
+            <!-- Background Glows & floating orbs -->
             <div
-                class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none">
+                class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
             </div>
+            <div class="absolute bottom-0 right-0 w-72 h-72 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-3"></div>
 
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                    <!-- Left Panel (4 cols) -->
-                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24">
+                    <!-- Left Panel (4 cols) - slides in from left -->
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
                         <div class="flex items-center gap-sm">
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white why-icon">
                                 <span class="material-symbols-outlined text-2xl"
                                     data-icon="directions_bus">directions_bus</span>
                             </div>
@@ -353,16 +543,16 @@
                         </p>
                     </div>
 
-                    <!-- Right Panel (8 cols): Capabilities Grid -->
-                    <div class="lg:col-span-8">
+                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
+                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
                         <span
                             class="font-label-md text-label-md text-white uppercase tracking-wider block font-bold mb-md">Travel
                             Services &amp; Sectors</span>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
 
                             <!-- Premium Bus Rental Services -->
-                            <div
-                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="100"
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
                                 <div class="flex items-center gap-xs mb-xs text-white">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="directions_bus">directions_bus</span>
@@ -372,8 +562,8 @@
                             </div>
 
                             <!-- Group Travel & Excursions -->
-                            <div
-                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="200"
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
                                 <div class="flex items-center gap-xs mb-xs text-white">
                                     <span class="material-symbols-outlined text-xl" data-icon="groups">groups</span>
                                     <span class="font-semibold text-sm">Group Travel &amp; Excursions</span>
@@ -382,8 +572,8 @@
                             </div>
 
                             <!-- Study Tour Transport -->
-                            <div
-                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="300"
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
                                 <div class="flex items-center gap-xs mb-xs text-white">
                                     <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
                                     <span class="font-semibold text-sm">Study Tour Transport</span>
@@ -392,8 +582,8 @@
                             </div>
 
                             <!-- Taxi & Car Rentals -->
-                            <div
-                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                            <div data-reveal="up" data-delay="400"
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
                                 <div class="flex items-center gap-xs mb-xs text-white">
                                     <span class="material-symbols-outlined text-xl"
                                         data-icon="local_taxi">local_taxi</span>
@@ -403,8 +593,8 @@
                             </div>
 
                             <!-- Corporate Commutes -->
-                            <div
-                                class="sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
+                            <div data-reveal="scale" data-delay="200"
+                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
                                 <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
                                      <div class="flex items-center gap-xs text-white">
                                          <span class="material-symbols-outlined text-xl" data-icon="business">business</span>
@@ -412,16 +602,16 @@
                                      </div>
                                      <p class="text-xs text-white/80 leading-relaxed">Scheduled employee shuttles and executive transport for corporate offices, daily commutes, and corporate events.</p>
                                 </div>
-                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10">
+                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
                                      <img src="assets/new_images/whiteglove_hero3.jpg" 
                                           alt="Corporate Commutes Shuttle" 
-                                          class="absolute inset-0 w-full h-full object-cover object-center" />
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
                                 </div>
                             </div>
 
                             <!-- Custom Group Charters -->
-                            <div
-                                class="sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
+                            <div data-reveal="scale" data-delay="300"
+                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
                                 <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
                                      <div class="flex items-center gap-xs text-white">
                                          <span class="material-symbols-outlined text-xl"
@@ -430,10 +620,10 @@
                                      </div>
                                      <p class="text-xs text-white/80 leading-relaxed">Tailor-made route planning, group booking, scheduled shuttle coordination, and complete travel management.</p>
                                 </div>
-                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10">
+                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
                                      <img src="assets/new_images/Dublin-1-e1718732623256.jpg" 
                                           alt="Custom Group Charters Coach" 
-                                          class="absolute inset-0 w-full h-full object-cover object-center" />
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
                                 </div>
                             </div>
 
@@ -445,12 +635,15 @@
         </section>
 
         <!-- Why Choose Lisset Section -->
-        <section class="py-12 md:py-xl bg-surface-container-low border-t border-b border-surface-container-high">
+        <section class="py-12 md:py-xl bg-surface-container-low border-t border-b border-surface-container-high relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
-                <div class="text-center mb-xl max-w-2xl mx-auto">
+                <div class="text-center mb-xl max-w-2xl mx-auto" data-reveal="up">
                     <span
                         class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Lisset
                         ADVANTAGE</span>
+                    <!-- Animated divider line -->
+                    <div class="divider-line mx-auto mb-sm" style="transition-delay:0.3s"></div>
                     <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Why Choose Lisset Transport
                         Inc</h2>
                     <p class="text-secondary font-body-md">Nearly two decades of transportation and mobility expertise.
@@ -459,11 +652,11 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-md">
                     <!-- 1. Operational Experience -->
-                    <div
-                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                    <div data-reveal="up" data-delay="100"
+                        class="why-card bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="space-y-sm">
                             <div
-                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                                 <span class="material-symbols-outlined text-xl" data-icon="history">history</span>
                             </div>
                             <h4 class="font-headline-md text-primary text-base font-bold">Operational Experience</h4>
@@ -473,11 +666,11 @@
                     </div>
 
                     <!-- 2. Structured Infrastructure -->
-                    <div
-                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                    <div data-reveal="up" data-delay="200"
+                        class="why-card bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="space-y-sm">
                             <div
-                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                                 <span class="material-symbols-outlined text-xl"
                                     data-icon="account_tree">account_tree</span>
                             </div>
@@ -488,11 +681,11 @@
                     </div>
 
                     <!-- 3. Technology Enabled Operations -->
-                    <div
-                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                    <div data-reveal="up" data-delay="300"
+                        class="why-card bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="space-y-sm">
                             <div
-                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                                 <span class="material-symbols-outlined text-xl" data-icon="memory">memory</span>
                             </div>
                             <h4 class="font-headline-md text-primary text-base font-bold">Technology Enabled Operations
@@ -503,11 +696,11 @@
                     </div>
 
                     <!-- 4. Customer-Focused Service -->
-                    <div
-                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                    <div data-reveal="up" data-delay="400"
+                        class="why-card bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="space-y-sm">
                             <div
-                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                                 <span class="material-symbols-outlined text-xl"
                                     data-icon="support_agent">support_agent</span>
                             </div>
@@ -518,11 +711,11 @@
                     </div>
 
                     <!-- 5. Scalable Operations -->
-                    <div
-                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                    <div data-reveal="up" data-delay="500"
+                        class="why-card bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="space-y-sm">
                             <div
-                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                                 <span class="material-symbols-outlined text-xl"
                                     data-icon="trending_up">trending_up</span>
                             </div>
@@ -539,24 +732,25 @@
 
         <!-- General CTA Section -->
         <section class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
-            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none">
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
             </div>
+            <div class="absolute -top-32 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg text-center space-y-md relative z-10">
-                <h2 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-white font-bold leading-tight">
+                <h2 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-white font-bold leading-tight" data-reveal="up">
                     Moving North America. Growing
                     Together.</h2>
-                <p class="font-body-lg text-body-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                <p class="font-body-lg text-body-lg text-white/80 max-w-3xl mx-auto leading-relaxed" data-reveal="up" data-delay="200">
                     At Lisset Transport Inc, our commitment remains focused on operational excellence, dependable
                     service
                     delivery, and building long-term customer relationships.
                 </p>
-                <p class="font-body-md text-body-md text-white/70 max-w-2xl mx-auto leading-relaxed">
+                <p class="font-body-md text-body-md text-white/70 max-w-2xl mx-auto leading-relaxed" data-reveal="up" data-delay="300">
                     Whether supporting industrial freight movement or delivering premium mobility experiences, we
                     continue building solutions designed around trust, efficiency, and reliability.
                 </p>
-                <div class="pt-md">
+                <div class="pt-md" data-reveal="scale" data-delay="400">
                     <a href="contact.html"
-                        class="bg-white text-primary-container px-6 md:px-xl py-md rounded font-label-md text-label-md hover:bg-surface-container transition-all text-center inline-block uppercase tracking-wider font-bold">
+                        class="bg-white text-primary-container px-6 md:px-xl py-md rounded font-label-md text-label-md hover:bg-surface-container hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-center inline-block uppercase tracking-wider font-bold">
                         Contact Our Team
                     </a>
                 </div>
@@ -779,26 +973,98 @@
             }
         };
 
-        // Simple scroll reveal effect
-        const observerOptions = {
-            rootMargin: '0px 0px 150px 0px',
-            threshold: 0.01
-        };
+        // =============================================
+        // SCROLL PROGRESS BAR
+        // =============================================
+        const progressBar = document.getElementById('scroll-progress');
+        function updateProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = pct + '%';
+        }
+        window.addEventListener('scroll', updateProgress, { passive: true });
 
-        const observer = new IntersectionObserver((entries) => {
+        // =============================================
+        // PARALLAX HERO LOGO
+        // =============================================
+        const parallaxLogo = document.getElementById('parallax-logo');
+        function updateParallax() {
+            if (!parallaxLogo) return;
+            const scrollY = window.scrollY;
+            parallaxLogo.style.transform = `translateY(${scrollY * 0.22}px) scale(${1 + scrollY * 0.00005})`;
+        }
+        window.addEventListener('scroll', updateParallax, { passive: true });
+
+        // =============================================
+        // HERO HEADLINE WORD REVEAL (triggers on load)
+        // =============================================
+        setTimeout(() => {
+            const headline = document.getElementById('hero-headline');
+            if (headline) headline.classList.add('revealed');
+            const divider = document.getElementById('hero-divider');
+            if (divider) divider.classList.add('revealed');
+        }, 300);
+
+        // =============================================
+        // SCROLL REVEAL — all [data-reveal] elements
+        // =============================================
+        const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
 
-        document.querySelectorAll('main > section:not(:first-of-type)').forEach(section => {
-            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-            observer.observe(section);
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+        // Animated divider lines (observe them too)
+        const dividerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    dividerObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.divider-line').forEach(el => dividerObserver.observe(el));
+
+        // =============================================
+        // STAT BARS + COUNTER ANIMATION
+        // =============================================
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const section = entry.target;
+                // Animate bars
+                section.querySelectorAll('.stat-bar').forEach(bar => {
+                    const targetW = parseFloat(bar.dataset.width);
+                    bar.style.width = targetW + '%';
+                });
+                // Animate percentage counters
+                section.querySelectorAll('.counter-pct').forEach(el => {
+                    const target = parseFloat(el.dataset.target);
+                    let start = 0;
+                    const step = target / 60;
+                    const interval = setInterval(() => {
+                        start = Math.min(start + step, target);
+                        el.textContent = start % 1 === 0 ? start.toFixed(0) : start.toFixed(1);
+                        if (start >= target) clearInterval(interval);
+                    }, 16);
+                });
+                statObserver.unobserve(section);
+            });
+        }, { threshold: 0.3 });
+        // Observe the operational section (parent of stat bars)
+        document.querySelectorAll('[data-reveal]').forEach(el => {
+            if (el.querySelector('.stat-bar')) statObserver.observe(el.closest('section'));
         });
 
+        // Also observe the stats section directly
+        const statSection = document.querySelector('.stat-bar')?.closest('section');
+        if (statSection) statObserver.observe(statSection);
 
     </script>
 
