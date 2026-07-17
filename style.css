@@ -394,3 +394,15 @@ html {
 #mobile-menu {
     padding-top: 140px !important;
 }
+
+/* Global Scroll Progress Bar fixed to absolute top edge of screen */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #002b5b, #4a90d9);
+    z-index: 999999; /* Higher than navbar */
+    transition: width 0.15s ease-out;
+}
