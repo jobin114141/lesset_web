@@ -309,6 +309,12 @@ html {
     border-color: rgba(255, 255, 255, 0.12);
 }
 
+.nav-capsule-container.hidden-nav {
+    transform: translate3d(-50%, -110px, 0) !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Rounded circle container for the logo */
 .nav-logo-capsule {
     width: 60px;

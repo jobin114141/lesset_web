@@ -381,13 +381,38 @@ window.handleContactSubmit = function (event) {
 document.addEventListener('DOMContentLoaded', () => {
     const mainNav = document.getElementById('main-nav');
     if (mainNav) {
+        let lastScrollY = window.scrollY;
+
         const handleScroll = () => {
-            if (window.scrollY > 40) {
+            const currentScrollY = window.scrollY;
+
+            // 1. Keep navbar fully visible and unsubscribed from scrolled state near the top
+            if (currentScrollY < 50) {
+                mainNav.classList.remove('scrolled');
+                mainNav.classList.remove('hidden-nav');
+                lastScrollY = currentScrollY;
+                return;
+            }
+
+            // 2. Taller viewports shrink padding state
+            if (currentScrollY > 40) {
                 mainNav.classList.add('scrolled');
             } else {
                 mainNav.classList.remove('scrolled');
             }
+
+            // 3. Directional detection: Scroll down hides, scroll up shows
+            if (currentScrollY > lastScrollY && currentScrollY > 150) {
+                // Scrolling Down -> Hide
+                mainNav.classList.add('hidden-nav');
+            } else if (currentScrollY < lastScrollY) {
+                // Scrolling Up -> Show
+                mainNav.classList.remove('hidden-nav');
+            }
+
+            lastScrollY = currentScrollY;
         };
+
         window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
     }
