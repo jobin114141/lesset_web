@@ -277,3 +277,98 @@ html {
         margin: 0 auto;
     }
 }
+/* ===== FLOATING CAPSULE NAVBAR ===== */
+.nav-capsule-container {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-w: 1200px;
+    background-color: rgba(17, 24, 39, 0.85); /* Dark charcoal/black color */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 9999px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-capsule-container.scrolled {
+    top: 12px;
+    height: 64px;
+    background-color: rgba(17, 24, 39, 0.98);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Rounded white container for the logo emblem */
+.nav-logo-capsule {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.nav-logo-capsule:hover {
+    transform: scale(1.08) rotate(5deg);
+}
+
+.nav-logo-capsule img {
+    height: 28px;
+    width: auto;
+    object-contain: fit;
+    mix-blend-mode: multiply;
+}
+
+/* Custom rounded white capsule button for email action */
+.nav-action-capsule {
+    background-color: #ffffff;
+    color: #111827 !important;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: 10px 24px;
+    font-size: 13px;
+    text-transform: lowercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    white-space: nowrap;
+}
+.nav-action-capsule:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.20);
+}
+
+/* Nav links in capsule */
+.nav-capsule-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.nav-capsule-link:hover, 
+.nav-capsule-link.active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure mobile header content is adjusted */
+#mobile-menu {
+    padding-top: 140px !important;
+}

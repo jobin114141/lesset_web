@@ -376,3 +376,19 @@ window.handleContactSubmit = function (event) {
 
     form.reset();
 };
+
+// Global Floating Capsule Navbar Scroll Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const mainNav = document.getElementById('main-nav');
+    if (mainNav) {
+        const handleScroll = () => {
+            if (window.scrollY > 40) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+    }
+});
