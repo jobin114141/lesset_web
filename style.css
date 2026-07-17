@@ -320,7 +320,7 @@ html {
     justify-content: center;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    transition: transform 0.3s ease;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-logo-capsule:hover {
     transform: scale(1.04);
@@ -333,6 +333,19 @@ html {
     height: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Shrink logo circle and brand image on navbar scroll */
+.nav-capsule-container.scrolled .nav-logo-capsule {
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.nav-capsule-container.scrolled .nav-logo-capsule img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 /* Custom rounded white capsule button for email action */
