@@ -311,8 +311,8 @@ html {
 
 /* Rounded pill container for the horizontal logo */
 .nav-logo-capsule {
-    height: 52px;
-    padding: 0 20px;
+    height: 60px;
+    padding: 0 24px;
     border-radius: 9999px;
     background-color: #ffffff;
     display: flex;
@@ -327,7 +327,7 @@ html {
 }
 
 .nav-logo-capsule img {
-    height: 36px;
+    height: 44px;
     width: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
