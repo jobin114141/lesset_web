@@ -285,7 +285,7 @@ html {
     transform: translateX(-50%);
     width: max-content;
     max-width: 95%; /* Responsive fit on smaller viewports */
-    background-color: rgba(17, 24, 39, 0.85); /* Dark charcoal/black color */
+    background-color: rgba(17, 24, 39, 0.95); /* Richer dark charcoal color, less dim */
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 9999px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
