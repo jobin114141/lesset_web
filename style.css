@@ -406,3 +406,144 @@ html {
     z-index: 999999; /* Higher than navbar */
     transition: width 0.15s ease-out;
 }
+
+/* ===== LOGISTICS SCROLLING STORYTELLING ===== */
+
+.story-section {
+    background-color: #080c14;
+    color: #f1f5f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-svg-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .story-svg-container {
+        left: 24px;
+        transform: none;
+        width: 80px;
+    }
+}
+
+.story-svg-line-bg {
+    stroke: rgba(255, 255, 255, 0.08);
+    stroke-width: 3px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.story-svg-line-active {
+    stroke: #FFB300; /* Amber glow matching premium transport color */
+    stroke-width: 4px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 8px rgba(255, 179, 0, 0.6));
+}
+
+/* Glowing Coordinate Dot */
+.coordinate-tracker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #FFB300;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    box-shadow: 0 0 15px #FFB300, 0 0 30px #FFB300;
+    pointer-events: none;
+}
+
+.coordinate-tracker::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFB300;
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+    animation: tracker-pulse 1.8s infinite ease-out;
+    opacity: 0.8;
+}
+
+@keyframes tracker-pulse {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+/* Floating coordinates bubble */
+.coordinate-bubble {
+    position: absolute;
+    background: rgba(8, 12, 20, 0.95);
+    border: 1px solid rgba(255, 179, 0, 0.5);
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), 0 0 15px rgba(255, 179, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 25;
+    pointer-events: none;
+    transform: translate(-50%, -140%);
+}
+
+@media (max-width: 1024px) {
+    .coordinate-bubble {
+        transform: translate(25px, -50%);
+    }
+}
+
+/* Dark glassmorphic card stylings */
+.glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 179, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+}
+
+/* Interactive Finder & Rates Input overrides */
+.finder-input {
+    background-color: rgba(15, 23, 42, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.finder-input:focus {
+    border-color: #FFB300 !important;
+    box-shadow: 0 0 0 2px rgba(255, 179, 0, 0.2) !important;
+    outline: none !important;
+}
+
