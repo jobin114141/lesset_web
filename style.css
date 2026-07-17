@@ -309,27 +309,27 @@ html {
     border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* Rounded white container for the logo emblem */
+/* Rounded pill container for the horizontal logo */
 .nav-logo-capsule {
-    width: 44px;
     height: 44px;
-    border-radius: 50%;
+    padding: 0 16px;
+    border-radius: 9999px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
 }
 .nav-logo-capsule:hover {
-    transform: scale(1.08) rotate(5deg);
+    transform: scale(1.04);
 }
 
 .nav-logo-capsule img {
     height: 28px;
     width: auto;
-    object-contain: fit;
+    object-fit: contain;
     mix-blend-mode: multiply;
 }
 
