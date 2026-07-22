@@ -1,408 +1,612 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
-<html class="light" lang="en">
 
-<head>
+<html class="light" lang="en">
 
-    <title>Comprehensive Transport & Travel Services | Lisset Transport Inc</title>
 
-    <meta name="description"
+<head>
 
-        content="Explore our complete range of services from industrial logistics to passenger mobility. A diversified portfolio driving value for our clients." />
 
-    <meta name="keywords"
+    <title>Comprehensive Transport & Travel Services | Lisset Transport Inc</title>
 
-        content="Lisset services, transport solutions, passenger mobility, diversified logistics, corporate transport" />
 
-    <meta name="author" content="Lisset Transport Inc" />
+    <meta name="description"
 
-    <meta name="robots" content="index, follow" />
 
-    <meta property="og:type" content="website" />
+        content="Explore our complete range of services from industrial logistics to passenger mobility. A diversified portfolio driving value for our clients." />
 
-    <meta property="og:title" content="Comprehensive Transport & Travel Services | Lisset Transport Inc" />
 
-    <meta property="og:description"
+    <meta name="keywords"
 
-        content="Explore our complete range of services from industrial logistics to passenger mobility. A diversified portfolio driving value for our clients." />
 
-    <meta property="og:image" content="assets/new_logos/logo_2.png" />
+        content="Lisset services, transport solutions, passenger mobility, diversified logistics, corporate transport" />
 
-    <meta charset="utf-8" />
 
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="author" content="Lisset Transport Inc" />
 
-    <!-- Tailwind CSS with Forms and Container Queries Plugins -->
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="robots" content="index, follow" />
 
-    <!-- Tailwind Configuration script -->
 
-    <script src="script.js"></script>
+    <meta property="og:type" content="website" />
 
-    <!-- Google Fonts Preconnect to prevent FOUT -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta property="og:title" content="Comprehensive Transport & Travel Services | Lisset Transport Inc" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts -->
+    <meta property="og:description"
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=block"
 
-        rel="stylesheet" />
+        content="Explore our complete range of services from industrial logistics to passenger mobility. A diversified portfolio driving value for our clients." />
 
-    <link
 
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block"
+    <meta property="og:image" content="assets/new_logos/logo_2.png" />
 
-        rel="stylesheet" />
 
-    <!-- Custom Style Sheet -->
+    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="style.css" />
 
-    <style>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        /* ===== SERVICES PAGE ANIMATIONS ===== */
 
-        /* Base reveal states */
+    <!-- Tailwind CSS with Forms and Container Queries Plugins -->
 
-        [data-reveal] {
 
-            opacity: 0;
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
 
-                        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    <!-- Tailwind Configuration script -->
 
-            will-change: opacity, transform;
 
-        }
+    <script src="script.js"></script>
 
-        [data-reveal="up"]    { transform: translateY(48px); }
 
-        [data-reveal="down"]  { transform: translateY(-48px); }
+    <!-- Google Fonts Preconnect to prevent FOUT -->
 
-        [data-reveal="left"]  { transform: translateX(-60px); }
 
-        [data-reveal="right"] { transform: translateX(60px); }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        [data-reveal="scale"] { transform: scale(0.88); }
 
-        [data-reveal="fade"]  { transform: none; }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        [data-reveal].revealed {
 
-            opacity: 1;
+    <!-- Google Fonts -->
 
-            transform: none;
 
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=block"
 
-        /* Stagger delays */
 
-        [data-delay="100"] { transition-delay: 0.10s; }
+        rel="stylesheet" />
 
-        [data-delay="200"] { transition-delay: 0.20s; }
 
-        [data-delay="300"] { transition-delay: 0.30s; }
+    <link
 
-        [data-delay="400"] { transition-delay: 0.40s; }
 
-        [data-delay="500"] { transition-delay: 0.50s; }
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block"
 
-        [data-delay="600"] { transition-delay: 0.60s; }
 
-        [data-delay="700"] { transition-delay: 0.70s; }
+        rel="stylesheet" />
 
-        [data-delay="800"] { transition-delay: 0.80s; }
 
-        /* ---- Parallax hero logo ---- */
+    <!-- Custom Style Sheet -->
 
-        .parallax-logo {
 
-            will-change: transform;
+    <link rel="stylesheet" href="style.css" />
 
-            transition: transform 0.1s linear;
 
-        }
+    <style>
 
-        /* ---- Floating orb animations ---- */
 
-        @keyframes floatOrb {
+        /* ===== SERVICES PAGE ANIMATIONS ===== */
 
-            0%, 100% { transform: translateY(0px) scale(1); }
 
-            50%       { transform: translateY(-20px) scale(1.05); }
+        /* Base reveal states */
 
-        }
 
-        .orb-float-1 { animation: floatOrb 7s ease-in-out infinite; }
+        [data-reveal] {
 
-        .orb-float-2 { animation: floatOrb 9s ease-in-out infinite 1.5s; }
 
-        .orb-float-3 { animation: floatOrb 6s ease-in-out infinite 3s; }
+            opacity: 0;
 
-        /* ---- Animated section divider line ---- */
 
-        .divider-line {
+            transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
 
-            width: 0;
 
-            height: 3px;
+                        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
 
-            background: linear-gradient(90deg, #002b5b, #4a90d9, #002b5b);
 
-            border-radius: 99px;
+            will-change: opacity, transform;
 
-            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 
-        }
+        }
 
-        .divider-line.revealed { width: 80px; }
 
-        /* ---- Counter number animation ---- */
+        [data-reveal="up"]    { transform: translateY(48px); }
 
-        .stat-number {
 
-            display: inline-block;
+        [data-reveal="down"]  { transform: translateY(-48px); }
 
-            font-variant-numeric: tabular-nums;
 
-        }
+        [data-reveal="left"]  { transform: translateX(-60px); }
 
-        /* ---- Capability card tilt hover ---- */
 
-        .cap-card {
+        [data-reveal="right"] { transform: translateX(60px); }
 
-            transform-style: preserve-3d;
 
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        [data-reveal="scale"] { transform: scale(0.88); }
 
-        }
 
-        .cap-card:hover {
+        [data-reveal="fade"]  { transform: none; }
 
-            transform: translateY(-4px) scale(1.01);
 
-            box-shadow: 0 12px 32px rgba(0,43,91,0.10);
+        [data-reveal].revealed {
 
-        }
 
-        /* ---- Wide feature card image zoom ---- */
+            opacity: 1;
 
-        .feature-img {
 
-            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: none;
 
-        }
 
-        .feature-card:hover .feature-img { transform: scale(1.06); }
+        }
 
-        /* ---- Why-choose card icon pulse ---- */
 
-        @keyframes iconPulse {
+        /* Stagger delays */
 
-            0%, 100% { box-shadow: 0 0 0 0 rgba(0,43,91,0.18); }
 
-            60%       { box-shadow: 0 0 0 10px rgba(0,43,91,0); }
+        [data-delay="100"] { transition-delay: 0.10s; }
 
-        }
 
-        .why-card:hover .why-icon {
+        [data-delay="200"] { transition-delay: 0.20s; }
 
-            animation: iconPulse 0.7s ease-out;
 
-        }
+        [data-delay="300"] { transition-delay: 0.30s; }
 
-        /* ---- CTA section shimmer ---- */
 
-        @keyframes shimmer {
+        [data-delay="400"] { transition-delay: 0.40s; }
 
-            0%   { background-position: -400px 0; }
 
-            100% { background-position: 400px 0; }
+        [data-delay="500"] { transition-delay: 0.50s; }
 
-        }
 
-        .cta-shimmer {
+        [data-delay="600"] { transition-delay: 0.60s; }
 
-            background: linear-gradient(90deg,
 
-                rgba(255,255,255,0.0) 0%,
+        [data-delay="700"] { transition-delay: 0.70s; }
 
-                rgba(255,255,255,0.06) 40%,
 
-                rgba(255,255,255,0.12) 50%,
+        [data-delay="800"] { transition-delay: 0.80s; }
 
-                rgba(255,255,255,0.06) 60%,
 
-                rgba(255,255,255,0.0) 100%);
+        /* ---- Parallax hero logo ---- */
 
-            background-size: 800px 100%;
 
-            animation: shimmer 4s linear infinite;
+        .parallax-logo {
 
-            pointer-events: none;
 
-        }
+            will-change: transform;
 
-        /* ---- Scroll progress bar ---- */
 
-        /* ---- Axis label tag pulse ---- */
+            transition: transform 0.1s linear;
 
-        @keyframes tagPop {
 
-            0%   { opacity: 0; transform: scale(0.7) translateY(6px); }
+        }
 
-            60%  { transform: scale(1.05) translateY(-1px); }
 
-            100% { opacity: 1; transform: scale(1) translateY(0); }
+        /* ---- Floating orb animations ---- */
 
-        }
 
-        .tag-pop { animation: tagPop 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+        @keyframes floatOrb {
 
-        /* ---- Hero headline word-by-word reveal ---- */
 
-        .word-reveal .word {
+            0%, 100% { transform: translateY(0px) scale(1); }
 
-            display: inline-block;
 
-            opacity: 0;
+            50%       { transform: translateY(-20px) scale(1.05); }
 
-            transform: translateY(30px);
 
-            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
 
-        }
 
-        .word-reveal.revealed .word {
+        .orb-float-1 { animation: floatOrb 7s ease-in-out infinite; }
 
-            opacity: 1;
 
-            transform: translateY(0);
+        .orb-float-2 { animation: floatOrb 9s ease-in-out infinite 1.5s; }
 
-        }
 
-        /* ---- Moving background grid pattern ---- */
+        .orb-float-3 { animation: floatOrb 6s ease-in-out infinite 3s; }
 
-        @keyframes gridDrift {
 
-            0%   { background-position: 0 0; }
+        /* ---- Animated section divider line ---- */
 
-            100% { background-position: 40px 40px; }
 
-        }
+        .divider-line {
 
-        .bg-grid-drift {
 
-            background-image:
+            width: 0;
 
-                linear-gradient(rgba(0,43,91,0.04) 1px, transparent 1px),
 
-                linear-gradient(90deg, rgba(0,43,91,0.04) 1px, transparent 1px);
+            height: 3px;
 
-            background-size: 40px 40px;
 
-            animation: gridDrift 6s linear infinite;
+            background: linear-gradient(90deg, #002b5b, #4a90d9, #002b5b);
 
-        }
 
-    </style>
+            border-radius: 99px;
 
-    <!-- Favicon -->
 
-    <link rel="icon" type="image/png" href="assets/new_logos/logo_2.png" />
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 
-    <link rel="apple-touch-icon" href="assets/new_logos/logo_2.png" />
 
-</head>
+        }
 
-<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
 
-    <nav class="nav-capsule-container" id="main-nav">
+        .divider-line.revealed { width: 80px; }
 
-        <!-- Logo capsule with circular emblem -->
 
-        <a href="index.html" class="nav-logo-capsule">
+        /* ---- Counter number animation ---- */
 
-            <img alt="Lisset Transport Inc" src="assets/new_logos/logo_2.png" />
 
-        </a>
+        .stat-number {
 
-        <!-- Center menu links -->
 
-        <div class="hidden xl:flex items-center gap-2">
+            display: inline-block;
 
-            <a class="nav-capsule-link" href="index.html">Home</a>
 
-            <a class="nav-capsule-link" href="about.html">About Us</a>
+            font-variant-numeric: tabular-nums;
 
-            <a class="nav-capsule-link active" href="services.html">Services</a>
 
-            <a class="nav-capsule-link" href="contact.html">Contact Us</a>
+        }
 
-        </div>
 
-        <!-- Right side action capsule / Mobile hamburger -->
+        /* ---- Capability card tilt hover ---- */
 
-        <div class="flex items-center gap-3">
 
-            <button onclick="toggleMobileMenu()" class="xl:hidden flex items-center justify-center p-2 text-white focus:outline-none" aria-label="Toggle Menu">
+        .cap-card {
 
-                <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
 
-            </button>
+            transform-style: preserve-3d;
 
-        </div>
 
-    </nav>
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 
-    <!-- Mobile Navigation Drawer -->
 
-    <div id="mobile-menu"
+        }
 
-        class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-[120px] transition-all duration-300 transform translate-x-full">
 
-        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+        .cap-card:hover {
 
-            <a onclick="toggleMobileMenu()"
 
-                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+            transform: translateY(-4px) scale(1.01);
 
-                href="index.html">Home</a>
 
-            <a onclick="toggleMobileMenu()"
+            box-shadow: 0 12px 32px rgba(0,43,91,0.10);
 
-                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
 
-                href="about.html">About Us</a>
+        }
 
-            <a onclick="toggleMobileMenu()"
 
-                class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block"
+        /* ---- Wide feature card image zoom ---- */
 
-                href="services.html">Services</a>
 
-            <a onclick="toggleMobileMenu()"
+        .feature-img {
 
-                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
 
-                href="contact.html">Contact Us</a>
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
-        </div>
 
-    </div>
+        }
 
-    <!-- Scroll progress bar -->
 
-    <div id="scroll-progress"></div>
+        .feature-card:hover .feature-img { transform: scale(1.06); }
 
-    <main class="pt-0">
 
-        <!-- Hero Section -->
+        /* ---- Why-choose card icon pulse ---- */
+
+
+        @keyframes iconPulse {
+
+
+            0%, 100% { box-shadow: 0 0 0 0 rgba(0,43,91,0.18); }
+
+
+            60%       { box-shadow: 0 0 0 10px rgba(0,43,91,0); }
+
+
+        }
+
+
+        .why-card:hover .why-icon {
+
+
+            animation: iconPulse 0.7s ease-out;
+
+
+        }
+
+
+        /* ---- CTA section shimmer ---- */
+
+
+        @keyframes shimmer {
+
+
+            0%   { background-position: -400px 0; }
+
+
+            100% { background-position: 400px 0; }
+
+
+        }
+
+
+        .cta-shimmer {
+
+
+            background: linear-gradient(90deg,
+
+
+                rgba(255,255,255,0.0) 0%,
+
+
+                rgba(255,255,255,0.06) 40%,
+
+
+                rgba(255,255,255,0.12) 50%,
+
+
+                rgba(255,255,255,0.06) 60%,
+
+
+                rgba(255,255,255,0.0) 100%);
+
+
+            background-size: 800px 100%;
+
+
+            animation: shimmer 4s linear infinite;
+
+
+            pointer-events: none;
+
+
+        }
+
+
+        /* ---- Scroll progress bar ---- */
+
+
+        /* ---- Axis label tag pulse ---- */
+
+
+        @keyframes tagPop {
+
+
+            0%   { opacity: 0; transform: scale(0.7) translateY(6px); }
+
+
+            60%  { transform: scale(1.05) translateY(-1px); }
+
+
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+
+
+        }
+
+
+        .tag-pop { animation: tagPop 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+
+        /* ---- Hero headline word-by-word reveal ---- */
+
+
+        .word-reveal .word {
+
+
+            display: inline-block;
+
+
+            opacity: 0;
+
+
+            transform: translateY(30px);
+
+
+            transition: opacity 0.5s ease, transform 0.5s ease;
+
+
+        }
+
+
+        .word-reveal.revealed .word {
+
+
+            opacity: 1;
+
+
+            transform: translateY(0);
+
+
+        }
+
+
+        /* ---- Moving background grid pattern ---- */
+
+
+        @keyframes gridDrift {
+
+
+            0%   { background-position: 0 0; }
+
+
+            100% { background-position: 40px 40px; }
+
+
+        }
+
+
+        .bg-grid-drift {
+
+
+            background-image:
+
+
+                linear-gradient(rgba(0,43,91,0.04) 1px, transparent 1px),
+
+
+                linear-gradient(90deg, rgba(0,43,91,0.04) 1px, transparent 1px);
+
+
+            background-size: 40px 40px;
+
+
+            animation: gridDrift 6s linear infinite;
+
+
+        }
+
+
+    </style>
+
+
+    <!-- Favicon -->
+
+
+    <link rel="icon" type="image/png" href="assets/new_logos/logo_2.png" />
+
+
+    <link rel="apple-touch-icon" href="assets/new_logos/logo_2.png" />
+
+
+</head>
+
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+
+    <nav class="nav-capsule-container" id="main-nav">
+
+
+        <!-- Logo capsule with circular emblem -->
+
+
+        <a href="index.html" class="nav-logo-capsule">
+
+
+            <img alt="Lisset Transport Inc" src="assets/new_logos/logo_2.png" />
+
+
+        </a>
+
+
+        <!-- Center menu links -->
+
+
+        <div class="hidden xl:flex items-center gap-2">
+
+
+            <a class="nav-capsule-link" href="index.html">Home</a>
+
+
+            <a class="nav-capsule-link" href="about.html">About Us</a>
+
+
+            <a class="nav-capsule-link active" href="services.html">Services</a>
+
+
+            <a class="nav-capsule-link" href="careers.html">Careers</a>
+            <a class="nav-capsule-link" href="contact.html">Contact Us</a>
+
+
+        </div>
+
+
+        <!-- Right side action capsule / Mobile hamburger -->
+
+
+        <div class="flex items-center gap-3">
+
+
+            <button onclick="toggleMobileMenu()" class="xl:hidden flex items-center justify-center p-2 text-white focus:outline-none" aria-label="Toggle Menu">
+
+
+                <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
+
+
+            </button>
+
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- Mobile Navigation Drawer -->
+
+
+    <div id="mobile-menu"
+
+
+        class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-[120px] transition-all duration-300 transform translate-x-full">
+
+
+        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+
+
+            <a onclick="toggleMobileMenu()"
+
+
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+
+
+                href="index.html">Home</a>
+
+
+            <a onclick="toggleMobileMenu()"
+
+
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+
+
+                href="about.html">About Us</a>
+
+
+            <a onclick="toggleMobileMenu()"
+
+
+                class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block"
+
+
+                href="services.html">Services</a>
+
+
+            <a onclick="toggleMobileMenu()"
+
+
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+
+
+                href="contact.html">Contact Us</a>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Scroll progress bar -->
+
+
+    <div id="scroll-progress"></div>
+
+
+    <main class="pt-0">
+
+
+        <!-- Hero Section -->
+
 
                 <section class="relative bg-surface overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20 bg-grid-drift">
             <div class="absolute top-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl orb-float-1 pointer-events-none"></div>
@@ -423,10 +627,7 @@
                         Whether you need a single shipment or a long-term transportation partner, we offer flexible, cost-effective solutions backed by exceptional customer service, real-time communication, and reliable delivery.
                     </p>
                     <div class="flex flex-wrap gap-md pt-sm" data-reveal="up" data-delay="500">
-                        <a href="#quote"
-                            class="bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold">
-                            Request a Free Quote
-                        </a>
+                        
                         <a href="contact.html"
                             class="border border-primary text-primary px-6 md:px-xl py-3 rounded hover:bg-primary/5 hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold">
                             Contact Us
@@ -455,7 +656,7 @@
                     <!-- FTL & LTL -->
                     <div data-reveal="up" data-delay="100" class="lift-card bg-surface rounded-2xl overflow-hidden border border-outline-variant hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col group">
                         <div class="h-60 w-full relative overflow-hidden">
-                            <img src="assets/new_images/LTL-hero.jpg" alt="FTL & LTL Services" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="assets/new_images/hero_truck_premium.png" alt="FTL & LTL Services" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                             <div class="absolute bottom-4 left-6 w-12 h-12 rounded-xl bg-white text-primary flex items-center justify-center shadow-lg">
                                 <span class="material-symbols-outlined text-2xl" data-icon="local_shipping">local_shipping</span>
@@ -540,107 +741,122 @@
                                 Every shipment is unique. We offer customized solutions designed around your business needs, whether recurring shipments or flexible freight options.
                             </p>
                         </div>
-                    </div>
+                                                </div>
+                        </div>
 
+                        <div class="pt-sm">
+                            <a href="contact.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
+                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section>
 
-        <!-- Logistics Division Section -->
 
-        <section id="logistics-division"
+        <!-- Logistics Division Section -->
 
-            class="py-12 md:py-xl bg-white border-t border-b border-surface-container-high relative overflow-hidden">
 
-            <!-- Floating accent circle -->
+        <section id="logistics-division"
 
-            <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
 
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+            class="py-12 md:py-xl bg-white border-t border-b border-surface-container-high relative overflow-hidden">
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                    <!-- Left Panel (4 cols) - slides in from left -->
+            <!-- Floating accent circle -->
 
-                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
 
-                        <div class="flex items-center gap-sm">
+            <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
 
-                            <div
 
-                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary why-icon">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
 
-                                <span class="material-symbols-outlined text-2xl"
 
-                                    data-icon="local_shipping">local_shipping</span>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                            </div>
 
-                            <h2 class="font-headline-md text-headline-md text-primary font-bold">Industrial Freight
+                    <!-- Left Panel (4 cols) - slides in from left -->
 
-                                &amp; Logistics</h2>
 
-                        </div>
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
 
-                        <span
 
-                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 font-label-md">
+                        <div class="flex items-center gap-sm">
 
-                            99.8% On-Time Delivery
 
-                        </span>
+                            <div
 
-                        <p class="font-body-lg text-body-lg text-primary font-semibold leading-relaxed">
 
-                            Reliable logistics operations designed to support commercial supply chains, cargo
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary why-icon">
 
-                            transportation, and freight movement requirements.
 
-                        </p>
+                                <span class="material-symbols-outlined text-2xl"
 
-                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
 
-                            Our logistics division focuses on operational efficiency, structured transport planning, and
+                                    data-icon="local_shipping">local_shipping</span>
 
-                            dependable delivery infrastructure built to support businesses across multiple sectors.
 
-                        </p>
+                            </div>
 
-                        <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
 
-                            Whether managing regional cargo movement or large-scale transportation requirements, Lisset
+                            <h2 class="font-headline-md text-headline-md text-primary font-bold">Industrial Freight
 
-                            provides scalable logistics capabilities built for reliability and operational excellence.
 
-                        </p>
+                                &amp; Logistics</h2>
 
-                        <div class="pt-md">
 
-                            <a href="logistics.html"
+                        </div>
 
-                                class="inline-flex items-center gap-xs bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:bg-primary hover:-translate-y-0.5 transition-all duration-300 font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">
 
-                                Explore Logistics Solutions <span class="material-symbols-outlined text-sm"
+                        <span
 
-                                    data-icon="arrow_forward">arrow_forward</span>
 
-                            </a>
+                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 font-label-md">
 
-                        </div>
 
-                    </div>
+                            99.8% On-Time Delivery
 
-                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
 
-                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
+                        </span>
 
-                        <span
 
-                            class="font-label-md text-label-md text-primary uppercase tracking-wider block font-bold mb-md">Key
+                        <p class="font-body-lg text-body-lg text-primary font-semibold leading-relaxed">
 
-                            Solutions &amp; Capabilities</span>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                            Reliable logistics operations designed to support commercial supply chains, cargo
+
+
+                            transportation, and freight movement requirements.
+
+
+                        </p>
+
+
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+
+
+                            Our logistics division focuses on operational efficiency, structured transport planning, and
+
+
+                            dependable delivery infrastructure built to support businesses across multiple sectors.
+                        </p>
+                        <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
+                            Whether managing regional cargo movement or large-scale transportation requirements, Lisset
+                            provides scalable logistics capabilities built for reliability and operational excellence.
+                        </p>
+                    </div>
+
+                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
+                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block font-bold mb-md">Key
+
+
+                            Solutions &amp; Capabilities</span>
+
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+
 
                                                         <!-- 53-Foot Dry Van -->
                             <div data-reveal="up" data-delay="100"
@@ -728,646 +944,952 @@
                                     integrated directly with distribution networks.</p>
                             </div>
 
-                             <!-- Cross-Border Operations -->
+                             <!-- Cross-Border Operations -->
 
-                             <div data-reveal="scale" data-delay="200"
 
-                                 class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-surface-container-low rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
+                             <div data-reveal="scale" data-delay="200"
 
-                                 <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
 
-                                     <div class="flex items-center gap-xs text-primary">
+                                 class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-surface-container-low rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
 
-                                         <span class="material-symbols-outlined text-xl" data-icon="public">public</span>
 
-                                         <span class="font-semibold text-sm">Cross-Border Network</span>
+                                 <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
 
-                                     </div>
 
-                                     <p class="text-xs text-secondary leading-relaxed">
+                                     <div class="flex items-center gap-xs text-primary">
 
-                                         Seamless movement across Canada and US borders with full regulatory compliance, customs clearance, and dedicated logistics routing tailored to trans-continental supply chains.
 
-                                     </p>
+                                         <span class="material-symbols-outlined text-xl" data-icon="public">public</span>
 
-                                 </div>
 
-                                 <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-outline-variant/40 overflow-hidden">
+                                         <span class="font-semibold text-sm">Cross-Border Network</span>
 
-                                     <img src="assets/new_images/OTR-trucks.png" 
 
-                                          alt="Cross Border Logistics Network" 
+                                     </div>
 
-                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
 
-                                 </div>
+                                     <p class="text-xs text-secondary leading-relaxed">
 
-                             </div>
 
-                        </div>
+                                         Seamless movement across Canada and US borders with full regulatory compliance, customs clearance, and dedicated logistics routing tailored to trans-continental supply chains.
 
-                    </div>
 
-                </div>
+                                     </p>
 
-            </div>
 
-        </section>
+                                 </div>
 
-        <!-- Operational Strength Section -->
 
-        <section class="py-12 md:py-20 bg-white border-b border-surface-container-high relative overflow-hidden">
+                                 <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-outline-variant/40 overflow-hidden">
 
-            <div class="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-1"></div>
 
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg z-10 relative">
+                                     <img src="assets/new_images/OTR-trucks.png" 
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
 
-                    <!-- Left Side (Blended Image) - slides in from left -->
+                                          alt="Cross Border Logistics Network" 
 
-                    <div class="lg:col-span-6 flex justify-center" data-reveal="left">
 
-                        <div class="relative w-full max-w-xl group">
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
 
-                            <div class="relative rounded-2xl overflow-hidden bg-white">
 
-                                <img src="assets/new_images/img12.png" 
+                                 </div>
 
-                                     alt="Operational Excellence" 
 
-                                     class="w-full h-[300px] md:h-[380px] object-contain mix-blend-multiply transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+                             </div>
 
-                            </div>
 
-                        </div>
+                        </div>
 
-                    </div>
 
-                    <!-- Right Side (Operational Details) - slides in from right -->
+                                                </div>
+                        </div>
 
-                    <div class="lg:col-span-6 space-y-md" data-reveal="right" data-delay="200">
+                        <div class="pt-sm">
+                            <a href="contact.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
+                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm">OPERATIONAL EXCELLENCE</span>
 
-                        <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Reliability Through Nationwide Integration</h2>
+        <!-- Operational Strength Section -->
 
-                        <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
 
-                            Our logistics operations are powered by a modern fleet, advanced telemetry tracking, and strategic hub-and-spoke distribution networks across Canada and the United States.
+        <section class="py-12 md:py-20 bg-white border-b border-surface-container-high relative overflow-hidden">
 
-                        </p>
 
-                        <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
+            <div class="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/4 rounded-full blur-3xl pointer-events-none orb-float-1"></div>
 
-                            Every route is optimized for efficiency, safety, and timing, delivering a seamless corporate supply chain experience that keeps your commercial business running smoothly.
 
-                        </p>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg z-10 relative">
 
-                        <!-- Animated stat bars -->
 
-                        <div class="space-y-3 pt-sm" data-reveal="up" data-delay="400">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
 
-                            <div>
 
-                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                    <!-- Left Side (Blended Image) - slides in from left -->
 
-                                    <span>On-Time Delivery</span><span class="counter-pct" data-target="99.8">0</span>%
 
-                                </div>
+                    <div class="lg:col-span-6 flex justify-center" data-reveal="left">
 
-                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="99.8" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)"></div>
+                        <div class="relative w-full max-w-xl group">
 
-                                </div>
 
-                            </div>
+                            <div class="relative rounded-2xl overflow-hidden bg-white">
 
-                            <div>
 
-                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                                <img src="assets/new_images/img12.png" 
 
-                                    <span>Fleet Utilization</span><span class="counter-pct" data-target="94">0</span>%
 
-                                </div>
+                                     alt="Operational Excellence" 
 
-                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="94" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.2s"></div>
+                                     class="w-full h-[300px] md:h-[380px] object-contain mix-blend-multiply transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
 
-                                </div>
 
-                            </div>
+                            </div>
 
-                            <div>
 
-                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
+                        </div>
 
-                                    <span>Customer Satisfaction</span><span class="counter-pct" data-target="97">0</span>%
 
-                                </div>
+                    </div>
 
-                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="97" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.4s"></div>
+                    <!-- Right Side (Operational Details) - slides in from right -->
 
-                                </div>
 
-                            </div>
+                    <div class="lg:col-span-6 space-y-md" data-reveal="right" data-delay="200">
 
-                        </div>
 
-                        <div class="pt-sm">
+                        <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm">OPERATIONAL EXCELLENCE</span>
 
-                            <a href="logistics.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
 
-                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Reliability Through Nationwide Integration</h2>
 
-                            </a>
 
-                        </div>
+                        <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
 
-                    </div>
 
-                </div>
+                            Our logistics operations are powered by a modern fleet, advanced telemetry tracking, and strategic hub-and-spoke distribution networks across Canada and the United States.
 
-            </div>
 
-        </section>
+                        </p>
 
-        <!-- Travel & Passenger Mobility Section -->
 
-        <section id="holidays-division" class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
+                        <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
 
-            <!-- Background Glows & floating orbs -->
 
-            <div
+                            Every route is optimized for efficiency, safety, and timing, delivering a seamless corporate supply chain experience that keeps your commercial business running smoothly.
 
-                class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
 
-            </div>
+                        </p>
 
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-3"></div>
 
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                        <!-- Animated stat bars -->
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                    <!-- Left Panel (4 cols) - slides in from left -->
+                        <div class="space-y-3 pt-sm" data-reveal="up" data-delay="400">
 
-                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
 
-                        <div class="flex items-center gap-sm">
+                            <div>
 
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white why-icon">
 
-                                <span class="material-symbols-outlined text-2xl"
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
 
-                                    data-icon="directions_bus">directions_bus</span>
 
-                            </div>
+                                    <span>On-Time Delivery</span><span class="counter-pct" data-target="99.8">0</span>%
 
-                            <h2 class="font-headline-md text-headline-md text-white font-bold">Travel
 
-                                &amp;<br />Passenger Mobility</h2>
+                                </div>
 
-                        </div>
 
-                        <span
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 text-white border border-white/20 font-label-md">
 
-                            15+ Years Travel Planning
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="99.8" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1)"></div>
 
-                        </span>
 
-                        <p class="font-body-lg text-body-lg text-white font-semibold leading-relaxed">
+                                </div>
 
-                            Structured travel experiences designed for comfort, convenience, and dependable passenger
 
-                            movement.
+                            </div>
 
-                        </p>
 
-                        <p class="font-body-md text-body-md text-white/80 leading-relaxed">
+                            <div>
 
-                            Our passenger division delivers organized mobility services supporting leisure travel,
 
-                            corporate
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
 
-                            transportation, educational tours, and group movement requirements.
 
-                        </p>
+                                    <span>Fleet Utilization</span><span class="counter-pct" data-target="94">0</span>%
 
-                        <p class="font-body-md text-body-md text-white/70 leading-relaxed">
 
-                            From corporate outings to custom travel experiences, our team focuses on delivering
+                                </div>
 
-                            well-managed journeys supported by experienced operational planning.
 
-                        </p>
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                    </div>
 
-                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="94" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.2s"></div>
 
-                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
 
-                        <span
+                                </div>
 
-                            class="font-label-md text-label-md text-white uppercase tracking-wider block font-bold mb-md">Travel
 
-                            Services &amp; Sectors</span>
+                            </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
 
-                            <!-- Premium Bus Rental Services -->
+                            <div>
 
-                            <div data-reveal="up" data-delay="100"
 
-                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
+                                <div class="flex justify-between text-xs font-semibold text-primary mb-1">
 
-                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                                    <span class="material-symbols-outlined text-xl"
+                                    <span>Customer Satisfaction</span><span class="counter-pct" data-target="97">0</span>%
 
-                                        data-icon="directions_bus">directions_bus</span>
 
-                                    <span class="font-semibold text-sm">Premium Bus Rental</span>
+                                </div>
 
-                                </div>
 
-                                <p class="text-xs text-white/80 leading-relaxed">Luxury touring coaches, shuttle vans, and passenger transport fleets for safe group commutes.</p>
+                                <div class="h-1.5 bg-primary/10 rounded-full overflow-hidden">
 
-                            </div>
 
-                            <!-- Group Travel & Excursions -->
+                                    <div class="stat-bar h-full bg-gradient-to-r from-primary-container to-primary rounded-full" data-width="97" style="width:0%;transition:width 1.4s cubic-bezier(0.22,1,0.36,1) 0.4s"></div>
 
-                            <div data-reveal="up" data-delay="200"
 
-                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
+                                </div>
 
-                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                                    <span class="material-symbols-outlined text-xl" data-icon="groups">groups</span>
+                                                        </div>
+                        </div>
 
-                                    <span class="font-semibold text-sm">Group Travel &amp; Excursions</span>
+                        <div class="pt-sm">
+                            <a href="contact.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
+                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                </div>
 
-                                <p class="text-xs text-white/80 leading-relaxed">Custom transit schedules and passenger planning for family trips, weddings, community events, and retreats.</p>
+        <!-- Travel & Passenger Mobility Section -->
 
-                            </div>
 
-                            <!-- Study Tour Transport -->
+        <section id="holidays-division" class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
 
-                            <div data-reveal="up" data-delay="300"
 
-                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
+            <!-- Background Glows & floating orbs -->
 
-                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                                    <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
+            <div
 
-                                    <span class="font-semibold text-sm">Study Tour Transport</span>
 
-                                </div>
+                class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
 
-                                <p class="text-xs text-white/80 leading-relaxed">Managed school and college excursions prioritizing high safety standards and timing.</p>
 
-                            </div>
+            </div>
 
-                            <!-- Taxi & Car Rentals -->
 
-                            <div data-reveal="up" data-delay="400"
+            <div class="absolute bottom-0 right-0 w-72 h-72 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-3"></div>
 
-                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
 
-                                <div class="flex items-center gap-xs mb-xs text-white">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
 
-                                    <span class="material-symbols-outlined text-xl"
 
-                                        data-icon="local_taxi">local_taxi</span>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
 
-                                    <span class="font-semibold text-sm">Taxi &amp; Car Rentals</span>
 
-                                </div>
+                    <!-- Left Panel (4 cols) - slides in from left -->
 
-                                <p class="text-xs text-white/80 leading-relaxed">Premium sedans, SUVs, and commuter vans for executive travel or airport transfers.</p>
 
-                            </div>
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24" data-reveal="left">
 
-                            <!-- Corporate Commutes -->
 
-                            <div data-reveal="scale" data-delay="200"
+                        <div class="flex items-center gap-sm">
 
-                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
 
-                                <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white why-icon">
 
-                                     <div class="flex items-center gap-xs text-white">
 
-                                         <span class="material-symbols-outlined text-xl" data-icon="business">business</span>
+                                <span class="material-symbols-outlined text-2xl"
 
-                                         <span class="font-semibold text-sm">Corporate Commutes</span>
 
-                                     </div>
+                                    data-icon="directions_bus">directions_bus</span>
 
-                                     <p class="text-xs text-white/80 leading-relaxed">Scheduled employee shuttles and executive transport for corporate offices, daily commutes, and corporate events.</p>
 
-                                </div>
+                            </div>
 
-                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
 
-                                     <img src="assets/new_images/intermodal-pictures.png" 
+                            <h2 class="font-headline-md text-headline-md text-white font-bold">Travel
 
-                                          alt="Corporate Commutes Shuttle" 
 
-                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
+                                &amp;<br />Passenger Mobility</h2>
 
-                                </div>
 
-                            </div>
+                        </div>
 
-                            <!-- Custom Group Charters -->
 
-                            <div data-reveal="scale" data-delay="300"
+                        <span
 
-                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
 
-                                <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
+                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 text-white border border-white/20 font-label-md">
 
-                                     <div class="flex items-center gap-xs text-white">
 
-                                         <span class="material-symbols-outlined text-xl"
+                            15+ Years Travel Planning
 
-                                             data-icon="travel_explore">travel_explore</span>
 
-                                         <span class="font-semibold text-sm">Custom Group Charters</span>
+                        </span>
 
-                                     </div>
 
-                                     <p class="text-xs text-white/80 leading-relaxed">Tailor-made route planning, group booking, scheduled shuttle coordination, and complete travel management.</p>
+                        <p class="font-body-lg text-body-lg text-white font-semibold leading-relaxed">
 
-                                </div>
 
-                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
+                            Structured travel experiences designed for comfort, convenience, and dependable passenger
 
-                                     <img src="assets/new_images/Dublin-1-e1718732623256.jpg" 
 
-                                          alt="Custom Group Charters Coach" 
+                            movement.
 
-                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
 
-                                </div>
+                        </p>
 
-                            </div>
 
-                        </div>
+                        <p class="font-body-md text-body-md text-white/80 leading-relaxed">
 
-                    </div>
 
-                </div>
+                            Our passenger division delivers organized mobility services supporting leisure travel,
 
-            </div>
 
-        </section>
+                            corporate
 
-        <!-- Why Choose Lisset Section -->
 
-        <section class="py-12 md:py-xl bg-surface-container-low border-t border-b border-surface-container-high relative overflow-hidden">
+                            transportation, educational tours, and group movement requirements.
 
-            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
 
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                        </p>
 
-                <div class="text-center mb-xl max-w-2xl mx-auto" data-reveal="up">
 
-                    <span
+                        <p class="font-body-md text-body-md text-white/70 leading-relaxed">
 
-                        class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Lisset
 
-                        ADVANTAGE</span>
+                            From corporate outings to custom travel experiences, our team focuses on delivering
 
-                    <!-- Animated divider line -->
 
-                    <div class="divider-line mx-auto mb-sm" style="transition-delay:0.3s"></div>
+                            well-managed journeys supported by experienced operational planning.
 
-                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Why Choose Lisset Transport
 
-                        Inc</h2>
+                        </p>
 
-                    <p class="text-secondary font-body-md">Nearly two decades of transportation and mobility expertise.
 
-                    </p>
+                    </div>
 
-                </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-md">
+                    <!-- Right Panel (8 cols): Capabilities Grid - slides in from right -->
 
-                    <!-- 1. Operational Experience -->
 
-                    <div data-reveal="up" data-delay="100"
+                    <div class="lg:col-span-8" data-reveal="right" data-delay="200">
 
-                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
 
-                        <div class="space-y-sm">
+                        <span
 
-                            <div
 
-                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                            class="font-label-md text-label-md text-white uppercase tracking-wider block font-bold mb-md">Travel
 
-                                <span class="material-symbols-outlined text-xl" data-icon="history">history</span>
 
-                            </div>
+                            Services &amp; Sectors</span>
 
-                            <h4 class="font-headline-md text-primary text-base font-bold">Operational Experience</h4>
 
-                            <p class="text-xs text-secondary leading-relaxed">Nearly two decades of transportation and
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
 
-                                mobility expertise.</p>
 
-                        </div>
+                            <!-- Premium Bus Rental Services -->
 
-                    </div>
 
-                    <!-- 2. Structured Infrastructure -->
+                            <div data-reveal="up" data-delay="100"
 
-                    <div data-reveal="up" data-delay="200"
 
-                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
 
-                        <div class="space-y-sm">
 
-                            <div
+                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
 
-                                <span class="material-symbols-outlined text-xl"
+                                    <span class="material-symbols-outlined text-xl"
 
-                                    data-icon="account_tree">account_tree</span>
 
-                            </div>
+                                        data-icon="directions_bus">directions_bus</span>
 
-                            <h4 class="font-headline-md text-primary text-base font-bold">Structured Infrastructure</h4>
 
-                            <p class="text-xs text-secondary leading-relaxed">Fleet systems designed to support
+                                    <span class="font-semibold text-sm">Premium Bus Rental</span>
 
-                                operational efficiency.</p>
 
-                        </div>
+                                </div>
 
-                    </div>
 
-                    <!-- 3. Technology Enabled Operations -->
+                                <p class="text-xs text-white/80 leading-relaxed">Luxury touring coaches, shuttle vans, and passenger transport fleets for safe group commutes.</p>
 
-                    <div data-reveal="up" data-delay="300"
 
-                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+                            </div>
 
-                        <div class="space-y-sm">
 
-                            <div
+                            <!-- Group Travel & Excursions -->
 
-                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
 
-                                <span class="material-symbols-outlined text-xl" data-icon="memory">memory</span>
+                            <div data-reveal="up" data-delay="200"
 
-                            </div>
 
-                            <h4 class="font-headline-md text-primary text-base font-bold">Technology Enabled Operations
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
 
-                            </h4>
 
-                            <p class="text-xs text-secondary leading-relaxed">Modern operational tools supporting
+                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                                visibility and service management.</p>
 
-                        </div>
+                                    <span class="material-symbols-outlined text-xl" data-icon="groups">groups</span>
 
-                    </div>
 
-                    <!-- 4. Customer-Focused Service -->
+                                    <span class="font-semibold text-sm">Group Travel &amp; Excursions</span>
 
-                    <div data-reveal="up" data-delay="400"
 
-                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+                                </div>
 
-                        <div class="space-y-sm">
 
-                            <div
+                                <p class="text-xs text-white/80 leading-relaxed">Custom transit schedules and passenger planning for family trips, weddings, community events, and retreats.</p>
 
-                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
 
-                                <span class="material-symbols-outlined text-xl"
+                            </div>
 
-                                    data-icon="support_agent">support_agent</span>
 
-                            </div>
+                            <!-- Study Tour Transport -->
 
-                            <h4 class="font-headline-md text-primary text-base font-bold">Customer-Focused Service</h4>
 
-                            <p class="text-xs text-secondary leading-relaxed">Long-term partnerships built through
+                            <div data-reveal="up" data-delay="300"
 
-                                reliability and consistent execution.</p>
 
-                        </div>
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
 
-                    </div>
 
-                    <!-- 5. Scalable Operations -->
+                                <div class="flex items-center gap-xs mb-xs text-white">
 
-                    <div data-reveal="up" data-delay="500"
 
-                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+                                    <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
 
-                        <div class="space-y-sm">
 
-                            <div
+                                    <span class="font-semibold text-sm">Study Tour Transport</span>
 
-                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
 
-                                <span class="material-symbols-outlined text-xl"
+                                </div>
 
-                                    data-icon="trending_up">trending_up</span>
 
-                            </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Managed school and college excursions prioritizing high safety standards and timing.</p>
 
-                            <h4 class="font-headline-md text-primary text-base font-bold">Scalable Operations</h4>
 
-                            <p class="text-xs text-secondary leading-relaxed">Capabilities designed to support growth
+                            </div>
 
-                                and evolving customer requirements.</p>
 
-                        </div>
+                            <!-- Taxi & Car Rentals -->
 
-                    </div>
 
-                </div>
+                            <div data-reveal="up" data-delay="400"
 
-            </div>
 
-        </section>
+                                class="cap-card bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10">
 
-        <!-- General CTA Section -->
 
-        <section class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
+                                <div class="flex items-center gap-xs mb-xs text-white">
 
-            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
 
-            </div>
+                                    <span class="material-symbols-outlined text-xl"
 
-            <div class="absolute -top-32 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
 
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg text-center space-y-md relative z-10">
+                                        data-icon="local_taxi">local_taxi</span>
 
-                <h2 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-white font-bold leading-tight" data-reveal="up">
 
-                    Moving North America. Growing
+                                    <span class="font-semibold text-sm">Taxi &amp; Car Rentals</span>
 
-                    Together.</h2>
 
-                <p class="font-body-lg text-body-lg text-white/80 max-w-3xl mx-auto leading-relaxed" data-reveal="up" data-delay="200">
+                                </div>
 
-                    At Lisset Transport Inc, our commitment remains focused on operational excellence, dependable
 
-                    service
+                                <p class="text-xs text-white/80 leading-relaxed">Premium sedans, SUVs, and commuter vans for executive travel or airport transfers.</p>
 
-                    delivery, and building long-term customer relationships.
 
-                </p>
+                            </div>
 
-                <p class="font-body-md text-body-md text-white/70 max-w-2xl mx-auto leading-relaxed" data-reveal="up" data-delay="300">
 
-                    Whether supporting industrial freight movement or delivering premium mobility experiences, we
+                            <!-- Corporate Commutes -->
 
-                    continue building solutions designed around trust, efficiency, and reliability.
 
-                </p>
+                            <div data-reveal="scale" data-delay="200"
 
-                <div class="pt-md" data-reveal="scale" data-delay="400">
 
-                    <a href="contact.html"
+                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
 
-                        class="bg-white text-primary-container px-6 md:px-xl py-md rounded font-label-md text-label-md hover:bg-surface-container hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-center inline-block uppercase tracking-wider font-bold">
 
-                        Contact Our Team
+                                <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
 
-                    </a>
 
-                </div>
+                                     <div class="flex items-center gap-xs text-white">
 
-            </div>
 
-        </section>
+                                         <span class="material-symbols-outlined text-xl" data-icon="business">business</span>
 
-    </main>
 
-    <!-- Footer -->
+                                         <span class="font-semibold text-sm">Corporate Commutes</span>
+
+
+                                     </div>
+
+
+                                     <p class="text-xs text-white/80 leading-relaxed">Scheduled employee shuttles and executive transport for corporate offices, daily commutes, and corporate events.</p>
+
+
+                                </div>
+
+
+                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
+
+
+                                     <img src="assets/new_images/intermodal-pictures.png" 
+
+
+                                          alt="Corporate Commutes Shuttle" 
+
+
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- Custom Group Charters -->
+
+
+                            <div data-reveal="scale" data-delay="300"
+
+
+                                class="feature-card sm:col-span-2 grid grid-cols-1 md:grid-cols-12 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300 overflow-hidden items-stretch">
+
+
+                                <div class="md:col-span-7 p-md flex flex-col justify-center space-y-sm">
+
+
+                                     <div class="flex items-center gap-xs text-white">
+
+
+                                         <span class="material-symbols-outlined text-xl"
+
+
+                                             data-icon="travel_explore">travel_explore</span>
+
+
+                                         <span class="font-semibold text-sm">Custom Group Charters</span>
+
+
+                                     </div>
+
+
+                                     <p class="text-xs text-white/80 leading-relaxed">Tailor-made route planning, group booking, scheduled shuttle coordination, and complete travel management.</p>
+
+
+                                </div>
+
+
+                                <div class="md:col-span-5 min-h-[140px] relative bg-white border-l border-white/10 overflow-hidden">
+
+
+                                     <img src="assets/new_images/Dublin-1-e1718732623256.jpg" 
+
+
+                                          alt="Custom Group Charters Coach" 
+
+
+                                          class="feature-img absolute inset-0 w-full h-full object-cover object-center" />
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                                                </div>
+                        </div>
+
+                        <div class="pt-sm">
+                            <a href="contact.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
+                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Why Choose Lisset Section -->
+
+
+        <section class="py-12 md:py-xl bg-surface-container-low border-t border-b border-surface-container-high relative overflow-hidden">
+
+
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
+
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+
+
+                <div class="text-center mb-xl max-w-2xl mx-auto" data-reveal="up">
+
+
+                    <span
+
+
+                        class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Lisset
+
+
+                        ADVANTAGE</span>
+
+
+                    <!-- Animated divider line -->
+
+
+                    <div class="divider-line mx-auto mb-sm" style="transition-delay:0.3s"></div>
+
+
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Why Choose Lisset Transport
+
+
+                        Inc</h2>
+
+
+                    <p class="text-secondary font-body-md">Nearly two decades of transportation and mobility expertise.
+
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-md">
+
+
+                    <!-- 1. Operational Experience -->
+
+
+                    <div data-reveal="up" data-delay="100"
+
+
+                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+
+
+                        <div class="space-y-sm">
+
+
+                            <div
+
+
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+
+
+                                <span class="material-symbols-outlined text-xl" data-icon="history">history</span>
+
+
+                            </div>
+
+
+                            <h4 class="font-headline-md text-primary text-base font-bold">Operational Experience</h4>
+
+
+                            <p class="text-xs text-secondary leading-relaxed">Nearly two decades of transportation and
+
+
+                                mobility expertise.</p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- 2. Structured Infrastructure -->
+
+
+                    <div data-reveal="up" data-delay="200"
+
+
+                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+
+
+                        <div class="space-y-sm">
+
+
+                            <div
+
+
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+
+
+                                <span class="material-symbols-outlined text-xl"
+
+
+                                    data-icon="account_tree">account_tree</span>
+
+
+                            </div>
+
+
+                            <h4 class="font-headline-md text-primary text-base font-bold">Structured Infrastructure</h4>
+
+
+                            <p class="text-xs text-secondary leading-relaxed">Fleet systems designed to support
+
+
+                                operational efficiency.</p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- 3. Technology Enabled Operations -->
+
+
+                    <div data-reveal="up" data-delay="300"
+
+
+                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+
+
+                        <div class="space-y-sm">
+
+
+                            <div
+
+
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+
+
+                                <span class="material-symbols-outlined text-xl" data-icon="memory">memory</span>
+
+
+                            </div>
+
+
+                            <h4 class="font-headline-md text-primary text-base font-bold">Technology Enabled Operations
+
+
+                            </h4>
+
+
+                            <p class="text-xs text-secondary leading-relaxed">Modern operational tools supporting
+
+
+                                visibility and service management.</p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- 4. Customer-Focused Service -->
+
+
+                    <div data-reveal="up" data-delay="400"
+
+
+                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+
+
+                        <div class="space-y-sm">
+
+
+                            <div
+
+
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+
+
+                                <span class="material-symbols-outlined text-xl"
+
+
+                                    data-icon="support_agent">support_agent</span>
+
+
+                            </div>
+
+
+                            <h4 class="font-headline-md text-primary text-base font-bold">Customer-Focused Service</h4>
+
+
+                            <p class="text-xs text-secondary leading-relaxed">Long-term partnerships built through
+
+
+                                reliability and consistent execution.</p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- 5. Scalable Operations -->
+
+
+                    <div data-reveal="up" data-delay="500"
+
+
+                        class="why-card bg-primary/5 p-md rounded-2xl border border-primary/10 backdrop-blur-md flex flex-col justify-between hover:border-primary hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+
+
+                        <div class="space-y-sm">
+
+
+                            <div
+
+
+                                class="why-icon w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+
+
+                                <span class="material-symbols-outlined text-xl"
+
+
+                                    data-icon="trending_up">trending_up</span>
+
+
+                            </div>
+
+
+                            <h4 class="font-headline-md text-primary text-base font-bold">Scalable Operations</h4>
+
+
+                            <p class="text-xs text-secondary leading-relaxed">Capabilities designed to support growth
+
+
+                                and evolving customer requirements.</p>
+
+
+                        </div>
+
+
+                                                </div>
+                        </div>
+
+                        <div class="pt-sm">
+                            <a href="contact.html" class="inline-flex items-center gap-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:text-primary-container hover:gap-sm transition-all duration-300">
+                                Learn More About Our Fleet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- General CTA Section -->
+
+
+        <section class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
+
+
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-1">
+
+
+            </div>
+
+
+            <div class="absolute -top-32 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none orb-float-2"></div>
+
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg text-center space-y-md relative z-10">
+
+
+                <h2 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-white font-bold leading-tight" data-reveal="up">
+
+
+                    Moving North America. Growing
+
+
+                    Together.</h2>
+
+
+                <p class="font-body-lg text-body-lg text-white/80 max-w-3xl mx-auto leading-relaxed" data-reveal="up" data-delay="200">
+
+
+                    At Lisset Transport Inc, our commitment remains focused on operational excellence, dependable
+
+
+                    service
+
+
+                    delivery, and building long-term customer relationships.
+
+
+                </p>
+
+
+                <p class="font-body-md text-body-md text-white/70 max-w-2xl mx-auto leading-relaxed" data-reveal="up" data-delay="300">
+
+
+                    Whether supporting industrial freight movement or delivering premium mobility experiences, we
+
+
+                    continue building solutions designed around trust, efficiency, and reliability.
+
+
+                </p>
+
+
+                <div class="pt-md" data-reveal="scale" data-delay="400">
+
+
+                    <a href="contact.html"
+
+
+                        class="bg-white text-primary-container px-6 md:px-xl py-md rounded font-label-md text-label-md hover:bg-surface-container hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-center inline-block uppercase tracking-wider font-bold">
+
+
+                        Contact Our Team
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
 
     <footer
-        class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
+        class="bg-gradient-to-b from-surface-container-lowest to-surface-container text-secondary border-t border-surface-container-high pt-12 md:pt-16 pb-4 md:pb-4 relative overflow-hidden shadow-[inset_0_4px_24px_rgba(0,0,0,0.02)]">
 
         <!-- Background Glows -->
 
@@ -1379,26 +1901,26 @@
 
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-xl">
 
                 <!-- Brand Column -->
 
-                <div class="space-y-sm lg:col-span-4">
+                <div class="pr-0 lg:pr-8 flex flex-col">
 
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-4 -mt-4 md:-mt-8 mb-4">
 
-                        <img alt="Lisset Transport Inc" class="h-12 w-auto object-contain mix-blend-multiply"
+                        <img alt="Lisset Transport Inc" class="h-20 md:h-24 w-auto object-contain mix-blend-multiply drop-shadow-sm hover:scale-105 transition-transform duration-300"
                             src="assets/new_logos/logo_2.png" />
 
                     </div>
 
-                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving North America. Growing
+                    <p class="text-primary font-bold text-sm md:text-base uppercase tracking-wider ">Moving North America. Growing
 
                         Together.
 
                     </p>
 
-                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
+                    <p class="text-secondary text-base leading-relaxed max-w-md mt-2">
 
                         Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
 
@@ -1408,9 +1930,10 @@
 
                 </div>
 
-                <!-- Quick Links Column -->
-
-                <div class="flex flex-col gap-base lg:col-span-2">
+                <!-- Right Section (Links & Contact) -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-xl">
+                  <!-- Quick Links Column -->
+                <div class="flex flex-col gap-base">
 
                     <div class="relative pb-2">
 
@@ -1454,15 +1977,7 @@
 
                         </a>
 
-                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
-                            href="logistics.html">
-
-                            <span
-                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
-
-                        </a>
+                        
 
                         <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
                             href="contact.html">
@@ -1488,76 +2003,8 @@
 
                 </div>
 
-                <!-- Divisions Column -->
-
-                <div class="flex flex-col gap-base lg:col-span-3">
-
-                    <div class="relative pb-2">
-
-                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
-
-                            Divisions</span>
-
-                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
-
-                    </div>
-
-                    <div class="flex flex-col gap-3 pt-2">
-
-                        <a href="logistics.html"
-                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Industrial Freight &
-
-                                Cargo</span>
-
-                        </a>
-
-                        <a href="services.html#corporate"
-                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Corporate Employee
-
-                                Mobility</span>
-
-                        </a>
-
-                        <a href="services.html"
-                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Premium Fleet
-
-                                Solutions</span>
-
-                        </a>
-
-                        <a href="logistics.html#warehouse"
-                            class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
-
-                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
-
-                            <span class="group-hover:translate-x-1 transition-all duration-300">Warehouse
-
-                                Management</span>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
                 <!-- Contact Column -->
-
-                <div class="flex flex-col gap-base lg:col-span-3">
+                <div class="flex flex-col gap-base">
 
                     <div class="relative pb-2">
 
@@ -1623,291 +2070,393 @@
             </div>
 
             <div
-                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
+                class="border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base -mt-8 pt-3 md:-mt-12">
 
-                <p class="text-secondary/60 text-sm">Ã‚Â© 2026 Lisset Transport Inc. All Rights Reserved.</p>
+                <p class="text-secondary/60 text-sm">&copy; 2026 Lisset Transport Inc. All Rights Reserved.</p>
 
-                <div class="flex gap-md">
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                        href="#">
-
-                        <span class="material-symbols-outlined text-lg">public</span>
-
-                    </a>
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                        href="mailto:safety@lisset.ca">
-
-                        <span class="material-symbols-outlined text-lg">mail</span>
-
-                    </a>
-
-                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                        href="tel:+19022011816">
-
-                        <span class="material-symbols-outlined text-lg">call</span>
-
-                    </a>
-
-                </div>
-
-            </div>
+                
 
         </div>
+              </div>cxa
+              </footer>
 
-    </footer>
 
-    <script>
+    <script>
 
-        // Mobile menu toggle
 
-        window.toggleMobileMenu = function () {
+        // Mobile menu toggle
 
-            const menu = document.getElementById('mobile-menu');
 
-            const icon = document.getElementById('hamburger-icon');
+        window.toggleMobileMenu = function () {
 
-            if (menu.classList.contains('hidden')) {
 
-                menu.classList.remove('hidden');
+            const menu = document.getElementById('mobile-menu');
 
-                setTimeout(() => {
 
-                    menu.classList.remove('translate-x-full');
+            const icon = document.getElementById('hamburger-icon');
 
-                }, 10);
 
-                icon.textContent = 'close';
+            if (menu.classList.contains('hidden')) {
 
-            } else {
 
-                menu.classList.add('translate-x-full');
+                menu.classList.remove('hidden');
 
-                setTimeout(() => {
 
-                    menu.classList.add('hidden');
+                setTimeout(() => {
 
-                }, 300);
 
-                icon.textContent = 'menu';
+                    menu.classList.remove('translate-x-full');
 
-            }
 
-        };
+                }, 10);
 
-        // FAQ Accordion Toggle Function
 
-        window.toggleFaq = function (index) {
+                icon.textContent = 'close';
 
-            const content = document.getElementById(`faq-content-${index}`);
 
-            const icon = document.getElementById(`faq-icon-${index}`);
+            } else {
 
-            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
 
-            for (let i = 1; i <= 4; i++) {
+                menu.classList.add('translate-x-full');
 
-                const c = document.getElementById(`faq-content-${i}`);
 
-                const ic = document.getElementById(`faq-icon-${i}`);
+                setTimeout(() => {
 
-                if (c && ic) {
 
-                    c.style.maxHeight = '0px';
+                    menu.classList.add('hidden');
 
-                    ic.style.transform = 'rotate(0deg)';
 
-                    ic.textContent = 'add';
+                }, 300);
 
-                }
 
-            }
+                icon.textContent = 'menu';
 
-            if (!isOpen) {
 
-                content.style.maxHeight = content.scrollHeight + 'px';
+            }
 
-                icon.style.transform = 'rotate(45deg)';
 
-                icon.textContent = 'close';
+        };
 
-            }
 
-        };
+        // FAQ Accordion Toggle Function
 
-        // =============================================
 
-        // SCROLL PROGRESS BAR
+        window.toggleFaq = function (index) {
 
-        // =============================================
 
-        const progressBar = document.getElementById('scroll-progress');
+            const content = document.getElementById(`faq-content-${index}`);
 
-        function updateProgress() {
 
-            const scrollTop = window.scrollY;
+            const icon = document.getElementById(`faq-icon-${index}`);
 
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
 
-            progressBar.style.width = pct + '%';
 
-        }
+            for (let i = 1; i <= 4; i++) {
 
-        window.addEventListener('scroll', updateProgress, { passive: true });
 
-        // =============================================
+                const c = document.getElementById(`faq-content-${i}`);
 
-        // PARALLAX HERO LOGO
 
-        // =============================================
+                const ic = document.getElementById(`faq-icon-${i}`);
 
-        const parallaxLogo = document.getElementById('parallax-logo');
 
-        function updateParallax() {
+                if (c && ic) {
 
-            if (!parallaxLogo) return;
 
-            const scrollY = window.scrollY;
+                    c.style.maxHeight = '0px';
 
-            parallaxLogo.style.transform = `translateY(${scrollY * 0.22}px) scale(${1 + scrollY * 0.00005})`;
 
-        }
+                    ic.style.transform = 'rotate(0deg)';
 
-        window.addEventListener('scroll', updateParallax, { passive: true });
 
-        // =============================================
+                    ic.textContent = 'add';
 
-        // HERO HEADLINE WORD REVEAL (triggers on load)
 
-        // =============================================
+                }
 
-        setTimeout(() => {
 
-            const headline = document.getElementById('hero-headline');
+            }
 
-            if (headline) headline.classList.add('revealed');
 
-            const divider = document.getElementById('hero-divider');
+            if (!isOpen) {
 
-            if (divider) divider.classList.add('revealed');
 
-        }, 300);
+                content.style.maxHeight = content.scrollHeight + 'px';
 
-        // =============================================
 
-        // SCROLL REVEAL â€” all [data-reveal] elements
+                icon.style.transform = 'rotate(45deg)';
 
-        // =============================================
 
-        const revealObserver = new IntersectionObserver((entries) => {
+                icon.textContent = 'close';
 
-            entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+            }
 
-                    entry.target.classList.add('revealed');
 
-                    revealObserver.unobserve(entry.target);
+        };
 
-                }
 
-            });
+        // =============================================
 
-        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
 
-        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+        // SCROLL PROGRESS BAR
 
-        // Animated divider lines (observe them too)
 
-        const dividerObserver = new IntersectionObserver((entries) => {
+        // =============================================
 
-            entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+        const progressBar = document.getElementById('scroll-progress');
 
-                    entry.target.classList.add('revealed');
 
-                    dividerObserver.unobserve(entry.target);
+        function updateProgress() {
 
-                }
 
-            });
+            const scrollTop = window.scrollY;
 
-        }, { threshold: 0.5 });
 
-        document.querySelectorAll('.divider-line').forEach(el => dividerObserver.observe(el));
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-        // =============================================
 
-        // STAT BARS + COUNTER ANIMATION
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
-        // =============================================
 
-        const statObserver = new IntersectionObserver((entries) => {
+            progressBar.style.width = pct + '%';
 
-            entries.forEach(entry => {
 
-                if (!entry.isIntersecting) return;
+        }
 
-                const section = entry.target;
 
-                // Animate bars
+        window.addEventListener('scroll', updateProgress, { passive: true });
 
-                section.querySelectorAll('.stat-bar').forEach(bar => {
 
-                    const targetW = parseFloat(bar.dataset.width);
+        // =============================================
 
-                    bar.style.width = targetW + '%';
 
-                });
+        // PARALLAX HERO LOGO
 
-                // Animate percentage counters
 
-                section.querySelectorAll('.counter-pct').forEach(el => {
+        // =============================================
 
-                    const target = parseFloat(el.dataset.target);
 
-                    let start = 0;
+        const parallaxLogo = document.getElementById('parallax-logo');
 
-                    const step = target / 60;
 
-                    const interval = setInterval(() => {
+        function updateParallax() {
 
-                        start = Math.min(start + step, target);
 
-                        el.textContent = start % 1 === 0 ? start.toFixed(0) : start.toFixed(1);
+            if (!parallaxLogo) return;
 
-                        if (start >= target) clearInterval(interval);
 
-                    }, 16);
+            const scrollY = window.scrollY;
 
-                });
 
-                statObserver.unobserve(section);
+            parallaxLogo.style.transform = `translateY(${scrollY * 0.22}px) scale(${1 + scrollY * 0.00005})`;
 
-            });
 
-        }, { threshold: 0.3 });
+        }
 
-        // Observe the operational section (parent of stat bars)
 
-        document.querySelectorAll('[data-reveal]').forEach(el => {
+        window.addEventListener('scroll', updateParallax, { passive: true });
 
-            if (el.querySelector('.stat-bar')) statObserver.observe(el.closest('section'));
 
-        });
+        // =============================================
 
-        // Also observe the stats section directly
 
-        const statSection = document.querySelector('.stat-bar')?.closest('section');
+        // HERO HEADLINE WORD REVEAL (triggers on load)
 
-        if (statSection) statObserver.observe(statSection);
 
-    </script>
+        // =============================================
 
-</body>
+
+        setTimeout(() => {
+
+
+            const headline = document.getElementById('hero-headline');
+
+
+            if (headline) headline.classList.add('revealed');
+
+
+            const divider = document.getElementById('hero-divider');
+
+
+            if (divider) divider.classList.add('revealed');
+
+
+        }, 300);
+
+
+        // =============================================
+
+
+        // SCROLL REVEAL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all [data-reveal] elements
+
+
+        // =============================================
+
+
+        const revealObserver = new IntersectionObserver((entries) => {
+
+
+            entries.forEach(entry => {
+
+
+                if (entry.isIntersecting) {
+
+
+                    entry.target.classList.add('revealed');
+
+
+                    revealObserver.unobserve(entry.target);
+
+
+                }
+
+
+            });
+
+
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
+
+
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+
+        // Animated divider lines (observe them too)
+
+
+        const dividerObserver = new IntersectionObserver((entries) => {
+
+
+            entries.forEach(entry => {
+
+
+                if (entry.isIntersecting) {
+
+
+                    entry.target.classList.add('revealed');
+
+
+                    dividerObserver.unobserve(entry.target);
+
+
+                }
+
+
+            });
+
+
+        }, { threshold: 0.5 });
+
+
+        document.querySelectorAll('.divider-line').forEach(el => dividerObserver.observe(el));
+
+
+        // =============================================
+
+
+        // STAT BARS + COUNTER ANIMATION
+
+
+        // =============================================
+
+
+        const statObserver = new IntersectionObserver((entries) => {
+
+
+            entries.forEach(entry => {
+
+
+                if (!entry.isIntersecting) return;
+
+
+                const section = entry.target;
+
+
+                // Animate bars
+
+
+                section.querySelectorAll('.stat-bar').forEach(bar => {
+
+
+                    const targetW = parseFloat(bar.dataset.width);
+
+
+                    bar.style.width = targetW + '%';
+
+
+                });
+
+
+                // Animate percentage counters
+
+
+                section.querySelectorAll('.counter-pct').forEach(el => {
+
+
+                    const target = parseFloat(el.dataset.target);
+
+
+                    let start = 0;
+
+
+                    const step = target / 60;
+
+
+                    const interval = setInterval(() => {
+
+
+                        start = Math.min(start + step, target);
+
+
+                        el.textContent = start % 1 === 0 ? start.toFixed(0) : start.toFixed(1);
+
+
+                        if (start >= target) clearInterval(interval);
+
+
+                    }, 16);
+
+
+                });
+
+
+                statObserver.unobserve(section);
+
+
+            });
+
+
+        }, { threshold: 0.3 });
+
+
+        // Observe the operational section (parent of stat bars)
+
+
+        document.querySelectorAll('[data-reveal]').forEach(el => {
+
+
+            if (el.querySelector('.stat-bar')) statObserver.observe(el.closest('section'));
+
+
+        });
+
+
+        // Also observe the stats section directly
+
+
+        const statSection = document.querySelector('.stat-bar')?.closest('section');
+
+
+        if (statSection) statObserver.observe(statSection);
+
+
+    </script>
+
+
+</body>
+
 
 </html>

@@ -1,4 +1,4 @@
-/* Custom CSS for Lisset Transport Inc */
+﻿/* Custom CSS for Lisset Transport Inc */
 
 html {
     scroll-behavior: smooth;
@@ -264,7 +264,7 @@ html {
 
     .location-cta-content {
         padding: 40px 0 0;
-        max-width: 100%;
+        max-width: 95%;
     }
 
     .location-cta-map {

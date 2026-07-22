@@ -160,29 +160,29 @@ window.trackShipment = function (event) {
     let status = 'In Transit';
     let currentStep = 2; // 0: Booked, 1: Dispatched, 2: Transit, 3: Delivered
     let details = `Shipment ${trackingId} is currently in route.`;
-    let origin = 'Kochi Hub';
-    let dest = 'Bangalore Depot';
+    let origin = 'Toronto Hub';
+    let dest = 'Chicago Depot';
     let eta = 'May 24, 2026';
 
     if (trackingId.includes('DELIVERED') || trackingId === 'Lisset-1001') {
         status = 'Delivered';
         currentStep = 3;
         details = 'Your shipment has been successfully delivered and signed for.';
-        origin = 'Chennai Port';
-        dest = 'Mumbai Logistics Park';
+        origin = 'New York Port';
+        dest = 'Boston Logistics Park';
         eta = 'Delivered (May 21, 2026)';
     } else if (trackingId.includes('BOOKED') || trackingId === 'Lisset-1003') {
         status = 'Booking Confirmed';
         currentStep = 0;
         details = 'Shipment booked. Awaiting pickup from origin location.';
-        origin = 'Bangalore Warehouse';
+        origin = 'Chicago Warehouse';
         dest = 'Hyderabad Delivery Center';
         eta = 'May 26, 2026';
     } else if (trackingId.includes('DISPATCHED') || trackingId === 'Lisset-1002') {
         status = 'Dispatched';
         currentStep = 1;
         details = 'Cargo loaded and departed from source logistics hub.';
-        origin = 'Kochi Container Terminal';
+        origin = 'Toronto Container Terminal';
         dest = 'Coimbatore Hub';
         eta = 'May 23, 2026';
     }
@@ -262,18 +262,18 @@ window.calculateRates = function (event) {
 
     // Distance Database
     const distances = {
-        'kochi-bangalore': 510,
-        'kochi-chennai': 690,
-        'kochi-mumbai': 1350,
-        'bangalore-kochi': 510,
-        'bangalore-chennai': 350,
-        'bangalore-mumbai': 980,
-        'chennai-kochi': 690,
-        'chennai-bangalore': 350,
-        'chennai-mumbai': 1330,
-        'mumbai-kochi': 1350,
-        'mumbai-bangalore': 980,
-        'mumbai-chennai': 1330
+        'toronto-chicago': 510,
+        'toronto-new_york': 690,
+        'toronto-boston': 1350,
+        'chicago-toronto': 510,
+        'chicago-new_york': 350,
+        'chicago-boston': 980,
+        'new_york-toronto': 690,
+        'new_york-chicago': 350,
+        'new_york-boston': 1330,
+        'boston-toronto': 1350,
+        'boston-chicago': 980,
+        'boston-new_york': 1330
     };
 
     const key = `${origin}-${dest}`;
