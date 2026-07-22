@@ -1,4 +1,4 @@
-/* Tailwind Config for Lisset Transport Inc */
+﻿/* Tailwind Config for Lisset Transport Inc */
 tailwind.config = {
     darkMode: "class",
     theme: {
@@ -415,5 +415,106 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
+    }
+});
+
+
+// Toggle Company Driver Benefits Modal (Hides main navbar while open)
+window.toggleDriverBenefitsModal = function () {
+    const modal = document.getElementById('driver-benefits-modal');
+    const mainNav = document.getElementById('main-nav');
+    if (modal) {
+        const isHidden = modal.classList.contains('hidden');
+        if (isHidden) {
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            if (mainNav) {
+                mainNav.style.opacity = '0';
+                mainNav.style.pointerEvents = 'none';
+                mainNav.style.transform = 'translateY(-150%)';
+                mainNav.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+            }
+        } else {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+            if (mainNav) {
+                mainNav.style.opacity = '';
+                mainNav.style.pointerEvents = '';
+                mainNav.style.transform = '';
+            }
+        }
+    }
+};
+
+// Close modal on backdrop click
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('driver-benefits-modal');
+    if (modal && e.target === modal) {
+        window.toggleDriverBenefitsModal();
+    }
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('driver-benefits-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+            window.toggleDriverBenefitsModal();
+        }
+    }
+});
+
+// Toggle Owner-Operator Modal Controller (Hides main navbar while open)
+window.toggleOwnerOperatorModal = function () {
+    const modal = document.getElementById('owner-operator-modal');
+    const mainNav = document.getElementById('main-nav');
+    if (modal) {
+        const isHidden = modal.classList.contains('hidden');
+        if (isHidden) {
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            if (mainNav) {
+                mainNav.style.opacity = '0';
+                mainNav.style.pointerEvents = 'none';
+                mainNav.style.transform = 'translateY(-150%)';
+                mainNav.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+            }
+        } else {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+            if (mainNav) {
+                mainNav.style.opacity = '';
+                mainNav.style.pointerEvents = '';
+                mainNav.style.transform = '';
+            }
+        }
+    }
+};
+
+// Global Close for both Modals on backdrop click
+document.addEventListener('click', (e) => {
+    const companyModal = document.getElementById('driver-benefits-modal');
+    const ownerModal = document.getElementById('owner-operator-modal');
+
+    if (companyModal && e.target === companyModal) {
+        window.toggleDriverBenefitsModal();
+    }
+    if (ownerModal && e.target === ownerModal) {
+        window.toggleOwnerOperatorModal();
+    }
+});
+
+// Global Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const companyModal = document.getElementById('driver-benefits-modal');
+        const ownerModal = document.getElementById('owner-operator-modal');
+
+        if (companyModal && !companyModal.classList.contains('hidden')) {
+            window.toggleDriverBenefitsModal();
+        }
+        if (ownerModal && !ownerModal.classList.contains('hidden')) {
+            window.toggleOwnerOperatorModal();
+        }
     }
 });
